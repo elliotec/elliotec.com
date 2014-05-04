@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "Creating This Site"
 date:   2014-04-17 01:26:11
 ---
