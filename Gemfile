@@ -6,6 +6,8 @@ gem "middleman-blog", "~> 3.5.2"
 gem "middleman-syntax"
 gem 'middleman-livereload'
 
+gem 'middleman-gh-pages'
+
 # For Heroku
 gem "rack-contrib"
 
