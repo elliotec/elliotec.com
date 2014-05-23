@@ -16,9 +16,9 @@ run lambda { |env|
   [
     404,
     {
-      'Content-Type' => 'text/html'
+      'Content-Type'  => 'text/html',
       'Cache-Control' => "public, max-age=#{FIVE_MINUTES}"
     },
-    ['File Not Found']
+    ['File not found']
   ]
- }
+}
