@@ -1,0 +1,381 @@
+/* line 1, /Users/elliotec/elliotecblog/source/stylesheets/bitters/extends/_button.scss */
+button,
+input[type="submit"] {
+  border: 1px solid #199a50;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 0 #71d69c;
+  color: #333333;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: bold;
+  background-color: #2ecc71;
+  background-image: -webkit-linear-gradient(#2ecc71, #1ba756);
+  background-image: linear-gradient(#2ecc71, #1ba756);
+  padding: 7px 18px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #30df7a;
+  background-clip: padding-box;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  line-height: 2.5em; }
+  /* line 131, /Users/elliotec/.rvm/gems/ruby-2.1.1/gems/bourbon-3.2.1/app/assets/stylesheets/addons/_button.scss */
+  button:hover:not(:disabled),
+  input[type="submit"]:hover:not(:disabled) {
+    box-shadow: inset 0 1px 0 0 #48cc80;
+    cursor: pointer;
+    background-color: #2eb366;
+    background-image: -webkit-linear-gradient(#2eb366, #1a9950);
+    background-image: linear-gradient(#2eb366, #1a9950); }
+  /* line 148, /Users/elliotec/.rvm/gems/ruby-2.1.1/gems/bourbon-3.2.1/app/assets/stylesheets/addons/_button.scss */
+  button:active:not(:disabled),
+  input[type="submit"]:active:not(:disabled), button:focus:not(:disabled),
+  input[type="submit"]:focus:not(:disabled) {
+    border: 1px solid #199a50;
+    box-shadow: inset 0 0 8px 4px #188b49, inset 0 0 8px 4px #188b49; }
+  /* line 51, /Users/elliotec/.rvm/gems/ruby-2.1.1/gems/bourbon-3.2.1/app/assets/stylesheets/addons/_button.scss */
+  button:disabled,
+  input[type="submit"]:disabled {
+    opacity: 0.5;
+    cursor: not-allowed; }
+
+/* line 1, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_typography.scss */
+body {
+  color: #333333;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5em;
+  margin-top: 5em; }
+
+/* line 10, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  line-height: 1.25em;
+  margin: 0;
+  text-rendering: optimizeLegibility; }
+
+/* line 17, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_typography.scss */
+h1 {
+  font-size: 2.25em; }
+
+/* line 21, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_typography.scss */
+h2 {
+  font-size: 2em; }
+
+/* line 25, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_typography.scss */
+h3 {
+  font-size: 1.75em; }
+
+/* line 29, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_typography.scss */
+h4 {
+  font-size: 1.5em; }
+
+/* line 33, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_typography.scss */
+h5 {
+  font-size: 1.25em; }
+
+/* line 37, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_typography.scss */
+h6 {
+  font-size: 1em; }
+
+/* line 41, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_typography.scss */
+p {
+  margin: 0 0 0.75em; }
+
+/* line 45, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_typography.scss */
+a {
+  color: #2ecc71;
+  text-decoration: none;
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  transition: color 0.1s linear; }
+  /* line 50, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_typography.scss */
+  a:hover {
+    color: #208e4e; }
+  /* line 54, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_typography.scss */
+  a:active, a:focus {
+    color: #208e4e;
+    outline: none; }
+
+/* line 60, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_typography.scss */
+hr {
+  border-bottom: 1px solid #dddddd;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5em 0; }
+
+/* line 68, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_typography.scss */
+img {
+  margin: 0;
+  max-width: 100%; }
+
+/* line 73, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_typography.scss */
+abbr, acronym {
+  border-bottom: 1px dotted #dddddd;
+  cursor: help; }
+
+/* line 78, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_typography.scss */
+address {
+  display: block;
+  margin: 0 0 0.75em; }
+
+/* line 83, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_typography.scss */
+hgroup {
+  margin-bottom: 0.75em; }
+
+/* line 87, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_typography.scss */
+del {
+  color: #595959; }
+
+/* line 91, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_typography.scss */
+blockquote {
+  border-left: 2px solid #dddddd;
+  color: #595959;
+  margin: 1.5em 0;
+  padding-left: 0.75em; }
+
+/* line 98, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_typography.scss */
+cite {
+  color: #737373;
+  font-style: italic; }
+  /* line 102, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_typography.scss */
+  cite:before {
+    content: '\2014 \00A0'; }
+
+/* line 10, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_forms.scss */
+fieldset {
+  background: #f7f7f7;
+  border: 1px solid #dddddd;
+  margin: 0 0 0.75em 0;
+  padding: 1.5em; }
+
+/* line 19, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_forms.scss */
+input,
+label,
+select {
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em; }
+
+/* line 25, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_forms.scss */
+label {
+  font-weight: bold;
+  margin-bottom: 0.375em; }
+  /* line 29, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_forms.scss */
+  label.required:after {
+    content: "*"; }
+  /* line 33, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_forms.scss */
+  label abbr {
+    display: none; }
+
+/* line 40, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_forms.scss */
+textarea,
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
+select[multiple=multiple] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: border-color;
+  -moz-transition: border-color;
+  transition: border-color;
+  background-color: white;
+  border-radius: 0.1875em;
+  border: 1px solid #dddddd;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em 0.5em;
+  width: 100%; }
+  /* line 53, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_forms.scss */
+  textarea:hover,
+  input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
+  select[multiple=multiple]:hover {
+    border-color: #c4c4c4; }
+  /* line 57, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_forms.scss */
+  textarea:focus,
+  input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
+  select[multiple=multiple]:focus {
+    border-color: #2ecc71;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(41, 183, 101, 0.7);
+    outline: none; }
+
+/* line 64, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_forms.scss */
+textarea {
+  resize: vertical; }
+
+/* line 68, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; }
+
+/* line 72, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_forms.scss */
+input[type="checkbox"], input[type="radio"] {
+  display: inline;
+  margin-right: 0.375em; }
+
+/* line 77, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_forms.scss */
+input[type="file"] {
+  width: 100%; }
+
+/* line 81, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_forms.scss */
+select {
+  width: auto;
+  max-width: 100%;
+  margin-bottom: 1.5em; }
+
+/* line 88, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_forms.scss */
+button,
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+
+/* line 1, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_tables.scss */
+table {
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%; }
+
+/* line 8, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_tables.scss */
+th {
+  border-bottom: 1px solid #b7b7b7;
+  font-weight: bold;
+  padding: 0.75em 0;
+  text-align: left; }
+
+/* line 15, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_tables.scss */
+td {
+  border-bottom: 1px solid #dddddd;
+  padding: 0.75em 0; }
+
+/* line 20, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_tables.scss */
+tr, td, th {
+  vertical-align: middle; }
+
+/* line 1, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_lists.scss */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+/* line 19, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_lists.scss */
+dl {
+  line-height: 1.5em;
+  margin-bottom: 0.75em; }
+  /* line 23, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_lists.scss */
+  dl dt {
+    font-weight: bold;
+    margin-top: 0.75em; }
+  /* line 28, /Users/elliotec/elliotecblog/source/stylesheets/bitters/_lists.scss */
+  dl dd {
+    margin: 0; }
+
+/* line 2, /Users/elliotec/.rvm/gems/ruby-2.1.1/gems/neat-1.5.1/app/assets/stylesheets/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 7, /Users/elliotec/elliotecblog/source/stylesheets/about.scss */
+.about {
+  height: 48.5em; }
+  /* line 14, /Users/elliotec/elliotecblog/source/stylesheets/about.scss */
+  .about .grid-items-lines {
+    position: relative; }
+    /* line 15, /Users/elliotec/.rvm/gems/ruby-2.1.1/gems/bourbon-3.2.1/app/assets/stylesheets/addons/_clearfix.scss */
+    .about .grid-items-lines:after {
+      content: "";
+      display: table;
+      clear: both; }
+    /* line 26, /Users/elliotec/elliotecblog/source/stylesheets/about.scss */
+    .about .grid-items-lines .grid-item {
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      height: 14em;
+      background: white;
+      width: 100%;
+      overflow: hidden;
+      float: left;
+      padding: 2em;
+      border-right: 1px solid rgba(51, 51, 51, 0.2);
+      border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+      cursor: pointer; }
+      @media screen and (min-width: 53.75em) {
+        /* line 26, /Users/elliotec/elliotecblog/source/stylesheets/about.scss */
+        .about .grid-items-lines .grid-item {
+          width: 33.33333%; } }
+      /* line 42, /Users/elliotec/elliotecblog/source/stylesheets/about.scss */
+      .about .grid-items-lines .grid-item:hover {
+        background: rgba(51, 51, 51, 0.03); }
+    /* line 47, /Users/elliotec/elliotecblog/source/stylesheets/about.scss */
+    .about .grid-items-lines .grid-item img {
+      display: block;
+      height: 2.5em;
+      margin-bottom: 1.2em;
+      opacity: .2; }
+    /* line 54, /Users/elliotec/elliotecblog/source/stylesheets/about.scss */
+    .about .grid-items-lines .grid-item h1 {
+      color: #333333;
+      font-size: 1.3em;
+      margin-bottom: .4em; }
+    /* line 60, /Users/elliotec/elliotecblog/source/stylesheets/about.scss */
+    .about .grid-items-lines .grid-item p {
+      color: rgba(51, 51, 51, 0.6); }
+      @media screen and (min-width: 40em) {
+        /* line 60, /Users/elliotec/elliotecblog/source/stylesheets/about.scss */
+        .about .grid-items-lines .grid-item p {
+          max-width: 70%; } }
+    @media screen and (min-width: 53.75em) {
+      /* line 67, /Users/elliotec/elliotecblog/source/stylesheets/about.scss */
+      .about .grid-items-lines .grid-item-big {
+        width: 100%; } }
+    /* line 71, /Users/elliotec/elliotecblog/source/stylesheets/about.scss */
+    .about .grid-items-lines .grid-item-big h1 {
+      text-align: center;
+      font-size: 1.9em; }
+    /* line 75, /Users/elliotec/elliotecblog/source/stylesheets/about.scss */
+    .about .grid-items-lines .grid-item-big p {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      margin-left: 17.05961%;
+      text-align: center;
+      font-size: 1.3em;
+      line-height: 1.2em; }
+      @media screen and (min-width: 40em) {
+        /* line 75, /Users/elliotec/elliotecblog/source/stylesheets/about.scss */
+        .about .grid-items-lines .grid-item-big p {
+          max-width: 100%; } }
+      /* line 38, /Users/elliotec/.rvm/gems/ruby-2.1.1/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+      .about .grid-items-lines .grid-item-big p:last-child {
+        margin-right: 0; }
+    /* line 88, /Users/elliotec/elliotecblog/source/stylesheets/about.scss */
+    .about .grid-items-lines .bottom-cover {
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      height: 3px;
+      background: white; }
+    /* line 96, /Users/elliotec/elliotecblog/source/stylesheets/about.scss */
+    .about .grid-items-lines .right-cover {
+      position: absolute;
+      right: 0px;
+      height: 100%;
+      width: 4px;
+      background: white; }
