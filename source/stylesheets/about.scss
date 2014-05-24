@@ -5,8 +5,6 @@
 @import "neat";
 
 .about {
-  height: 48.5em;
-  // GRID ITEMS
   @mixin grid-item-columns($columns) {
     width: (100% / 12) * $columns;
   }
@@ -19,6 +17,7 @@
     $grid-item-big-columns: 12;
     $grid-item-color: $base-font-color;
     $grid-item-height: 14em;
+    $grid-item-big-height: 20em;
 
     @include clearfix;
     position: relative;
@@ -65,20 +64,32 @@
       }
 
     .grid-item-big {
+      text-align: center;
       @include media($large-screen) {
         @include grid-item-columns($grid-item-big-columns);
       }
+      @include media($mobile) {
+        height: $grid-item-big-height;
+        font-size: .8em;
+        text-align: left;
+        line-height: 5em;
+      }
       h1 {
-        text-align: center;
         font-size: 1.9em;
       }
       p {
         @include media($medium-screen) {
           max-width: 100%;
         }
+
+        @include media($mobile) {
+          @include span-columns(4);
+          @include shift(0);
+        }
+
         @include span-columns(8);
         @include shift(2);
-        text-align: center;
+
         font-size: 1.3em;
         line-height: 1.2em;
       }

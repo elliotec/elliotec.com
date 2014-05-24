@@ -87,6 +87,7 @@
     font-weight: 200;  
     padding-top: 2em;
     text-align: center;
+
   }
 
     .hover-tile-hidden {
@@ -95,6 +96,9 @@
         margin-bottom: .5em;
       }
       p {
+        @include media($mobile) {
+        line-height: 1em;
+      }
         color: transparentize(white, .1);
       }
     }

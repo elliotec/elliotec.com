@@ -7,8 +7,19 @@
 .home {
   background-color: $lightwhite;
   margin-top: -1.5em;
+  height: 50em;
   
   .intro {
+  
+  @include media($mobile) {
+    @include span-columns(3);
+    @include shift(.5);
+    bottom: 0;
+    top: 7em;
+    font-size: 1.2em;
+    text-align: center;
+  }
+
   @include span-columns(4);
   @include shift(6);
   position:relative;
@@ -21,13 +32,19 @@
     font-size: 1.6em;
     }
   }
+
   .headshot {
+    @include media($mobile) {
+      @include span-columns(3);
+      @include shift(.5);
+      position: relative;
+      margin-top: -3.5em;
+    }
+
     @include span-columns(3);
     @include shift(2);
-    clear: left;
     border-radius: 4em;
     position: relative;
     top: 7em
-
   }
 }
