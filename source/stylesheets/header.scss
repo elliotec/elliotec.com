@@ -7,8 +7,9 @@
 header.navigation {
   $navigation-padding: 1em;
   $navigation-background: $dark-gray;
+  $navigation-background-hover: lighten($navigation-background, 10);
   $navigation-color: $nephritis;
-  $navigation-color-hover: $emerald;
+  $navigation-color-hover: $lightwhite;
   $navigation-height: 60px;
   $navigation-nav-button-background: $base-accent-color;
   $navigation-nav-button-background-hover: lighten($navigation-background, 10);
@@ -126,7 +127,7 @@ header.navigation {
     }
 
     a {
-      font-weight: 400;
+      font-weight: 500;
       color: $navigation-color;
 
       &:hover {

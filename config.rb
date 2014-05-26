@@ -9,7 +9,7 @@ activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   # blog.prefix = "blog"
   blog.sources = "/posts/:year-:month-:day-:title.html"
-   blog.permalink = ":title.html"
+  blog.permalink = ":title.html"
   # Matcher for blog source files
   # blog.sources = "{year}-{month}-{day}-{title}.html"
   # blog.taglink = "tags/{tag}.html"
@@ -44,22 +44,7 @@ set :markdown_engine, :redcarpet
 
 set :markdown, :fenced_code_blocks => true, :smartypants => true
 
-# Build-specific configuration
 configure :build do
-  # For example, change the Compass output style for deployment
-  # activate :minify_css
-
-  # Minify Javascript on build
-  # activate :minify_javascript
-
-  # Enable cache buster
-  # activate :asset_hash
-
-  # Use relative URLs
-  # activate :relative_assets
-
-  # Or use a different image path
-  # set :http_prefix, "/Content/images/"
 end
 
 activate :livereload
