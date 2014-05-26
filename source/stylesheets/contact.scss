@@ -6,16 +6,21 @@
 
 .contact {
   background-color: $lightwhite;
-  height: 30em;
+  height: 35em;
 
   .button {
     @include media($mobile) {
-      @include span-columns(3);
-      @include shift(.5);
+      @include span-columns(2.5);
+      @include shift(.75);
     }
 
-    @include span-columns(3);
-    @include shift(4.5);
+    @include media($tablet) {
+      @include span-columns(1.33);
+      @include shift(1.33);
+    }
+
+    @include span-columns(2);
+    @include shift(5);
     @extend %button;
     margin-top: 2em;
   }
