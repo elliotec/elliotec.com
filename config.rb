@@ -50,7 +50,7 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
-set :build_dir, 'tmp'
+set :build_dir, 'build'
 
 set :markdown_engine, :redcarpet
 
