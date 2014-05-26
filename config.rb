@@ -1,8 +1,8 @@
-###
-# Blog settings
-###
-
-# Time.zone = "UTC"
+activate :deploy do |deploy|
+  deploy.build_before = true # default: false
+  deploy.method = :git
+  deploy.branch   = "master"
+end
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
@@ -64,10 +64,3 @@ end
 activate :livereload
 activate :directory_indexes
 activate :syntax
-
-activate :deploy do |deploy|
-  deploy.build_before = true # default: false
-  deploy.method = :git
-  deploy.branch = master
-  deploy.commit_message = Automated deploy commit at `timestamp`
-end
