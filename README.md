@@ -1,4 +1,5 @@
-middleman
-=========
+My personal blog and portfolio site.
 
-Setting up a better blog with Middleman
+See it at http://elliotec.com
+
+Check out the source on the source branch and the build on the build branch
