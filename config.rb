@@ -1,7 +1,8 @@
 activate :deploy do |deploy|
   deploy.build_before = true # default: false
   deploy.method = :git
-  deploy.branch   = "master"
+  deploy.remote = "origin"
+  deploy.branch = "master"
 end
 
 activate :blog do |blog|
