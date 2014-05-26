@@ -7,9 +7,9 @@
         <li class="nav-link"><%= link_to "About", "#about"%></li>
         <li class="nav-link"><%= link_to "Projects", "#projects"%></li>
         <li class="nav-link"><%= link_to "Posts", "#posts"%></li>
-        <li class="nav-link more"><%= link_to "Contact", "javascript:void(0);" %>
+        <li class="nav-link more"><%= link_to "Contact", "#contact" %>
           <ul class="submenu">
-          <li><%= link_to "Email", "#contact" %></li>
+          <li><%= link_to "Email", "mailto:me@michaelelliott.me" %></li>
             <li><%= link_to "Github", "http://github.com/elliotec" %></li>
             <li><%= link_to "Linkedin", "http://linkedin.com/in/elliotec" %></li>
             <li><%= link_to "Twitter", "http://twitter.com/elliotecweb" %></li>
@@ -37,7 +37,7 @@
     </div>
     <div class="grid-item">
       <h1>Design</h1>
-      <p>I use HTML5 &amp; SCSS for design and layout, and jQuery is a go-to for moving stuff around the page.</p>
+      <p>I use HTML5 &amp; Sass for design and layout, and jQuery is my go-to for moving stuff around the page.</p>
     </div>
     <div class="grid-item">
       <h1>Deployment</h1>
@@ -140,4 +140,7 @@
 <section class="contact">
   <h2>Contact</h2>
   <%= link_to "Email me!", "mailto:me@michaelelliott.me", class: "button" %>
+  <%= link_to "Github", "http://github.com/elliotec", class: "button" %>
+  <%= link_to "Linkedin", "http://linkedin.com/in/elliotec", class: "button" %>
+  <%= link_to "Twitter", "http://twitter.com/elliotecweb", class: "button" %>
 </section>
