@@ -5,6 +5,7 @@ gem "middleman", "~> 3.3.2"
 gem "middleman-blog", "~> 3.5.2"
 gem "middleman-syntax"
 gem 'middleman-livereload'
+gem 'middleman-deploy'
 
 # Sass toolkit
 gem 'bitters'
