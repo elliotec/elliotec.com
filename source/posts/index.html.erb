@@ -1,13 +1,11 @@
-<div class="post">
-  <article class="post-content">
-    <h1>Posts</h1>
-    <ul class="posts">
-      <% page_articles.each_with_index do |article, i| %>
-        <li>
-          <h3><%= link_to article.title, article %></h3>
-          <p id='date'><%= article.date.strftime('%B %d, %Y') %></p>
-        </li>
-      <% end %>
-    </ul>
-  </article>
-</div>
+<section class="posts">
+  <h2>Posts</h2>
+  <ul>
+    <% blog.articles.each do |post| %>
+    <li class = "post-item">
+      <%= link_to(post.title, post.url)%>
+    </li>
+      <p id='date'><%= post.date.strftime('%B %d, %Y') %></p>
+    <% end %>
+  </ul>
+</section>
