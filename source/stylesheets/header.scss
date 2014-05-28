@@ -4,6 +4,8 @@
 @import "bitters/bitters";
 @import "neat";
 
+
+
 header.navigation {
   $navigation-padding: 1em;
   $navigation-background: $dark-gray;
@@ -25,9 +27,6 @@ header.navigation {
   width: 100%;
   z-index: 999;
   margin:0px auto;
-  position:fixed;
-  top: 0px;
-
 
   .menu-wrapper {
     @include outer-container;

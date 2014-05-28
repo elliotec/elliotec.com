@@ -43,3 +43,21 @@ a.anchor {
   top: -60px;
   visibility: hidden;
 }
+
+// For Headroom
+
+header.headroom { 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all .2s ease-in-out !important;
+}
+
+header.headroom--unpinned {
+  top: -100px !important;
+}
+
+header.headroom--pinned {
+  top: 0 !important;
+}

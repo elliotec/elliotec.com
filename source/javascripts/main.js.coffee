@@ -1,3 +1,5 @@
+#= require headroom
+
 $ ->
   menu = $("#navigation-menu")
   menuToggle = $("#js-mobile-menu")
@@ -7,3 +9,8 @@ $ ->
       menu.removeAttr "style"  if menu.is(":hidden")
       return
     return
+    
+  header = document.querySelector("header")
+  headroom = new Headroom(header)
+  headroom.init()
+  return

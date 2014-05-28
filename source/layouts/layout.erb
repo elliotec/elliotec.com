@@ -1,39 +1,33 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html class="no-js" lang="en">
 <html>
   <head>
     <meta charset="utf-8" />
     <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
-    <meta name="description" content="The personal blog and portfolio of Michael Elliott.">
+    <meta name="description" content="Web design, development, hosting, deployment, optimization, and consulting. The personal blog and portfolio of Michael Elliott, full-stack web developer.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>elliotec<%= ' - ' + current_article.title unless current_article.nil? %></title>
-    <link href='http://fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <title>elliotec | Web development &amp; design<%= ' - ' + current_article.title unless current_article.nil? %></title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
+    <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Nunito:400,700,300", "http://fonts.googleapis.com/css?family=Varela+Round" %>
     <%= stylesheet_link_tag "normalize", "rouge", "all" %>
     <%= javascript_include_tag "modernizr" %>
-    <script src="//squaresend.com/squaresend.js"></script>
   </head>
   <body>
+
+    <%= yield %>
+
+    <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js", "main", "//squaresend.com/squaresend.js" %>
+
     <a href="https://plus.google.com/106073475634344086622?rel=author"></a>
-    <div id="wrapper">
-      <%= yield %>
-    </div>
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <%= javascript_include_tag "main" %>
-
+    <a href="https://plus.google.com/100799948688623726078" rel="publisher"></a>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
       ga('create', 'UA-46276194-3', 'elliotec.com');
       ga('send', 'pageview');
     </script>
-
   </body>
 </html>
