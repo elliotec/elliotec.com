@@ -5,8 +5,9 @@
 @import "neat";
 
 .posts {
-  height: 25em;
+  height: auto;
   text-align: center;
+  margin-bottom: 3em;
 
   .post-item {
     font-size: 2em;
