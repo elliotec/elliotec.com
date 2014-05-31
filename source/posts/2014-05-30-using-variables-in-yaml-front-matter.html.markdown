@@ -21,7 +21,7 @@ tags: yaml, middleman
 ---
 ```
 
-This makes it super easy to have various HTML layouts that you can assign to any page on your site. It also gives us the date and title options which are useful for the index, file structure, and other obvious reasons. 
+This makes it super easy to have various HTML layouts that you can assign to any page on your site. It also gives us the date and title options which are useful for the index, file structure, and other obvious benefits. 
 
 ##Setting Custom Variables
 
@@ -63,7 +63,7 @@ linkedin: <svg> ...
 ---
 ```
 
-3) After that it was simply a matter of calling "current_page.data" and passing the custom variable in Erb:
+3) After that it was simply a matter of calling "current_page.data" and passing the custom variable in its place in Erb:
 
 
 ```erb
