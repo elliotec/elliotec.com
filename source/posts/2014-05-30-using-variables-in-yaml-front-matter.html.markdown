@@ -7,7 +7,7 @@ tags: yaml, middleman
 
 ##What is Front Matter?
 
-I didn't know this until just now, but [the name comes from book design](http://en.wikipedia.org/wiki/Book_design#Front_matter), where the front matter is just all the stuff before the actual body of the book. This includes the table of contents, title pages, copywrite info, etc. It's essentially all the metadata of the book.
+I didn't know this until just now, but [the name comes from book design](http://en.wikipedia.org/wiki/Book_design#Front_matter), where the front matter is just all the stuff before the actual body of the book. This includes the table of contents, title pages, copyright info, etc. It's essentially all the metadata of the book.
 
 Likewise, the YAML front matter common in static-site generators like Middleman is the metadata of the current page. In my case that usually ends up being post pages where some of the dynamic data is defined:
 
