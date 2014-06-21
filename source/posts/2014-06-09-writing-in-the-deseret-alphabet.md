@@ -47,13 +47,29 @@ Here's a pronunciation table:
 
 | Glyph | IPA  | Sound| Glyph | IPA | Sound|
 |-------|------|-------------|-------|-----|-------------|
-| 𐐔    | /d/ |              | 𐐞    | /z/ |             |
-| 𐐕    | /tʃ/ |             | 𐐟    | /ʃ/ |             |
-| 𐐖    | /dʒ/ |             | 𐐠    | /ʒ/ |             |
-| 𐐗    | /k/ |             | 𐐡    | /r/ |             |
-| 𐐘    | /ɡ/ |             | 𐐢    | /l/ |             |
-| 𐐙    | /f/ |             | 𐐣    | /m/ |             |
-| 𐐚    | /v/  |             | 𐐤    | /n/ |             |
-| 𐐛    | /θ/  |             | 𐐥    | /ŋ/ |             |
-| 𐐜    | /ð/  |             | 𐐦    | /ɔɪ/|             |
-| 𐐝    | /s/  |             | 𐐧    | /juː/ |             |
+| 𐐔    | /d/ |  "d" in dog  | 𐐞    | /z/ | "z" in zoo |
+| 𐐕    | /tʃ/ |"ch" in church| 𐐟    | /ʃ/ | "sh" in ship |
+| 𐐖    | /dʒ/ | "j" in jump  | 𐐠    | /ʒ/ | "s" in measure |
+| 𐐗    | /k/ | "k" in kite  | 𐐡    | /r/ |  "r" in red |
+| 𐐘    | /ɡ/ |  "g" in girl | 𐐢    | /l/ | "l" in love |
+| 𐐙    | /f/ |  "f" in food | 𐐣    | /m/ |  "m" in mom |
+| 𐐚    | /v/  | "v" in voice | 𐐤    | /n/ | "n" in night  |
+| 𐐛    | /θ/  | "th" in think | 𐐥    | /ŋ/ | "ng" in sing |
+| 𐐜    | /ð/  | "th" in that | 𐐦    | /ɔɪ/|  "oy" in boy  |
+| 𐐝    | /s/  | "s" in sun  | 𐐧    | /juː/ | "yew" in yew  |
+
+
+
+So, thats kind of a lot. 40 unique characters and sounds seems a bit daunting, which may be part of the reason it had a hard time getting adopted by the intended users and audience.
+
+## Limitations of the alphabet
+
+The alphabet in its official form was created to emulate the pronunciation of the settlers, who came primarily from New England. This means when you read out loud a publication in the Deseret Alphabet, it's going to sound like you're talking with the accent of a North Easterner in the 1860's. 
+
+A good example of change is "𐐃", which in present-day Utah essentially doesn't exist. Think of a Long Island native saying something like "I thought you caught it when you fought it," or something along those lines. You know what I mean about the vowels in those words being non-existant and replaced simply with "ah" in the western United States.
+
+Another limitation is the lack of a schwa (/ə/) vowel. It sounds like the "e" in "the." Historically the schwa has been written as 𐐊, which I find odd since the symbol 𐐋 is much closer in my opinion. My blog, my rules, so I'll use 𐐋 as the schwa from now on.
+
+###### 𐐂𐐁𐐝𐐋𐐣𐐛𐐟𐐌𐐜𐐥𐐄𐐗 𐐄𐐥𐐋𐐛𐐂𐐥𐐄𐐀𐐤𐐋𐐗𐐂𐐦
+
+##### 𐐂𐐆𐐊𐐎 𐐋𐐢𐐆𐐂𐐝𐐚 𐐗𐐂𐐆𐐧𐐣𐐊𐐞𐐎𐐗
