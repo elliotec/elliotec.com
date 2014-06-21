@@ -5,14 +5,17 @@ activate :deploy do |deploy|
   deploy.branch = "master"
 end
 
+Time.zone = "America/Denver"
+
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   # blog.prefix = "blog"
   blog.sources = "/posts/:year-:month-:day-:title.html"
   blog.permalink = ":title.html"
+  blog.name = "elliotec"
   # Matcher for blog source files
   # blog.sources = "{year}-{month}-{day}-{title}.html"
-  # blog.taglink = "tags/{tag}.html"
+  blog.taglink = "tags/{tag}.html"
   # blog.layout = "layout"
   # blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250

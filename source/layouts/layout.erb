@@ -7,7 +7,7 @@
     <meta name="description" content="Web design, development, hosting, deployment, optimization, and consulting. The personal blog and portfolio of Michael Elliott, full-stack web developer.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>elliotec | Web development &amp; design<%= ' - ' + current_article.title unless current_article.nil? %></title>
-    <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
+    <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "elliotec" %>
     <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Nunito:400,700,300", "http://fonts.googleapis.com/css?family=Varela+Round" %>
     <%= stylesheet_link_tag "normalize", "rouge", "all" %>
     <%= javascript_include_tag "modernizr" %>
