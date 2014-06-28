@@ -3,7 +3,7 @@ published: false
 layout: post
 title: Writing in the Deseret Alphabet
 date: 2014-06-09 09:08
-tags: utah, languages, deseret
+tags: utah, languages, deseret, sass, fonts
 ---
 ## The State of Deseret
 
@@ -41,7 +41,7 @@ Here's a pronunciation table:
 | 𐐄    | /oʊ/ |  "o" in go  | 𐐎    | /w/ |  "w" in wow |
 | 𐐅    | /uː/ | "oo" in do | 𐐏    | /j/ |  "y" in yes |
 | 𐐆    | /ɪ/  |  "i" in sit | 𐐐    | /h/ |  "h" in hi |
-| 𐐇    | /ɛ/  |  "eh" in bet | 𐐑  | /p/ | "p" in pet  |
+| 𐐇    | /ɛ/  |  "e" in bet | 𐐑  | /p/ | "p" in pet  |
 | 𐐈    | /æ/  | "a" in cat   | 𐐒  | /b/ | "b" in boy |
 | 𐐉    | /ɒ/  |  "o" in lot | 𐐓   | /t/ |  "t" in tank |
 
@@ -60,7 +60,9 @@ Here's a pronunciation table:
 
 
 
-So, thats kind of a lot. 40 unique characters and sounds seems a bit daunting, which may be part of the reason it had a hard time getting adopted by the intended users and audience.
+So, ostensibly thats kind of a lot. 40 new unique characters and sounds to replace a very well known system seems a bit daunting, which may be part of the reason it had a hard time getting adopted by the intended users and audience. 
+
+In my opinion, other than the glyphs looking nothing at all like thier roman-counterparts, the alphabet is rather easy to learn since you are just reassigning a symbol to a sound in English. There is no grammar or syntax change, it's really just like mind-mapping 40 pictures to 40 words for which a few hours of flash card study would be quite sufficient.
 
 ## Limitations of the alphabet
 
@@ -70,6 +72,120 @@ A good example of change is "𐐃", which in present-day Utah essentially doesn'
 
 Another limitation is the lack of a schwa (/ə/) vowel. It sounds like the "e" in "the." Historically the schwa has been written as 𐐊, which I find odd since the symbol 𐐋 is much closer in my opinion. My blog, my rules, so I'll use 𐐋 as the schwa from now on.
 
-###### 𐐂𐐁𐐝𐐋𐐣𐐛𐐟𐐌𐐜𐐥𐐄𐐗 𐐄𐐥𐐋𐐛𐐂𐐥𐐄𐐀𐐤𐐋𐐗𐐂𐐦
+## Now for the fun part
 
-##### 𐐂𐐆𐐊𐐎 𐐋𐐢𐐆𐐂𐐝𐐚 𐐗𐐂𐐆𐐧𐐣𐐊𐐞𐐎𐐗
+I wasn't satisfied with the default unicode Deseret font, so I went about scouring the web for better ones. I had a lot of trouble finding a good sans-serif font. The primary resource for these and the serif fonts I found were by [Joshua Erickson](http://copper.chem.ucla.edu/~jericks/index.html), but alas, the entire sans-serif collection has been disabled. Bummer. At least I could use some of his serif fonts that were less harsh on the eyes than the default, and there were a few sans-serif fonts his site led me to. Here are a few font samples in addition to the default unicode font you see above in the chart:
+
+
+
+<p class="adamic">1. 𐐈𐐔𐐈𐐣𐐆𐐗𐐒𐐀： 𐐀𐐁𐐂𐐃𐐄𐐅𐐆𐐇𐐈𐐉𐐊𐐋𐐌𐐍𐐎𐐏𐐐𐐑𐐒𐐓𐐔𐐕𐐖𐐗𐐘𐐙𐐚𐐛𐐜𐐝𐐞𐐠𐐡𐐢𐐣𐐤𐐥𐐦𐐧𐐟 </p>
+
+<p class="huney">2. H_NIBI：ABCDEFGHIJKLMNOPQRSTUVWXYZŽÀÁÂÃÊÎÐÑÔÕÛÞ </p>
+
+<p class="deseret-sans">3. DEZÒRET: ABCDEFGHIJKLMNOPQRSTUVWXYZÅÆÈÊÌÍÒØÛŒˉ </p>
+
+Unfortunately 2 and 3 (the two sans-serif) are mapped to two seperate and seemingly arbitrary encodings rather than the proper Deseret unicode characters like the serif font at the top of that list. So even though 2 (HuneyBee) is my favorite of the three, its nowhere near as easy to implement as 1 (AdamicBee). 
+
+Here is the HTML source of those example fonts:
+
+```html
+<p class="adamic">1. 𐐈𐐔𐐈𐐣𐐆𐐗𐐒𐐀： 𐐀𐐁𐐂𐐃𐐄𐐅𐐆𐐇𐐈𐐉𐐊𐐋𐐌𐐍𐐎𐐏𐐐𐐑𐐒𐐓𐐔𐐕𐐖𐐗𐐘𐐙𐐚𐐛𐐜𐐝𐐞𐐠𐐡𐐢𐐣𐐤𐐥𐐦𐐧𐐟</p>
+
+<p class="huney">2. H_NIBI：ABCDEFGHIJKLMNOPQRSTUVWXYZŽÀÁÂÃÊÎÐÑÔÕÛÞ</p>
+
+<p class="deseret-sans">3. DEZÒRET: ABCDEFGHIJKLMNOPQRSTUVWXYZÅÆÈÊÌÍÒØÛŒˉ</p>
+
+```
+
+As you can see, 1 is in the proper Deseret unicode, and 2 and 3... aren't. Maybe they are relics of the pre-unicode days of Deseret, but either way I'll be leaving them out when trying to write in it.
+
+Almost all of the fonts I tried were one .ttf file and I needed to convert them to web fonts. This was ridiculously easy with [FontPrep](http://fontprep.com/). All I had to do was drag the .ttf file onto the app, and it generated a whole package of web font formats with the corresponding CSS. I highly recommend that app if you ever need to generate custom web fonts.
+
+While I'm at it, I may as well explain how I got these custom fonts to work in the asset pipeline using Sass.
+
+First, I created a /fonts directory where the rest of my asset directories are:
+
+```unix
+(Middleman)
+-source
+  -fonts
+  -images
+  -javascripts
+  -stylesheets
+  ...etc
+
+(Rails)
+-app
+  -assets
+    -fonts
+    -images
+    -javascripts
+    -stylesheets
+```
+
+Next, FontPrep generates four files when it recieves a .ttf- .eot, .svg, .woff, and another .ttf. I put these files in the /fonts directory for all three fonts I'm using (not including default unicode, obviously):
+
+```unix
+-source
+  -fonts
+    -AdamicBee.eot
+    -AdamicBee.svg
+    -AdamicBee.woff
+    -AdamicBee.ttf
+    -Huneybee.eot
+    -Huneybee.svg
+    -Huneybee.woff
+    -Huneybee.ttf
+    -deseret.eot
+    -deseret.svg
+    -deseret.woff
+    -deseret.ttf
+```
+
+Since I'm using [Bourbon](http://bourbon.io), I can use the magnificent font-face mixin (I'm also using [Bitters](http://bitters.bourbon.io), so I placed these 3 lines at the bottom of the _typography.scss partial):
+
+```scss
+@include font-face('Huneybee', '/fonts/Huneybee');
+@include font-face('AdamicBee', '/fonts/AdamicBee');
+@include font-face('deseret', '/fonts/deseret');
+```
+This compiles the following CSS:
+
+```css
+@font-face {
+  font-family: 'HuneyBee';
+  src: url('/fonts/Huneybee.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/Huneybee.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/Huneybee.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/Huneybee.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/Huneybee.svg#aa041304602ddc161943388b95e8c94f') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'AdamicBee';
+  src: url('/fonts/AdamicBee.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/AdamicBee.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/AdamicBee.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/AdamicBee.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/AdamicBee.svg#159e7fbb74bf1cefffafc0996ebf38fb') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Deseret-sans';
+  src: url('/fonts/deseret.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/deseret.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/deseret.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/deseret.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/deseret.svg#c44a3474510e076f453a95eeee3a1178') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+```
+Thats about as bullet-proof cross-browser compatible as you can get. A good example for why I think Sass is indespensible in modern web development. 3 simple scss lines compile to 34 lines of css with the best of the best practices.
