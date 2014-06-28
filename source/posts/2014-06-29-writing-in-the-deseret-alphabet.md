@@ -2,7 +2,7 @@
 published: false
 layout: post
 title: Writing in the Deseret Alphabet
-date: 2014-06-09 09:08
+date: 2014-06-29 09:08
 tags: utah, languages, deseret, sass, fonts
 ---
 ## The State of Deseret
@@ -145,6 +145,7 @@ Next, FontPrep generates four files when it recieves a .ttf- .eot, .svg, .woff, 
 Since I'm using [Bourbon](http://bourbon.io), I can use the magnificent font-face mixin (I'm also using [Bitters](http://bitters.bourbon.io), so I placed these 3 lines at the bottom of the _typography.scss partial):
 
 ```scss
+// /bitters/_typography.scss
 @include font-face('Huneybee', '/fonts/Huneybee');
 @include font-face('AdamicBee', '/fonts/AdamicBee');
 @include font-face('deseret', '/fonts/deseret');
@@ -189,3 +190,26 @@ This compiles the following CSS:
 }
 ```
 Thats about as bullet-proof cross-browser compatible as you can get. A good example for why I think Sass is indespensible in modern web development. 3 simple scss lines compile to 34 lines of css with the best of the best practices.
+
+Finally, I just gave each seperate font its own class in the scss that I could apply to any HTML element:
+
+```scss
+// /posts.scss
+  .huney {
+    font-family: "HuneyBee";
+  }
+  .deseret-sans {
+    font-family: "deseret";
+  }
+  .adamic {
+    font-family: "AdamicBee";
+  }
+```
+
+It should also be noted that I'm using Markdown for these posts, which means in this special case I just used the HTML you saw above in the Markdown file to apply those classes to the unique font examples.
+
+## And finally, a real writing sample
+
+"A human being should be able to change a diaper, plan an invasion, butcher a hog, conn a ship, design a building, write a sonnet, balance accounts, build a wall, set a bone, comfort the dying, take orders, give orders, cooperate, act alone, solve equations, analyze a new problem, pitch manure, program a computer, cook a tasty meal, fight efficiently, die gallantly. Specialization is for insects." - Robert Heinlein
+
+<p class="adamic">"𐐁 𐐐𐐧𐐣𐐊𐐤 𐐒𐐀𐐏𐐀𐐥 𐐟𐐋𐐔 𐐒𐐀 𐐁𐐒𐐋𐐢 𐐓𐐅 𐐕𐐁𐐤𐐖 𐐊 𐐔𐐌𐐑𐐋𐐡, 𐐑𐐢𐐈𐐤 𐐊𐐤 𐐆𐐤𐐚𐐁𐐠𐐊𐐤, 𐐒𐐋𐐕𐐋𐐡 𐐊 𐐐𐐉𐐘, 𐐗𐐂𐐤 𐐊 𐐟𐐆𐐑, 𐐔𐐆𐐞𐐌𐐤 𐐊 𐐒𐐆𐐢𐐔𐐀𐐥, 𐐡𐐌𐐓 𐐊 𐐝𐐂𐐤𐐆𐐓, 𐐒𐐈𐐢𐐈𐐤𐐝 𐐊𐐗𐐍𐐤𐐓𐐝, 𐐒𐐆𐐢𐐔 𐐊 𐐎𐐉𐐢, 𐐝𐐇𐐓 𐐊 𐐒𐐄𐐤, 𐐗𐐊𐐣𐐙𐐋𐐡𐐓 𐐜𐐋 𐐔𐐌𐐀𐐥, 𐐓𐐁𐐗 𐐃𐐡𐐔𐐋𐐡𐐝, 𐐘𐐆𐐚 𐐃𐐡𐐔𐐋𐐡𐐝, 𐐗𐐄𐐂𐐑𐐋𐐡𐐁𐐓, 𐐈𐐗𐐓 𐐊𐐢𐐄𐐤, 𐐝𐐂𐐢𐐚 𐐀𐐗𐐎𐐁𐐠𐐊𐐤𐐝, 𐐈𐐤𐐊𐐢𐐌𐐞 𐐊 𐐤𐐅 𐐑𐐡𐐂𐐒𐐢𐐆𐐣, 𐐑𐐆𐐕 𐐣𐐊𐐤𐐧𐐡, 𐐑𐐡𐐄𐐘𐐡𐐈𐐣 𐐊 𐐗𐐊𐐣𐐑𐐧𐐓𐐋𐐡, 𐐗𐐋𐐗 𐐊 𐐓𐐁𐐝𐐓𐐀 𐐣𐐀𐐢, 𐐙𐐌𐐓 𐐀𐐙𐐆𐐟𐐆𐐤𐐓𐐢𐐀, 𐐔𐐌 𐐘𐐈𐐢𐐈𐐤𐐓𐐢𐐀. 𐐝𐐑𐐇𐐟𐐆𐐢𐐌𐐞𐐁𐐟𐐊𐐤 𐐆𐐞 𐐙𐐄𐐡 𐐆𐐤𐐝𐐇𐐗𐐓𐐝." - 𐐡𐐉𐐒𐐋𐐡𐐓 𐐐𐐌𐐤𐐢𐐌𐐤</p>
