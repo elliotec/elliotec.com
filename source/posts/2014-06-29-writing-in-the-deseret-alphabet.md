@@ -62,7 +62,7 @@ Here's a pronunciation table:
 
 So, ostensibly thats kind of a lot. 40 new unique characters and sounds to replace a very well known system seems a bit daunting, which may be part of the reason it had a hard time getting adopted by the intended users and audience. 
 
-In my opinion, other than the glyphs looking nothing at all like their Roman counterparts, the alphabet is rather easy to learn since you are just reassigning a symbol to a sound in English. There is no grammar or syntax change, it's really just like mind-mapping 40 pictures to 40 words for which a few hours of flash card study would be quite sufficient. (Though, this isn't the first time I've learned a dead script for no reason. I once became fluent in the ancient [Baybayin Tagalog script](http://en.wikipedia.org/wiki/Baybayin) in a strange bout of manic overachievement.)
+In my opinion, other than the glyphs looking nothing at all like their Latin counterparts, the alphabet is rather easy to learn since you are just reassigning a symbol to a sound in English. There is no grammar or syntax change, it's really just like mind-mapping 40 pictures to 40 words for which a few hours of flash card study would be quite sufficient. (Though, this isn't the first time I've learned a dead script for no reason. I once became fluent in the ancient [Baybayin Tagalog script](http://en.wikipedia.org/wiki/Baybayin) in a strange bout of manic overachievement.)
 
 ## Limitations of the alphabet
 
