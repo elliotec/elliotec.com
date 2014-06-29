@@ -32,32 +32,32 @@ It is amazing how much research there is on the Deseret Alphabet, with how few p
 Here's a pronunciation table:
 
 
-| Glyph | IPA  | Sound | Glyph | IPA | Sound |
-|-------|------|-------------|-------|-----|-------------|
-| 𐐀    | /iː/ |  "e" in me   | 𐐊    | /ʌ/|  "u" in luck |
-| 𐐁    | /eɪ/ | "ay" in day  | 𐐋    | /ʊ/ |  "u" in pull |
-| 𐐂    | /ɑː/ | "a" in cart | 𐐌    | /aɪ/|  "y" in my |
-| 𐐃    | /ɔː/ | "au" in caught | 𐐍 | /aʊ/ | "ow" in cow |
-| 𐐄    | /oʊ/ |  "o" in go  | 𐐎    | /w/ |  "w" in wow |
-| 𐐅    | /uː/ | "oo" in do | 𐐏    | /j/ |  "y" in yes |
-| 𐐆    | /ɪ/  |  "i" in sit | 𐐐    | /h/ |  "h" in hi |
-| 𐐇    | /ɛ/  |  "e" in bet | 𐐑  | /p/ | "p" in pet  |
-| 𐐈    | /æ/  | "a" in cat   | 𐐒  | /b/ | "b" in boy |
-| 𐐉    | /ɒ/  |  "o" in lot | 𐐓   | /t/ |  "t" in tank |
 
 | Glyph | IPA  | Sound | Glyph | IPA | Sound |
 |-------|------|-------------|-------|-----|-------------|
-| 𐐔    | /d/ |  "d" in dog  | 𐐞    | /z/ | "z" in zoo |
-| 𐐕    | /tʃ/ |"ch" in church| 𐐟    | /ʃ/ | "sh" in ship |
-| 𐐖    | /dʒ/ | "j" in jump  | 𐐠    | /ʒ/ | "s" in measure |
-| 𐐗    | /k/ | "k" in kite  | 𐐡    | /r/ |  "r" in red |
-| 𐐘    | /ɡ/ |  "g" in girl | 𐐢    | /l/ | "l" in love |
-| 𐐙    | /f/ |  "f" in food | 𐐣    | /m/ |  "m" in mom |
-| 𐐚    | /v/  | "v" in voice | 𐐤    | /n/ | "n" in night  |
-| 𐐛    | /θ/  | "th" in think | 𐐥    | /ŋ/ | "ng" in sing |
-| 𐐜    | /ð/  | "th" in that | 𐐦    | /ɔɪ/|  "oy" in boy  |
-| 𐐝    | /s/  | "s" in sun  | 𐐧    | /juː/ | "yew" in yew  |
+|<i class="adamic"> 𐐀</i>    | /iː/ |  "e" in me   | <i class="adamic">𐐊</i>    | /ʌ/|  "u" in luck |
+| <i class="adamic">𐐁</i>    | /eɪ/ | "ay" in day  | <i class="adamic">𐐋</i>    | /ʊ/ |  "u" in pull |
+| <i class="adamic">𐐂</i>    | /ɑː/ | "a" in cart | <i class="adamic">𐐌</i>    | /aɪ/|  "y" in my |
+| <i class="adamic">𐐃</i>    | /ɔː/ | "au" in caught | <i class="adamic">𐐍 </i>| /aʊ/ | "ow" in cow |
+| <i class="adamic">𐐄</i>    | /oʊ/ |  "o" in go  | <i class="adamic">𐐎</i>    | /w/ |  "w" in wow |
+| <i class="adamic">𐐅 </i>   | /uː/ | "oo" in do | <i class="adamic">𐐏 </i>   | /j/ |  "y" in yes |
+| <i class="adamic">𐐆</i>    | /ɪ/  |  "i" in sit | <i class="adamic">𐐐</i>    | /h/ |  "h" in hi |
+| <i class="adamic">𐐇 </i>   | /ɛ/  |  "e" in bet | <i class="adamic">𐐑</i>  | /p/ | "p" in pet  |
+| <i class="adamic">𐐈 </i>   | /æ/  | "a" in cat   | <i class="adamic">𐐒</i>  | /b/ | "b" in boy |
+| <i class="adamic">𐐉 </i>   | /ɒ/  |  "o" in lot | <i class="adamic">𐐓</i>   | /t/ |  "t" in tank |
 
+| Glyph | IPA  | Sound | Glyph | IPA | Sound |
+|-------|------|-------------|-------|-----|-------------|
+| <i class="adamic">𐐔</i>    | /d/ |  "d" in dog  | <i class="adamic">𐐞  </i>  | /z/ | "z" in zoo |
+| <i class="adamic">𐐕</i>    | /tʃ/ |"ch" in church| <i class="adamic">𐐟</i>    | /ʃ/ | "sh" in ship |
+| <i class="adamic">𐐖 </i>   | /dʒ/ | "j" in jump  | <i class="adamic">𐐠</i>    | /ʒ/ | "s" in measure |
+| <i class="adamic">𐐗 </i>   | /k/ | "k" in kite  | <i class="adamic">𐐡</i>    | /r/ |  "r" in red |
+| <i class="adamic">𐐘</i>    | /ɡ/ |  "g" in girl | <i class="adamic">𐐢</i>    | /l/ | "l" in love |
+| <i class="adamic">𐐙</i>    | /f/ |  "f" in food | <i class="adamic">𐐣 </i>   | /m/ |  "m" in mom |
+| <i class="adamic">𐐚</i>    | /v/  | "v" in voice | <i class="adamic">𐐤 </i>   | /n/ | "n" in night  |
+| <i class="adamic">𐐛</i>    | /θ/  | "th" in think | <i class="adamic">𐐥 </i>   | /ŋ/ | "ng" in sing |
+| <i class="adamic">𐐜 </i>   | /ð/  | "th" in that | <i class="adamic">𐐦</i>    | /ɔɪ/|  "oy" in boy  |
+| <i class="adamic">𐐝 </i>   | /s/  | "s" in sun  | <i class="adamic">𐐧 </i>   | /juː/ | "yew" in yew  |
 
 
 So, ostensibly thats kind of a lot. 40 new unique characters and sounds to replace a very well known system seems a bit daunting, which may be part of the reason it had a hard time getting adopted by the intended users and audience. 
@@ -68,13 +68,13 @@ In my opinion, other than the glyphs looking nothing at all like their Latin cou
 
 The alphabet in its official form was created to emulate the pronunciation of the settlers, who came primarily from New England. This means when you read out loud a publication in the Deseret Alphabet, it's going to sound like you're talking with the accent of a North Easterner in the 1860's. 
 
-A good example of change is "𐐃", which in present-day Utah essentially doesn't exist. Think of a Long Island native saying something like "I thought you caught it when you fought it," or something along those lines. You know what I mean about the vowels in those words being non-existent and replaced simply with "ah" in the western United States.
+A good example of change is <i class="adamic">"𐐃"</i>, which in present-day Utah essentially doesn't exist. Think of a Long Island native saying something like "I thought you caught it when you fought it," or something along those lines. You know what I mean about the vowels in those words being non-existent and replaced simply with "ah" in the western United States.
 
-Another limitation is the lack of a schwa (/ə/) vowel. It sounds like the "e" in "the." Historically the schwa has been written as 𐐊, which I find odd since the symbol 𐐋 is much closer in my opinion. My blog, my rules, so I'll use 𐐋 as the schwa from now on. Also, Deseret is cased, but the capital letters are just bigger versions of the lower case ones. So I'm going to skip using the lower case for readability and ease of use.
+Another limitation is the lack of a schwa (/ə/) vowel. It sounds like the "e" in "the." Historically the schwa has been written as <i class="adamic">𐐊</i>, which I find odd since the symbol <i class="adamic">𐐋</i> is much closer in my opinion. My blog, my rules, so I'll use <i class="adamic">𐐋</i> as the schwa from now on. Also, Deseret is cased, but the capital letters are just bigger versions of the lower case ones. So I'm going to skip using the lower case for readability and ease of use.
 
 ## Now for the fun part
 
-I wasn't satisfied with the default Unicode Deseret font, so I went about scouring the web for better ones. I had a lot of trouble finding a good sans-serif font. The primary resource for these and the serif fonts I found were by [Joshua Erickson](http://copper.chem.ucla.edu/~jericks/index.html), but alas, the entire sans-serif collection has been disabled. Bummer. At least I could use some of his serif fonts that were less harsh on the eyes than the default, and there were a few sans-serif fonts his site led me to. Here are a few font samples in addition to the default Unicode font you see above in the chart:
+ I went about scouring the web for better Deseret fonts. I had a lot of trouble finding a good sans-serif font. The primary resource for these and the serif fonts I found were by [Joshua Erickson](http://copper.chem.ucla.edu/~jericks/index.html), but alas, the entire sans-serif collection has been disabled. Bummer. At least I could use some of his serif fonts that were less harsh on the eyes than the default, and there were a few sans-serif fonts his site led me to. Here are a few font samples:
 
 
 
