@@ -5,6 +5,8 @@ title: Writing in the Deseret Alphabet
 date: 2014-06-29 09:08
 tags: utah, languages, deseret, sass, fonts
 ---
+*If you're here for the code and want to skip most of the history and linguistics, <a href="#code">click here</a>.*
+
 ## The State of Deseret
 
 This past weekend I went camping in the [San Rafael Swell](http://en.wikipedia.org/wiki/San_Rafael_Swell) and became interested in my native state of Utah's history and unique culture.
@@ -72,6 +74,7 @@ A good example of change is <i class="adamic">"𐐃"</i>, which in present-day U
 
 Another limitation is the lack of a schwa (/ə/) vowel. It sounds like the "e" in "the." Historically the schwa has been written as <i class="adamic">𐐊</i>, which I find odd since the symbol <i class="adamic">𐐋</i> is much closer in my opinion. My blog, my rules, so I'll use <i class="adamic">𐐋</i> as the schwa from now on. Also, Deseret is cased, but the capital letters are just bigger versions of the lower case ones. So I'm going to skip using the lower case for readability and ease of use.
 
+<a class="anchor" id="code"></a>
 ## Now for the fun part
 
  I went about scouring the web for better Deseret fonts. I had a lot of trouble finding a good sans-serif font. The primary resource for these and the serif fonts I found were by [Joshua Erickson](http://copper.chem.ucla.edu/~jericks/index.html), but alas, the entire sans-serif collection has been disabled. Bummer. At least I could use some of his serif fonts that were less harsh on the eyes than the default, and there were a few sans-serif fonts his site led me to. Here are a few font samples:
@@ -123,7 +126,7 @@ First, I created a /fonts directory where the rest of my asset directories are:
     -stylesheets
 ```
 
-Next, FontPrep generates four files when it receives a .ttf- .eot, .svg, .woff, and another .ttf. I put these files in the /fonts directory for all three fonts I'm using (not including default Unicode, obviously):
+Next, FontPrep generates four files when it receives a .ttf- .eot, .svg, .woff, and another .ttf. I put these files in the /fonts directory for all three fonts I'm using:
 
 ```unix
 -source
