@@ -57,7 +57,7 @@ twittericon: <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" 
   <%= image_tag("/images/headshot.png", class: "headshot") %>
   <div class="intro">
     <h3>Hi, I'm Michael Elliott.</h3><br>
-    <p>I'm a full-stack web developer known professionally and around the web as elliotec. I'm currently available for contract/consulting work or a full-time position.</p>
+    <p>I'm a full-stack web developer known professionally and around the web as elliotec. I'm currently building stuff at 4Life Research, but remain available for contract and consulting gigs.</p>
   </div>
 </section>
 <a class="anchor" id="about"></a>
@@ -95,6 +95,18 @@ twittericon: <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" 
     <div class="right-cover"></div>
     <div class="bottom-cover"></div>
   </div>
+</section>
+<a class="anchor" id="posts"></a>
+<section class="posts">
+  <h2>Posts</h2>
+  <ul>
+    <% blog.articles.each do |post| %>
+    <li class = "post-item">
+      <%= link_to(post.title, post.url)%>
+    </li>
+      <p id='date'><%= post.date.strftime('%B %d, %Y') %></p>
+    <% end %>
+  </ul>
 </section>
 <a class="anchor" id="projects"></a>
 <section class="projects">
@@ -156,18 +168,6 @@ twittericon: <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" 
     </div>
     </a>
   </div>
-</section>
-<a class="anchor" id="posts"></a>
-<section class="posts">
-  <h2>Posts</h2>
-  <ul>
-    <% blog.articles.each do |post| %>
-    <li class = "post-item">
-      <%= link_to(post.title, post.url)%>
-    </li>
-      <p id='date'><%= post.date.strftime('%B %d, %Y') %></p>
-    <% end %>
-  </ul>
 </section>
 <a class="anchor" id="contact"></a>
 <section class="contact">
