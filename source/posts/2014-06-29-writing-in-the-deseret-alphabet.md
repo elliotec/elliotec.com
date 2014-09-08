@@ -230,7 +230,25 @@ That example saved 51 characters, down nearly a third of the characters used in 
 
 This is very tedious to type, however. I mapped my keys to each of the Deseret characters using [Better Touch Tool](http://www.boastr.net/), a handy tool for lots of things, but it totally wasn't worth it as I ended up being faster by just copy/pasting the characters from the chart in order. 
 
-I thought about writing little sticky note characters and putting them on their corresponding keys, but I figured I already spent this much time learning a dead alphabet and my use of it will most likely die with the end of this post. 
+I thought about writing little sticky note characters and putting them on their corresponding keys, but I figured I already spent this much time learning a dead alphabet and my use of it will most likely die with the end of this post.
+
+Alright, one more thing. This is the logo of one of my favorite bars in Salt Lake City, the [Bourbon House](http://www.bourbonhouseslc.com/). I'm using it without permission so if they ask me to take it down I will.
+
+<img src="../images/bourbon.png">
+
+It's a characature of Brigham Young holding a glass of bourbon,something he ironically was known to do (he even built the first whiskey distillery in Utah, go figure). It might be hard to see, but the Deseret there says: <blockquote class="adamic">𐐒𐐁𐐁𐐡 𐐀𐐝 𐐑𐐡𐐄𐐄𐐙 𐐓𐐐𐐂𐐓 𐐘𐐄𐐔 𐐢𐐄𐐚𐐁𐐝 𐐋𐐝</blockquote>
+
+To a native Deseret reader, that would be utter nonsense. It sounds something like:
+
+>Be-eer eess proh-ohff t-haut gohd lohveeess oooss
+
+It's safe to assume that it's trying to say "Beer is proof that God loves us."
+
+So a more proper translation would be along the lines of:
+
+<blockquote class="adamic">𐐒𐐁𐐡 𐐆𐐞 𐐑𐐡𐐅𐐙 𐐜𐐈𐐓 𐐘𐐉𐐔 𐐢𐐊𐐚𐐞 𐐊𐐝</blockquote>
+
+I don't blame them for not getting a dead script kinda wrong, especially because it's funny and I like them a lot.
 
 If you want to learn more about the Deseret Alphabet, here are some resources I used:
 
