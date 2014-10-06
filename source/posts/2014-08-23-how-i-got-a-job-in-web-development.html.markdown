@@ -34,3 +34,4 @@ This awareness led me to feel like I owed it to karma or whatever powers that we
 
 ## Learning HTML and CSS
 
+I soon asked the almighty Google for some of the top HTML & CSS resources. It wasn't long before I saw the book, aptly titled [HTML & CSS](http://www.htmlandcssbook.com/), by Jon Duckett. I chose

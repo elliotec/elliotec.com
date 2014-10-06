@@ -252,11 +252,13 @@ I don't blame them for not getting a dead script kinda wrong, especially because
 
 If you want to learn more about the Deseret Alphabet, here are some resources I used:
 
+*Update: A new, far superior [Deseret Translator](http://2deseret.com) has been created by Nathan Hadfield. He referenced this article as a resource that helped him build it. Please check it out!*
+
 - [The quasi-official Deseret Alphabet site](http://www.deseretalphabet.org//) *This site had almost all the resources I used neatly in one place, and seems to be maintained quite frequently.*
 
 - [Deseret Alphabet Blog](http://deseretalphabet.blogspot.com/) *The owner of this blog has translated over [50% of the XKCD comics](http://www.deseretalphabet.info/XKCD/1385.html) into Deseret, an impressive feat no matter how pointless.*
 
-- [The Deseret Alphabet Translator](http://deseret.in/) *Still in beta, and some of the translations are pretty broken. I submitted a [pull request](https://github.com/sam1am/deseret.in/pull/1) with a few fixes that would hopefully improve it, if he merges it.*
+- [The Deseret Alphabet Translator](http://deseret.in/) *Still in beta, and some of the translations are pretty broken. I submitted a [pull request](https://github.com/sam1am/deseret.in/pull/1) with a few fixes that would hopefully improve it, if he merges it. (Update: disregard this resource and redirect yourself [here](http://2deseret.com)) *
 
 Anyway, thats enough of that. I probably should've spent this time learning a new programming language or something, but I learned a ton about my homeland's history, web fonts, typography, linguistics, and encoding so there was no lack of intellectual stimulation. 
 
