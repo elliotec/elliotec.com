@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title: Writing in the Deseret Alphabet
+title: Writing in the Deseret Alphabet with Web Fonts
 date: 2014-06-29 09:08
 tags: utah, languages, deseret, sass, fonts
 ---
