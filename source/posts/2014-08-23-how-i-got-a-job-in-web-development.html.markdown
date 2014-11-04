@@ -51,6 +51,12 @@ I was super excited about programming and my new prospects for income. I decided
 
 I did one for free, one as a trade, and then started charging (not very much). My first three clients were close friends or family, and after that I indiscriminately offered my services to anyone and everyone. One of my first non-family/friend clients was an HVAC contractor that was fixing the furnace in the house I was renting at the time. He saw me working on a different project, asked what I was doing, and told me he needed a website. I gave him a cheap quote, and had another check in my pocket that day.
 
-It was time to legitimize myself as a business; I had started making enough money to open up a business account and register a sole proprietorship. I finally got around to making myself a (pretty rudimentary) personal website and got my girlfriend's help in designing a logo in illustrator. We designed business cards for me around the same time and got a ridiculously cheap bulk order from FedEx. I still use them and they look like this:
+It was time to legitimize my business; I had started making enough money to open up a bank account and register a sole proprietorship. I finally got around to making myself a (pretty rudimentary) personal website and got my girlfriend's help in designing a logo in Illustrator. We designed business cards for me at the same time and got a ridiculously cheap bulk order from FedEx. I still use them and they look like this:
 
 <img class="cards" src="../images/cardfront.png">
+
+<img class="cards" src="../images/cardback.png">
+
+#Expediting my learning
+
+I continued to get a client here and there even after my ankle had fully healed and started work again full time at Starbucks.

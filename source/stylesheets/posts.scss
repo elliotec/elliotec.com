@@ -155,3 +155,8 @@ article.type-system-rounded {
   font-family: "Lucida Console", Monaco, monospace, "AdamicBee";
   }
 }
+
+.cards {
+  @include span-columns(8);
+  @include shift(2);
+}
