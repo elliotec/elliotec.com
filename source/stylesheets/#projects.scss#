@@ -91,10 +91,12 @@
   }
 
     .hover-tile-hidden {
-      background: transparentize(black, .3);
+        background: transparentize(black, .3);
+        
       h4 {
         margin-bottom: .5em;
       }
+      
       p {
         @include media($mobile) {
         line-height: 1em;
