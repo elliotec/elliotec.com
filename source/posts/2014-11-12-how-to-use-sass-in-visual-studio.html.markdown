@@ -25,7 +25,7 @@ If you use Sass, as hopefully you do if you're reading this, you will find yours
     
     <img src="../images/workbench.png"/>
 
-4. In the toolbar, got to `Mindscape > Web Workbench Settings` and make sure the only checkbox selected under Compile is your "main.scss" file mentioned earlier:
+4. In the toolbar, got to `Mindscape > Web Workbench Settings` and make sure the only checkbox selected under Compile is your "main.scss" file mentioned earlier. Uncheck all the rest unless you want a million extra css files and an hour-long build:
 
     <img src="../images/settings.png"/>
 
