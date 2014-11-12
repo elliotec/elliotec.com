@@ -69,4 +69,165 @@ Before applying, I sent an email to them explaining my situation to see if I'd b
 
 The application and interview process was pretty intense. After an inital, quite lengthy application assessing my skills and aptitude I was moved on to another stage that required a submission of a one-minute video of me explaining "something technical."" I chose jQuery and probably did it 50 times before feeling I had done an adequate job. I soon got another email requesting a time for an interview, and I got on Skype with the CEO at the alloted time. The interview went absolutely terrible. There were connectivity issues which amplified the fact that I had absolutely no clue what I was talking about. He was asking me questions about data structures and algorithms and how I'd model real life objects and items in code. I found myself literally speechless multiple times during the call. I had a few acceptable answers but mostly it was pretty embarrassing and I was sure I wouldn't move further. But he must've had some faith in me, and said he'd send me a code challenge to complete as soon as possible.
 
-It was a Friday, and I started working on it immediately and through the weekend.
+It was a Friday, and I started working on it immediately and through the weekend. It was very challenging. There were three individual challenges - they went something like this:
+
+1. Make a simple html page to manage a todo list where users can input todos and check them off upon completion.
+
+2. Model a public library with object oriented Ruby including Library, Shelf, and Book objects that has "enshelf" and "unshelf" methods and essentially keeps track of inventory.
+
+3. Generate and deploy a publicly available Rails app on Heroku that can create, edit, update, and destroy users. First name is required,and email must be valid. Add more features if it was easy.
+
+The first challenge was pretty easy for me, becuase I'd been doing front end stuff the most up to that point. I recall getting slightly hung up on a piece of the problem, but I think I solved it in the first night after the interview. Here was my solution (you can find the associated stylesheet [here](https://github.com/elliotec/todolist/blob/master/stylesheet.css), if you're curious):
+
+```html
+<!doctype HTML>
+<html>
+  <head>
+    <title>Code Fellows To-do List</title>
+     <meta charset="utf-8" />
+     <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+  </head>
+    <body>
+      <form>
+        <label><h2>~Code Fellows Todo List~</h2></label>
+          <input id="addtodo" type="text"  autofocus="autofocus" placeholder="Whatcha gonna do?"/>
+          <input id="plus" type="submit" value="+">
+      </form>
+      <ul></ul>
+
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+      <script type="text/javascript" charset="utf-8">
+        $('form').submit(function () {
+          if ($('#addtodo').val() !== '') {
+            var input_value = $('#addtodo').val();
+            $('ul').prepend('<li><a href="">&#x2713;</a>' + input_value + '</li>');
+          };
+          $('#addtodo').val('');
+          $('')
+          return false;
+        });
+        
+        $(document).on('click', 'a', function (e) {
+            e.preventDefault();
+            $(this).parent().fadeOut("slow");
+        });
+      </script>
+    </body>
+</html>
+```
+<em>Note: I have not changed these examples at all since I initially wrote them, except maybe fixing some indentation here and there.</em>
+
+I then skipped to the third challenge knowing number 2 would take me much longer. There were a few tricky parts- I had previously only used [Devise](https://github.com/plataformatec/devise) for user authentication, and changing the defaults for that were quite a pain. Also, [Heroku](http://heroku.com) has this thing where it loves to make deploying a Rails app super difficult, even though it's business is seeimingly based on the opposite. I made it work though, with time to spare for a quick Bootstrap UI and some funny pictures. You can find the code for that app [here on my Github](https://github.com/elliotec/codefellows_crud). The tricky part was fixing the Devise configuration, which looked like this:
+
+```ruby
+#controllers/application_controller.rb
+class ApplicationController < ActionController::Base
+ protect_from_forgery with: :exception
+ before_filter :configure_permitted_parameters, if: :devise_controller?
+
+protected
+
+ def configure_permitted_parameters
+   devise_parameter_sanitizer.for(:sign_in) << :firstname
+   devise_parameter_sanitizer.for(:sign_up) << :firstname
+   devise_parameter_sanitizer.for(:account_update) << :firstname
+   devise_parameter_sanitizer.for(:sign_in) << :lastname
+   devise_parameter_sanitizer.for(:sign_up) << :lastname
+   devise_parameter_sanitizer.for(:account_update) << :lastname
+ end
+end
+
+#models/user.rb
+class User < ActiveRecord::Base
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :trackable, :validatable
+
+  validates_presence_of :firstname
+end                                     
+```
+             
+And finally, the public library. This was by far the most difficult part of the challenge and up to this point the most hardcore actual programming I'd ever been tasked to do, and it'd be a long time before I did anything that difficult again. This is the point where I realized that I learned Rails without hardly learning any Ruby at all - hence the namesake "on Rails." I was determined to submit the challenges by Monday, and was sincerely worried that wasn't going to happen when I read the discription of the challenge (which, by the way, was a lot more complicated and jargon-y than the description above). So I immediately started looking around for tutorials that would help me with plain Ruby. I did [CodeSchool's Try Ruby](http://tryruby.org) which was very introductory and ultimately a waste of time when it came to what I was trying to accomplish.
+
+I looked at many tutorials and finally came accross [Ruby in 100 Minutes](http://tutorials.jumpstartlab.com/projects/ruby_in_100_minutes.html) which is vastly different now than when I used it as a resource. At the time, it modeled a personal chef that made things for you, and the resulting program [looked like this](https://github.com/elliotec/100_min_ruby/blob/master/personal_chef.rb). It still is probably worth reading through, but it doesn't seem nearly as helpful for writing a real Ruby program as it used to be.
+             
+After going through that tutorial, I perused Github looking for real world examples I could use to model my program after. I found about 5 or 6 that I looked at a bajillion times and sort of made the brain connections I needed to translate into the public library. It took me from Saturday night til Sunday night to do this whole thing, and with minimal to zero sleep (I don't think this was necessary, I probably would have been fine if I took another day, but I was determined.). This is what it turned out as:
+
+```ruby
+class Library
+  attr_reader :shelf, :books
+  def initialize
+    @shelf = []
+    @books = []
+  end
+
+  def report_all
+    puts "Currently in the library we have #{Book.total} books."
+  end
+
+  def add_shelf(shelf)
+    @shelf.push(self)
+  end
+end
+
+class Shelf
+  attr_reader :books
+  def initialize(library)
+    library.add_shelf(self)
+    @books = []
+  end
+
+  def check_out(book)
+    @books.delete(book)
+    $count += -1
+  end
+
+  def return(book)
+    @books.push(book)
+  end
+end
+
+class Book
+  attr_reader :shelf, :title
+
+  $count = 0
+
+  def initialize(title, library)
+    @title = title
+    @library = library
+    $count += 1
+  end
+
+  def enshelf(shelf)
+    @shelf = shelf
+    shelf.return(self)
+    puts "Thanks for returning your book!"
+  end
+
+  def unshelf
+    @shelf.check_out(self)
+    puts "Checking out #{title}..."
+  end
+
+  def self.total
+    $count
+  end
+end
+
+# COMMANDS =====
+
+Utah = Library.new
+Fantasy = Shelf.new(Utah)
+Programming = Shelf.new(Utah)
+Biography = Shelf.new(Utah)
+dragons = Book.new("Dragons!", Utah)
+rubywow = Book.new("Ruby!Wow!", Utah)
+george = Book.new("The Life of George", Utah)
+dragons.enshelf(Fantasy)
+george.enshelf(Biography)
+rubywow.enshelf(Programming)
+Utah.report_all
+dragons.unshelf
+rubywow.unshelf
+Utah.report_all
+```
