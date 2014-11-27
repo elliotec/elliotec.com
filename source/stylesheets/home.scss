@@ -7,15 +7,15 @@
 .home {
   background-color: $lightwhite;
   margin-top: -1.5em;
-  height: 50em;
-  
+  height: 40em;
+
   .intro {
   
   @include media($mobile) {
     @include span-columns(3);
     @include shift(.5);
     bottom: 0;
-    top: 7em;
+    top: 10em;
     font-size: 1.2em;
     text-align: center;
   }
@@ -23,13 +23,15 @@
   @include span-columns(4);
   @include shift(6);
   position:relative;
-  bottom: 9em;
+  bottom: 4em;
   font-size: 1.5em;
+  //@include vertical-align;
 
   h3 {
     font-family: 'Varela Round', sans-serif;
     color: $nephritis;
     font-size: 1.6em;
+    
     }
   }
 
@@ -39,11 +41,12 @@
       @include shift(.5);
       position: relative;
       margin-top: -3.5em;
+      @include vertical-align;
     }
 
     @include span-columns(3);
     @include shift(2);
-    border-radius: 4em;
+    border-radius: 10%;
     position: relative;
     top: 7em
   }
