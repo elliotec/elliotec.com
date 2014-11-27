@@ -1,11 +1,3 @@
-@charset "utf-8";
-
-@import "bourbon";
-@import "bitters/bitters";
-@import "neat";
-
-
-
 header.navigation {
   $navigation-padding: 1em;
   $navigation-background: $dark-gray;
@@ -36,7 +28,7 @@ header.navigation {
   }
 
   .logo {
-    float: left;    
+    float: left;
     max-height: $navigation-height;
     padding-left: $navigation-padding;
     padding-right: 2em;
@@ -93,7 +85,7 @@ header.navigation {
     }
   }
 
-  ul#navigation-menu {    
+  ul#navigation-menu {
     clear: both;
     -webkit-transform-style: preserve-3d; // stop webkit flicker
     display: none;

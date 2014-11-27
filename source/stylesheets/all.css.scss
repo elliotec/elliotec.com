@@ -5,20 +5,12 @@
 @import "neat";
 @import "header";
 @import "home";
-@import "about";
 @import "projects";
 @import "posts";
 @import "contact";
 
-@mixin vertical-align {
-  position: relative;
-  top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
 section {
+  @include clearfix;
   display: block;
   height: auto;
 
@@ -29,6 +21,12 @@ section {
     padding: 1em;
     color: $nephritis;
   }
+}
+
+html, body, .full {
+  height: 100%;
+  width: 100%;
+  @include clearfix;
 }
 
 svg {
@@ -46,7 +44,7 @@ a.anchor {
 
 // For Headroom
 
-header.headroom { 
+header.headroom {
   position: fixed;
   top: 0;
   left: 0;

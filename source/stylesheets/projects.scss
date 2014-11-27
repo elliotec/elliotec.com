@@ -1,9 +1,3 @@
-@charset "utf-8";
-
-@import "bourbon";
-@import "bitters/bitters";
-@import "neat";
-
 .projects {
   background-color: $lightwhite;
   @mixin grid-item-columns($columns) {
@@ -20,7 +14,7 @@
   $grid-item-height: 23em;
 
   @include clearfix;
-    
+
   .grid-item {
     @include transition (all 0.2s ease-in-out);
     height: $grid-item-height;
@@ -54,7 +48,7 @@
 
 .codeunion {
   background: url("/images/codeunion.png");
-  
+
 }
 .hover-tile-outer {
   $hover-tile-height: 23em;
@@ -84,7 +78,7 @@
   .hover-tile-visible {
     color: transparentize(white, .3);
     font-size: 2em;
-    font-weight: 200;  
+    font-weight: 200;
     padding-top: 2em;
     text-align: center;
 
@@ -92,11 +86,11 @@
 
     .hover-tile-hidden {
         background: transparentize(black, .3);
-        
+
       h4 {
         margin-bottom: .5em;
       }
-      
+
       p {
         @include media($mobile) {
         line-height: 1em;

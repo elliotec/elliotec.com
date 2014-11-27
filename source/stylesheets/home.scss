@@ -1,16 +1,10 @@
-@charset "utf-8";
-
-@import "bourbon";
-@import "bitters/bitters";
-@import "neat";
-
 .home {
   background-color: $lightwhite;
-  margin-top: -1.5em;
-  height: 40em;
+  margin: -1.5em;
+  height: 100%;
 
   .intro {
-  
+
   @include media($mobile) {
     @include span-columns(3);
     @include shift(.5);
@@ -23,15 +17,14 @@
   @include span-columns(4);
   @include shift(6);
   position:relative;
-  bottom: 4em;
+  bottom: 1em;
   font-size: 1.5em;
-  //@include vertical-align;
 
   h3 {
     font-family: 'Varela Round', sans-serif;
     color: $nephritis;
     font-size: 1.6em;
-    
+
     }
   }
 
@@ -48,6 +41,6 @@
     @include shift(2);
     border-radius: 10%;
     position: relative;
-    top: 7em
+    @include vertical-align;
   }
 }

@@ -1,6 +1,6 @@
 ---
 emailicon: <svg xmlns="http://www.w3.org/2000/svg"
-              width="40" height="20" ><path fill="#fff" d="M9.5 9.5l-9.5-4.806v-1.132q0-.501.353-.844t.835-.343h16.625q.482 0 .835.343t.353.844v1.132zm-.594 1.188h1.188l8.906-4.62v9.37q0 .482-.353.835t-.835.353h-16.625q-.482 0-.835-.353t-.353-.835v-9.37z"/></svg> 
+              width="40" height="20" ><path fill="#fff" d="M9.5 9.5l-9.5-4.806v-1.132q0-.501.353-.844t.835-.343h16.625q.482 0 .835.343t.353.844v1.132zm-.594 1.188h1.188l8.906-4.62v9.37q0 .482-.353.835t-.835.353h-16.625q-.482 0-.835-.353t-.353-.835v-9.37z"/></svg>
 githubicon: <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="40" height="20" viewBox="0 0 99.441 99.44" enable-background="new 0 0 99.441 99.44" xml:space="preserve"><path id="github" fill="#fff" d="M64.507,95.749c-2.439,0.474-3.303-1.026-3.303-2.307c0-1.584,0.053-6.763,0.053-13.197
                 c0-4.486-1.535-7.412-3.259-8.905c10.707-1.189,21.958-5.257,21.958-23.727c0-5.25-1.867-9.541-4.949-12.908
@@ -31,6 +31,7 @@ twittericon: <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" 
                 C92.872,26.245,96.286,22.695,98.986,18.657z"/>
                 </svg>
 ---
+<div class="full">
 <header class="navigation">
   <div class="menu-wrapper">
     <%= link_to "{ elliotec }", "/index.html", class: 'logo' %>
@@ -38,8 +39,8 @@ twittericon: <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" 
     <div class="nav">
       <ul id="navigation-menu">
         <!-- <li class="nav-link"><%= link_to "About", "#about"%></li> -->
-        <li class="nav-link"><%= link_to "Projects", "#projects"%></li>
         <li class="nav-link"><%= link_to "Posts", "#posts"%></li>
+        <li class="nav-link"><%= link_to "Projects", "#projects"%></li>
         <li class="nav-link more"><%= link_to "Contact", "#contact" %>
           <ul class="submenu">
             <li><a href="mailto:me@michaelelliott.me"><%= current_page.data.emailicon %>Email</a>
@@ -49,7 +50,7 @@ twittericon: <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" 
             </ul>
         </li>
       </ul>
-    </div> 
+    </div>
   </div>
 </header>
 <div id="home"></div>
@@ -61,42 +62,7 @@ twittericon: <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" 
     <p>Currently at <a href="http://www.overstock.com">Overstock.com</a></p>
   </div>
 </section>
-<a class="anchor" id="about"></a>
-<!-- <section class="about">
-<h2>About Me</h2>
-<div class="grid-items-lines">
-<div class="grid-item">
-<h1>Development</h1>
-<p>I use Ruby on Rails as my primary development framework for creating dynamic web applications.</p>
 </div>
-<div class="grid-item">
-<h1>Design</h1>
-<p>I use HTML5 &amp; Sass for design and layout, and jQuery or CoffeeScript are my go-tos for moving stuff around the page.</p>
-</div>
-<div class="grid-item">
-<h1>Deployment</h1>
-<p><a href="http://ninefold.com">Ninefold</a> makes deployment super easy, but I also use Heroku, Digital Ocean, and Site44 for production. My favorite DNS provider is IWantMyName.</p>
-</div>
-<div class="grid-item">
-<h1>Integration</h1>
-<p>I have experience with iOS and hardware integration, building APIs, and consuming APIs.</p>
-</div>
-<div class="grid-item">
-<h1>Tools</h1>
-<p>I use OSX and Linux for development, Git for version-control, and spend lots of time on the command line. </p>
-</div>
-<div class="grid-item">
-<h1>Hobbies</h1>
-<p>I enjoy rock climbing, snowboarding, video games, friends, playing music, travelling, and a bunch of other stuff too.</p>
-</div>
-<div class="grid-item grid-item-big">
-<h1>What can I do for you?</h1>
-<p>Have an app idea? Need an info, ecommerce, portfolio site, or a full-time developer? I can rapidly prototype web applications with the whole package or help on just about any project.
-</div>
-<div class="right-cover"></div>
-<div class="bottom-cover"></div>
-</div>
-</section> -->
 <a class="anchor" id="posts"></a>
 <section class="posts">
   <h2>Posts</h2>
