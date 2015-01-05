@@ -24,8 +24,6 @@ article.type-system-rounded {
   $sans-serif: 'Nunito', sans-serif;
   $sans-serif-2: 'Varela Round', sans-serif;
 
-
-
   @include media($mobile) {
     @include span-columns(4);
     @include shift(0);
@@ -157,6 +155,6 @@ article.type-system-rounded {
 }
 
 .cards {
-  @include span-columns(8);
-  @include shift(2);
+  @include span-columns(12);
+  padding: .5em 10em 2em;
 }
