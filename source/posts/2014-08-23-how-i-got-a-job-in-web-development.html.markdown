@@ -114,6 +114,16 @@ Startup Weekend really put my skills to the limit, pushed me in ways I'd never b
 
 I got back to Salt Lake the first week of April and immediately started sending applications to companies in SLC and Seattle. The first couple weeks were slow with responses, and I was busy updating my own portfolio site anyway. Things went much quicker once I had something to show for myself and my site was ready. Between both cities, I sent out about 100 resumes and applications. A vast majority of those did not get any response. I had much better luck when I started to beef up my Linkedin again, posted on the job hunting subreddits, and used social media to expose myself and interest in finding a job.
 
-I went through roughly 20 phone interviews. The majority of the phone interviews led to the next step, usually either a code challenge of some sort, or an in-person interview. Almost all of
+I went through roughly 20 phone interviews. The majority of the phone interviews led to the next step, usually either a code challenge of some sort, or an in-person interview.
 
-At first, the code challeneges were pretty tough for me. Usually the at-home ones had something to do with their company. Literally every single at home challenge for a company required consuming data from an API. I was uncomfortable at first with it. It sounds pretty weird to say now, but I really hadn't been exposed to consuming data from an API until code challenges for jobs. It's strange that I didn't learn it in any of the tutorials I did or at Code Fellows. I had built APIs, and Rails makes that pretty easy.
+At first, the code challeneges were pretty tough for me. Usually the at-home ones had something to do with their company. Literally every single at home challenge for a company required consuming data from an API. I was uncomfortable at first with it. It sounds pretty weird to say now, but I really hadn't been exposed to consuming data from an API until code challenges for jobs. It's strange that I didn't learn it before, since it is such an essential skill.
+
+Most of the in person interviews had a white board challenge involved, which is honestly in my opinion one of the worst measurements of a person's coding skill. I actually was prepared for this by Code Fellows, and did quite well on most of them.
+
+I got a false alarm offer from a local startup I interviewed with for a Rails job in early May. It was a bit of a disappointment when they went dark on me but I recovered and threw myself out there again by putting my site on Reddit job subs and reaching out to people at attractive companies on Linkedin.
+
+##The First Job
+
+The first week of June brought me 2 official offers within days of each other. One was for a software development contractor company that contracts people to other companies for long periods of time. I was offered a senior position in ruby, Rails, and front end development. The other offer was for a front end role on a .Net stack. The Rails one was for more money. I chose the other one because I met both teams and liked them more. I don't regret that decision at all.
+
+Interestingly, both companies that gave me an offer reached out to me rather than the other way around. One was a recruiter who found me on Linkedin and the other was the dev manager who saw my post on Reddit. Both asked me lots of technical questions, and even code questions, but neither gave me a white board nor take home code challenge.
