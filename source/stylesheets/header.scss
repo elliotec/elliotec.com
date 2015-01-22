@@ -50,11 +50,11 @@ header.navigation {
 
   .logocenter {
     @include media($mobile) {
-      @include span-columns(3);
-      @include shift(1);
+      @include span-columns(4);
+      margin-left: 30%;
     }
 
-    @include span-columns(2);
+    @include span-columns(4);
     @include shift(5);
     margin-top: .5em;
     max-height: $navigation-height;
