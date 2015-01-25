@@ -2,7 +2,7 @@
 published: false
 layout: post
 title: How I Got a Job in Web Development
-date: 2015-01-24 17:12 MDT
+date: 2014-01-24 17:12 MDT
 tags: jobs, ruby, sass, bootcamp, consulting
 ---
 
