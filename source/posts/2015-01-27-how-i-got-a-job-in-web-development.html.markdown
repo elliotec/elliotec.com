@@ -162,3 +162,5 @@ Okay, maybe that was too long, so here's a summarized tl;dr list of the steps I 
 10. Applied, interviewed, practiced, repeat. I sent out tons of applications and put myself out there in every way I could think of. Ultimately Linkedin, Reddit, and meetups were the channels that actually got me job offers. I practiced whiteboarding algorithms and solving problems, had a lot of interviews (each better than the previous, for the most part) and continuously kept up to date on current trends and technologies.
 
 A year is a relatively short time to have gotten where I did, and I am certain I wouldn't have gotten there without the series of fortunate events (yes, I consider the destruction of my ankle as a fortunate event in hindsight) that allowed me to focus obsessively and full time on this pursuit. But passion is a lot stronger then luck and if one has the drive, they shouldn't need any fortune to make things happen on their own timeline.
+
+Join the discussion [here on Hacker News](https://news.ycombinator.com/item?id=8954348).
