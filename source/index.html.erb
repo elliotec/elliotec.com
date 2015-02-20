@@ -68,9 +68,9 @@ twittericon: <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" 
   <h2>Posts</h2>
   <ul>
     <% blog.articles.each do |post| %>
-    <li class = "post-item">
-      <%= link_to(post.title, post.url)%>
-    </li>
+      <li class="post-item">
+        <%= link_to(post.title, post.url)%>
+      </li>
       <p id='date'><%= post.date.strftime('%B %d, %Y') %></p>
     <% end %>
   </ul>
