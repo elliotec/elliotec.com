@@ -19,16 +19,16 @@ I'll be using the example of a contact list so as not to seem too contrived.
 
 >JSON (JavaScript Object Notation) is a lightweight data-interchange format. It is easy for humans to read and write. It is easy for machines to parse and generate.
 
-Originally derived from JavaScript, JSON has become a wildly popular choice for data exchange on the web. It uses two base structures: name-value pairs called<em>objects</em> (Ruby or Python people might know these as hash tables or dictionaries), and arrays (also known as vectors or lists). The name is always a string followed by a colon, and valid types for the values (which can be comma-separated) are: string, number, boolean, null, object, and array. The structures can be nested within each other.
+Originally derived from JavaScript, JSON has become a wildly popular choice for data exchange on the web. It uses two base structures: name-value pairs called <em>objects</em> (Ruby or Python people might know these as hash tables or dictionaries), and arrays (also known as vectors or lists). The name is always a string followed by a colon, and valid types for the values (which can be comma-separated) are: string, number, boolean, null, object, and array. The structures can be nested within each other.
 
-Some valid and RESTful JSON for our example contact list could be like this:
+Some valid JSON for our example contact list could look like this:
 
 ```json
 {"contacts" : [
     {
       "id" : 1,
-      "first-name" : "Saul",
-      "last-name" : "McHeartney",
+      "firstName" : "Saul",
+      "lastName" : "McHeartney",
       "phone" : 4415155558888,
       "email" : "thewalrus@theeggman.net",
       "favorites": true
@@ -46,9 +46,13 @@ Some valid and RESTful JSON for our example contact list could be like this:
       "firstName" : "Gringo",
       "lastName" : "Ztarr",
       "phone" : null,
-      "email" : "octopussubmarine@igetby.net",
+      "email" : "octopus@colorfulsubmarines.net",
       "favorites" : false
     }
   ]
 }
 ```
+
+There will usually be a robust back end to your app crunching and serving the data to the client, but for mocking purposes I like to use [json-server](https://github.com/typicode/json-server). This gives us a REST API with whatever endpoints we want which starts up by simply typing ```$ json-server file.json``` in the command line.
+
+
