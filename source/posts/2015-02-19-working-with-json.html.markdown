@@ -27,26 +27,26 @@ Some valid JSON for our example contact list could look like this:
 {"contacts" : [
     {
       "id" : 1,
-      "firstName" : "Saul",
-      "lastName" : "McHeartney",
-      "phone" : 4415155558888,
-      "email" : "thewalrus@theeggman.net",
+      "firstName" : "Beff",
+      "lastName" : "Jezos",
+      "phone" : 8015557878,
+      "email" : "beff@jesos.net",
       "favorites": true
     },
     {
       "id": 2,
-      "firstName" : "Lon",
-      "lastName" : "Jennon",
-      "phone" : 4415199999999,
-      "email" : "tangerinetrees@marmaladeskies.net",
+      "firstName" : "Cim",
+      "lastName" : "Took",
+      "phone" : 2325558900,
+      "email" : "cim@cook.net",
       "favorites" : true
     },
     {
-      "id" : 4,
-      "firstName" : "Gringo",
-      "lastName" : "Ztarr",
-      "phone" : null,
-      "email" : "octopus@colorfulsubmarines.net",
+      "id" : 3,
+      "firstName" : "Zark",
+      "lastName" : "Muckerberg",
+      "phone" : 9885556734,
+      "email" : "zark@muckerberg.net",
       "favorites" : false
     }
   ]
