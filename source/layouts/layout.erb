@@ -5,11 +5,11 @@
     <meta charset="utf-8" />
     <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
     <meta name="author" content="Michael Elliott">
-    <meta name="description" content="The personal blog and portfolio of Michael Elliott, full stack web developer.">
+    <meta name="description" content="Michael Elliott, full stack web developer.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>elliotec | Web development &amp; design<%= ' - ' + current_article.title unless current_article.nil? %></title>
+    <title>elliotec | Mike Elliott<%= ' - ' + current_article.title unless current_article.nil? %></title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "elliotec" %>
-    <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Nunito:400,700,300", "http://fonts.googleapis.com/css?family=Varela+Round" %>
+    <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Nunito:400,700,300", "http://fonts.googleapis.com/css?family=Varela+Round", "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"%>
     <%= stylesheet_link_tag "normalize", "rouge", "all" %>
   </head>
   <body>

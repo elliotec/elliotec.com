@@ -154,8 +154,8 @@ DEPENDENCIES
   bitters
   bourbon
   builder (~> 3.0)
-  middleman (~> 3.3.2)
-  middleman-blog (~> 3.5.2)
+  middleman
+  middleman-blog
   middleman-deploy
   middleman-livereload
   middleman-syntax
