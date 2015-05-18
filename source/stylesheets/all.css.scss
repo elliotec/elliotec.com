@@ -5,7 +5,6 @@
 @import "neat";
 @import "header";
 @import "home";
-@import "projects";
 @import "posts";
 @import "contact";
 
@@ -27,19 +26,6 @@ html, body, .full {
   height: 100%;
   width: 100%;
   @include clearfix;
-}
-
-svg {
-  padding-right: 1em;
-  position: relative;
-  top: .1em;
-}
-
-a.anchor {
-  display: block;
-  position: relative;
-  top: -60px;
-  visibility: hidden;
 }
 
 // For Headroom

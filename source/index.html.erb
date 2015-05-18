@@ -1,18 +1,4 @@
 <div class="full">
-<header class="navigation">
-  <div class="menu-wrapper">
-    <%= link_to "{ elliotec }", "/index.html", class: 'logo' %>
-    <p class="navigation-menu-button" id="js-mobile-menu">MENU</p>
-    <div class="nav">
-      <ul id="navigation-menu">
-        <li class="nav-link"><%= link_to "Posts", "#posts"%></li>
-        <li class="nav-link"><%= link_to "Projects", "#projects"%></li>
-        <li class="nav-link"><%= link_to "Contact", "#contact" %></li>
-      </ul>
-    </div>
-  </div>
-</header>
-<div id="home"></div>
 <section class="home">
   <%= image_tag("/images/headshotsq.png", class: "headshot") %>
   <div class="intro">
@@ -22,9 +8,7 @@
   </div>
 </section>
 </div>
-<a class="anchor" id="posts"></a>
 <section class="posts">
-  <h2>Posts</h2>
   <ul>
     <% blog.articles.each do |post| %>
       <li class="post-item">
@@ -34,71 +18,7 @@
     <% end %>
   </ul>
 </section>
-<a class="anchor" id="projects"></a>
-<section class="projects">
-  <h2>Some Projects</h2>
-  <div class="grid-items">
-    <a href="http://www.4life.com/bringdreamshome" class="grid-item">
-    <div class="hover-tile-outer bringdreamshome">
-      <div class="hover-tile-container">
-        <div class="hover-tile hover-tile-visible">
-        </div>
-        <div class="hover-tile hover-tile-hidden">
-          <h4>4Life Bring Dreams Home Convention 2015</h4>
-          <p>4Life's convention information and registration site.</p>
-          <p>Plugged into an old .Net Web Forms project for multiple language and CMS support. Fully responsive and mobile friendly with fun things like parallax, animations, and full-screen video.</p>
-          <p>I designed and developed it primarily with Sass and CoffeeScript.</p>
-        </div>
-      </div>
-    </div>
-    </a>
-    <a href="http://www.fastbar.co" class="grid-item">
-    <div class="hover-tile-outer fastbar">
-      <div class="hover-tile-container">
-        <div class="hover-tile hover-tile-visible">
-        </div>
-        <div class="hover-tile hover-tile-hidden">
-          <h4>Fastbar</h4>
-          <p>Redesign Seattle Startup Weekend - 3rd Place Winner</p>
-          <p>FastBar is an event process improvement company combining iOS, Rails, and RFID technologies.</p>
-          <p>I engineered the back end, from the registration system to the data analytics. I worked closely with the iOS developer integrating the native POS application with the web app and database, and worked with the designers on making it all look great.</p>
-          <p>Most of the action happens on the iOS side, but check out the code on my Github to see how it all works.</p>
-        </div>
-      </div>
-    </div>
-    </a>
-    <a href="http://beautilist.herokuapp.com" class="grid-item">
-      <div class="hover-tile-outer beautilist">
-        <div class="hover-tile-container">
-          <div class="hover-tile hover-tile-visible">
-          </div>
-          <div class="hover-tile hover-tile-hidden">
-            <h4>Beautilist</h4>
-            <p>Beautilist is a Rails app built in 4 days that implements a tree data structure in Ruby to infinitely nest lists and uses Ajax calls to manipulate the lists and their children around the DOM in real-time.</p>
-            <p>Sign up to add as many lists and sublists as you want to see what the app is capable of.</p>
-          </div>
-        </div>
-      </div>
-    </a>
-    <a href="http://codeunion2.herokuapp.com" class="grid-item">
-    <div class="hover-tile-outer codeunion">
-      <div class="hover-tile-container">
-        <div class="hover-tile hover-tile-visible">
-        </div>
-        <div class="hover-tile hover-tile-hidden">
-          <h4>Code Union</h4>
-          <p>Code Union is an application aggregating and curating resources and best practices for people learning to code. I led a team of 4 in the development and design of the initial prototype.</p>
-          <p>The application has recently been improved by another group of students  at Code Fellows in Seattle for their final project.</p>
-          <p>Feel free to sign up and add your own content to see how it works!</p>
-        </div>
-      </div>
-    </div>
-    </a>
-  </div>
-</section>
-<a class="anchor" id="contact"></a>
 <section class="contact">
-  <h2>Contact</h2>
   <div class="social">
     <a href="mailto:me@michaelelliott.me"><i class="fa fa-envelope fa-5x"></i></a>
     <a href="http://linkedin.com/in/elliotec"><i class="fa fa-linkedin fa-5x"></i></a>
