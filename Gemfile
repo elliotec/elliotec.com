@@ -5,6 +5,7 @@ gem 'middleman-blog'
 gem 'middleman-syntax'
 gem 'middleman-livereload'
 gem 'middleman-deploy'
+gem 'middleman-minify-html'
 
 # Sass toolkit
 gem 'bitters'
