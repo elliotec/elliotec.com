@@ -1,4 +1,7 @@
 @charset "utf-8";
+@import "bourbon";
+@import "neat";
+@import "bitters/bitters";
 
 .posts {
   height: auto;
@@ -58,7 +61,7 @@ article.type-system-rounded {
 
   p {
     line-height: 1.5em;
-    font-size: 1.05em;
+    font-size: 1.1em;
     font-weight: 300;
     margin-bottom: 1.5em;
 
@@ -78,10 +81,6 @@ article.type-system-rounded {
     list-style-type: disc;
     margin-left: 1.5em;
     margin-bottom: 1em;
-  }
-
-  hr {
-    width: 3em;
   }
 
   .huney {

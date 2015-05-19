@@ -1,8 +1,12 @@
 @charset "utf-8";
 
+@import "bourbon";
+@import "neat";
+@import "bitters/bitters";
+
 .contact {
   background-color: $lightwhite;
-  height: 41em;
+  height: 40em;
   padding-bottom: 1em;
 }
 
