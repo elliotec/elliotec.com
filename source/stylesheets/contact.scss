@@ -1,9 +1,5 @@
 @charset "utf-8";
 
-@import "bourbon";
-@import "bitters/bitters";
-@import "neat";
-
 .contact {
   background-color: $lightwhite;
   height: 41em;
@@ -25,10 +21,8 @@
     @include transform(translateZ(0));
     @include transition-property(transform);
     @include transition-duration(0.8s);
-
     margin: 1em 2em 1em;
     display: inline-block;
-    vertical-align: middle;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     -moz-osx-font-smoothing: grayscale;
 
@@ -57,7 +51,7 @@
   margin-top: 5em;
 
   @include media($large-screen){
-    margin-top: 20em;
+    margin-top: 22em;
   }
   p {
     text-align: center;

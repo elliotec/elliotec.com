@@ -1,9 +1,5 @@
 @charset "utf-8";
 
-@import "bourbon";
-@import "bitters/bitters";
-@import "neat";
-
 .posts {
   height: auto;
   text-align: center;
@@ -24,29 +20,10 @@ article.type-system-rounded {
   $sans-serif: 'Nunito', sans-serif;
   $sans-serif-2: 'Varela Round', sans-serif;
 
-  @include media($mobile) {
-    @include span-columns(4);
-    @include shift(0);
-    padding: 1em;
-  }
-
-  @include clearfix;
-  @include span-columns(6);
-  @include shift(3);
   text-align: left;
-  margin-bottom: 5em;
-
-  .type {
-    border-bottom: 1px solid;
-    display: inline-block;
-    font-family: $sans-serif;
-    font-size: .7em;
-    font-weight: 800;
-    margin-bottom: 2em;
-    padding: .3em 0;
-    text-align: left;
-    text-transform: uppercase;
-  }
+  margin:0 auto 5em;
+  padding: 0 10px;
+  max-width: 750px;
 
   h1 {
     font-family: $sans-serif-2;
@@ -87,7 +64,7 @@ article.type-system-rounded {
 
   p {
     font-family: $sans-serif;
-    line-height: 1.4em;
+    line-height: 1.5em;
     font-size: 1.05em;
     font-weight: 300;
     margin-bottom: 1.5em;
@@ -111,29 +88,8 @@ article.type-system-rounded {
     margin-bottom: 1em;
   }
 
-  a.read-more {
-    display: inline-block;
-    font-family: $sans-serif-2;
-    font-weight: 700;
-    font-size: .8em;
-    text-transform: uppercase;
-    margin-left: .2em;
-    position: relative;
-
-    span {
-      position: absolute;
-      font-size: 1.5em;
-      top: -1px;
-      right: -12px;
-    }
-  }
-
   hr {
     width: 3em;
-  }
-
-  p.author {
-    font-family: $sans-serif;
   }
 
   .huney {
@@ -156,5 +112,5 @@ article.type-system-rounded {
 
 .cards {
   @include span-columns(12);
-  padding: .5em 10em 2em;
+  padding: 8% ;
 }
