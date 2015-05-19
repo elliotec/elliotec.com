@@ -14,11 +14,11 @@ section {
   height: auto;
 
   h2 {
-    font-family:'Varela Round', sans-serif;
     text-align: center;
     border-top: 1px solid #ddd;
     padding: 1em;
     color: $nephritis;
+    font-weight: 500;
   }
 }
 
@@ -26,4 +26,5 @@ html, body, .full {
   height: 100%;
   width: 100%;
   @include clearfix;
+  font-family: $sans-serif;
 }

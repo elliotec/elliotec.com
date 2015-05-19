@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
 <html>
   <head>
     <meta charset="utf-8" />
@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>elliotec | Mike Elliott<%= ' - ' + current_article.title unless current_article.nil? %></title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "elliotec" %>
-    <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Nunito:400,700,300", "http://fonts.googleapis.com/css?family=Varela+Round", "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"%>
+    <%= stylesheet_link_tag "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"%>
     <%= stylesheet_link_tag "normalize", "rouge", "all" %>
   </head>
   <body>
