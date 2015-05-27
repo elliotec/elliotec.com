@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Building This Site
+title:  Building This Site in Middleman
 date:   2014-05-17 11:26:11
 ---
 
