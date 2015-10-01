@@ -1,7 +1,7 @@
 ---
 published: false
 layout: post
-title: Working with JSON: jQuery vs. Angularjs vs. React
+title: "Working with JSON: jQuery vs. Angularjs vs. React"
 date: 2015-02-19 22:52 MST
 tags: JSON, jQuery, Angularjs, Reactjs, data, front end
 ---

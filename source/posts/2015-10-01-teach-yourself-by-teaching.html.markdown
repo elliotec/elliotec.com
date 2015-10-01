@@ -62,9 +62,15 @@ It's usually humbling. It's often lucrative. And it's always going to be a bette
 ###Other references and sources
 
 [The LdL Approach](https://en.wikipedia.org/wiki/Learning_by_teaching#The_LdL_approach)
+
 [Constructivist Learning](https://www.nde-ed.org/TeachingResources/ClassroomTips/Constructivist%20_Learning.htm)
+
 [Teach what you know](http://lifehacker.com/teach-others-what-you-know-to-make-connections-and-lear-1639560273)
+
 [The Protoge Effect](http://ideas.time.com/2011/11/30/the-protege-effect/)
+
 [Birth Order and Intelligence](http://www.sciencedirect.com/science/article/pii/S0160289607000062)
+
 [I learn more by teaching than learning](http://www.agent4change.net/grapevine/platform/1646-i-learn-more-by-teaching-than-learning-gavin-dykes.html)
+
 [Lesson Study Technique](http://ww2.kqed.org/mindshift/2015/09/14/lesson-study-technique-what-teachers-can-learn-from-one-another/)
