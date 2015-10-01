@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Learn More By Teaching
-date: 2015-09-30 14:49 MDT
+title: Teach Yourself by Teaching
+date: 2015-10-01 14:49 MDT
 tags: learning, teaching, development
 published: false
 ---
 
 ##An age old concept
 
-It has never been a secret that teaching is a great way to learn. The ancient Roman philosopher Seneca stated that "While we teach, we learn" 2 millenia ago. European schools started to have some version of teaching assistants or student teachers around the end of the 18th century.
+It has never been a secret that teaching is a great way to learn. The ancient Roman philosopher Seneca stated that "While we teach, we learn" 2 millennia ago. European schools started to have some version of teaching assistants or student teachers around the end of the 18th century.
 
 There have been more [recent pedagogic techniques](https://en.wikipedia.org/wiki/Learning_by_teaching#The_LdL_approach) focused specifically on having students teach to learn based on research that teaching is, in fact, the _best_ way to learn.
 
@@ -26,7 +26,7 @@ Turns out [studies show](http://link.springer.com/article/10.3758%2Fs13421-014-0
 
 We trick ourselves all the time into thinking we are learning. It's quite a conundrum - how can we have a full grasp of an idea when we don't know what we don't know?
 
-As [Richard Rusczyk says](http://artofproblemsolving.com/articles/learning-through-teaching), "Teaching removes this possibility of self-deceit." This happens both by us preemptively gathering more information and knowledge in anticipation of our student's lack of understanding or quesitons, and also by being put on the spot by those which were not anticipated at the time of teaching.
+As [Richard Rusczyk says](http://artofproblemsolving.com/articles/learning-through-teaching), "Teaching removes this possibility of self-deceit." This happens both by us preemptively gathering more information and knowledge in anticipation of our student's lack of understanding or questions, and also by being put on the spot by those which were not anticipated at the time of teaching.
 
 Teaching also happens to be an excellent cure for an endemic of the tech world: [Impostor Syndrome](https://en.wikipedia.org/wiki/Impostor_syndrome).
 
@@ -36,11 +36,11 @@ Teaching also happens to be an excellent cure for an endemic of the tech world: 
 
 I started a gig as a personal tutor of a Computer Science grad student at UW in Ruby on Rails before finishing the course, and then was an assistant instructor for the following bootcamp after mine. I believe these two jobs were an early immunization for the impostor syndrome I may have had if I didn't do them. It might have been a little too far on the ego boost, but thats another problem.
 
-Point is, I started teaching for purely selfish reasons - [make money, and get learnt](http://genius.com/Carnage-i-like-tuh-lyrics/). (sorry)
+Point is, I started teaching for purely selfish reasons - [make money, and get learnt](https://www.youtube.com/watch?v=2Nx-sH0kn6E). (sorry)
 
-That's not to say I haven't had lots of rewarding experiences teaching what I do. I was shocked at the amount of attention my post on how I got my job was getting, and how many folks emailed me that it was an inspiration boost, or they got into a course they've been excited about, or they got their dream job, etc. Knowing you've helped someone achieve something is an amazing thing.
+That's not to say I haven't had lots of rewarding experiences teaching what I do. I was surprised at the amount of attention my post on how I got my job was getting, and how many folks emailed me that it was an inspiration boost, or they got into a course they've been excited about, or they got their dream job, etc. Knowing you've helped someone achieve something is a sweet feeling.
 
-And I guarantee I learned more than my audience just by writing it.
+And I guarantee I learned more than my audience just by writing that.
 
 ##"I know that I know nothing"
 
@@ -50,10 +50,21 @@ I am consistently stumped by questions my students and teammates ask me. Sometim
 
 It's humbling and also excellent practice to go through this process.
 
-So, if you're a blossoming developer or recent grad that is stuck in the awful seemingly infinite loop of "I need experience to get a job to get experience so I can get a job" like me and so many have been in the past, try your hand at teaching. Some good places to start would be TAing for some classes, private tutoring, or even just blogging.
+So, if you're a blossoming developer or recent grad that is stuck in the awful seemingly infinite loop of "I need experience to get a job to get experience so I can get a job" like me and so many have been in the past, try your hand at teaching. Some good places to start would be TA-ing for some classes, private tutoring, or even just blogging.
 
 If you've got tons of experience and are feeling a bit stale on your skills or just plain bored, try your hand at teaching. Some good places to start could be assisting at a university, private teaching facility like bootcamps, business or development mentoring, or even just blogging.
 
-Being a teacher implies mastery of the subject even though to be a decent teacher you must acknowledge thatthe more you know, the more you realize you know very little.
+Being a teacher implies mastery of the subject even though to be a decent teacher you must acknowledge that the more you know, the more you realize you know very little.
 
 It's usually humbling. It's often lucrative. And it's always going to be a better learning experience for you than your student.
+
+
+###Other references and sources
+
+[The LdL Approach](https://en.wikipedia.org/wiki/Learning_by_teaching#The_LdL_approach)
+[Constructivist Learning](https://www.nde-ed.org/TeachingResources/ClassroomTips/Constructivist%20_Learning.htm)
+[Teach what you know](http://lifehacker.com/teach-others-what-you-know-to-make-connections-and-lear-1639560273)
+[The Protoge Effect](http://ideas.time.com/2011/11/30/the-protege-effect/)
+[Birth Order and Intelligence](http://www.sciencedirect.com/science/article/pii/S0160289607000062)
+[I learn more by teaching than learning](http://www.agent4change.net/grapevine/platform/1646-i-learn-more-by-teaching-than-learning-gavin-dykes.html)
+[Lesson Study Technique](http://ww2.kqed.org/mindshift/2015/09/14/lesson-study-technique-what-teachers-can-learn-from-one-another/)
