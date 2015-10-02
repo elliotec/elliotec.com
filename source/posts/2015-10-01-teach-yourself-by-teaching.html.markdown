@@ -8,7 +8,7 @@ published: true
 
 ##An age old concept
 
-It has never been a secret that teaching is a great way to learn. The ancient Roman philosopher Seneca stated that "While we teach, we learn" 2 millennia ago. European schools started to have some version of teaching assistants or student teachers around the end of the 18th century.
+It has never been a secret that teaching is a great way to learn. The ancient Roman philosopher Seneca stated that, "While we teach, we learn", two millennia ago. European schools started to have some version of teaching assistants or student teachers around the end of the 18th century.
 
 There have been more [recent pedagogic techniques](https://en.wikipedia.org/wiki/Learning_by_teaching#The_LdL_approach) focused specifically on having students teach to learn based on research that teaching is, in fact, the _best_ way to learn.
 
@@ -16,11 +16,11 @@ There have been more [recent pedagogic techniques](https://en.wikipedia.org/wiki
 
 ##Gaining expertise
 
-In his book ["The 4-Hour Workweek,"](http://fourhourworkweek.com) Timothy Ferris famously (and controversially) outlines how to be come an expert in anything in 4 weeks and 6 steps. Read the book if you want to know each step, but let me give you a hint: at least half of them involve teaching.
+In his book ["The 4-Hour Workweek,"](http://fourhourworkweek.com) Timothy Ferris famously (and controversially) outlines how to be come an expert in anything in four weeks and six steps. Read the book if you want to know each step, but let me give you a hint: at least half of them involve teaching.
 
 Think about the times you've had to give presentations. It's likely that you started out methodically when you found out you were going to do it, only to find yourself scrambling the night before and doing it in a few hours college-thesis-style. But you still learned a ton! Certainly more than the people that you were presenting for.
 
-Turns out [studies show](http://link.springer.com/article/10.3758%2Fs13421-014-0416-z) that even _being told_ you will have to teach a concept later improves learning and recall significantly. Maybe those of us with high willpower can trick ourselves into this, but I recommend actually putting yourself in a teaching situation to get the full effect.
+Turns out, [studies show](http://link.springer.com/article/10.3758%2Fs13421-014-0416-z) that even _being told_ you will have to teach a concept later improves learning and recall significantly. Maybe those of us with high willpower can trick ourselves into this, but I recommend actually putting yourself in a teaching situation to get the full effect.
 
 ##Tricking ourselves
 
@@ -34,7 +34,7 @@ Teaching also happens to be an excellent cure for an endemic of the tech world: 
 
 [In an earlier post](http://elliotec.com/how-i-got-a-job-in-web-development), I laid out the steps I took in getting a job in my current field of web/software development. It is notable that quite early in the process, I was getting paid to teach people what I had been learning, almost in tandem. I recall my instructor at the bootcamp I was enrolled in mention something in passing about learning by teaching and I really took it to heart.
 
-I started a gig as a personal tutor of a Computer Science grad student at UW in Ruby on Rails before finishing the course, and then was an assistant instructor for the following bootcamp after mine. I believe these two jobs were an early immunization for the impostor syndrome I may have had if I didn't do them. It might have been a little too far on the ego boost, but thats another problem.
+I started a gig as a personal tutor for a Computer Science grad student at UW in Ruby on Rails before finishing the course, and then was an assistant instructor for the following bootcamp after mine. I believe these two jobs were an early immunization for the impostor syndrome I may have had if I didn't do them. It might have been a little too far on the ego boost, but thats another problem.
 
 Point is, I started teaching for purely selfish reasons - [make money, and get learnt](https://www.youtube.com/watch?v=2Nx-sH0kn6E). (sorry)
 
@@ -46,13 +46,15 @@ And I guarantee I learned more than my audience just by writing that.
 
 Since then, I've started working as a mentor for [Thinkful](http://thinkful.com) on the weekends. This, plus being the development lead of a team at my full time spot gives me plentiful teaching, and therefore learning, opportunities.
 
-I am consistently stumped by questions my students and teammates ask me. Sometimes it feels good when they have an easy question that I'm well prepared for, but that is rarely the case. More often, I'll have to look up pieces of answers and help them and myself connect the dots. Surprise! Thats what I do in my real life job anyway!
+I am consistently stumped by questions my students and teammates ask me. Sometimes it feels good when they have an easy question that I'm well prepared for, but that is rarely the case. More often, I'll have to look up pieces of answers and help them and myself connect the dots.
 
-It's humbling and also excellent practice to go through this process.
+Surprise! Thats what I do in my real life job anyway!
 
 So, if you're a blossoming developer or recent grad that is stuck in the awful seemingly infinite loop of "I need experience to get a job to get experience so I can get a job" like me and so many have been in the past, try your hand at teaching. Some good places to start would be TA-ing for some classes, private tutoring, or even just blogging.
 
-If you've got tons of experience and are feeling a bit stale on your skills or just plain bored, try your hand at teaching. Some good places to start could be assisting at a university, private teaching facility like bootcamps, business or development mentoring, or even just blogging.
+Or, if you've got tons of experience and are feeling a bit stale on your skills or just plain bored, try teaching! Some good places to start could be assisting at a university, private teaching facility like bootcamps, business or development mentoring, or even just blogging. Best of all, be a true mentor for someone.
+
+A true mentorship experience is hard to find without contriving it, but I have had some unbelievable mentors in my life that have been far more influential than they know, and have shaped me and my character immensely. I strive to be that person for someone else someday, but I may not even know it if it happens.
 
 Being a teacher implies mastery of the subject even though to be a decent teacher you must acknowledge that the more you know, the more you realize you know very little.
 
