@@ -50,9 +50,9 @@ I am consistently stumped by questions my students and teammates ask me. Sometim
 
 Surprise! Thats what I do in my real life job anyway!
 
-So, if you're a blossoming developer or recent grad that is stuck in the awful seemingly infinite loop of "I need experience to get a job to get experience so I can get a job" like me and so many have been in the past, try your hand at teaching. Some good places to start would be TA-ing for some classes, private tutoring, or even just blogging.
+So, if you're a blossoming developer or recent grad that is stuck in the awful, seemingly infinite loop of, "I need experience to get a job to get experience so I can get a job," like me and so many have been in the past, try your hand at teaching. Some good places to start would be TA-ing for some classes, private tutoring, or even just blogging.
 
-Or, if you've got tons of experience and are feeling a bit stale on your skills or just plain bored, try teaching! Some good places to start could be assisting at a university, private teaching facility like bootcamps, business or development mentoring, or even just blogging. Best of all, be a true mentor for someone.
+Or, if you've got tons of experience and are feeling a bit stale on your skills or just plain bored, try teaching! Some good places to start could be assisting at a university, private teaching facility like bootcamps, blogging, or best of all, be a true mentor for someone.
 
 A true mentorship experience is hard to find without contriving it, but I have had some unbelievable mentors in my life that have been far more influential than they know, and have shaped me and my character immensely. I strive to be that person for someone else someday, but I may not even know it if it happens.
 
