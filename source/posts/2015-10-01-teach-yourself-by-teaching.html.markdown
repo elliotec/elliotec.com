@@ -3,7 +3,7 @@ layout: post
 title: Teach Yourself by Teaching
 date: 2015-10-01 14:49 MDT
 tags: learning, teaching, development
-published: false
+published: true
 ---
 
 ##An age old concept
