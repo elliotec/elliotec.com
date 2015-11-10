@@ -1,12 +1,16 @@
 ---
 layout: post
-title: Teach Yourself by Teaching
-date: 2015-10-01 14:49 MDT
+title: Teach Your Skills for Fun and Profit
+date: 2015-11-10 14:49 MDT
 tags: learning, teaching, development
 published: true
 ---
 
 ##An age old concept
+
+What do Alton Brown, Tim Ferris, Bob Vila, and Ryan Bates all have in common? You guessed it, they all made a small (or large) fortune off teaching the skills of their trade. They weren't teachers initially, they were just pretty good at what they did, and thought teaching others what they knew could be beneficial to all parties. And it was.
+
+Teaching your skills at any level can sharpen them dramatically and make you a decent side income. Longer term you may find it makes you more than a decent side income, and teaching becomes a skill in itself.
 
 It has never been a secret that teaching is a great way to learn. The ancient Roman philosopher Seneca stated that, "While we teach, we learn", two millennia ago. European schools started to have some version of teaching assistants or student teachers around the end of the 18th century.
 
@@ -16,7 +20,7 @@ There have been more [recent pedagogic techniques](https://en.wikipedia.org/wiki
 
 ##Gaining expertise
 
-In his book ["The 4-Hour Workweek,"](http://fourhourworkweek.com) Timothy Ferris famously (and controversially) outlines how to be come an expert in anything in four weeks and six steps. Read the book if you want to know each step, but let me give you a hint: at least half of them involve teaching.
+In his book ["The 4-Hour Workweek,"](http://fourhourworkweek.com) Tim Ferris famously (and controversially) outlines how to be come an expert in anything in four weeks and six steps. Read the book if you want to know each step, but let me give you a hint: at least half of them involve teaching.
 
 Think about the times you've had to give presentations. It's likely that you started out methodically when you found out you were going to do it, only to find yourself scrambling the night before and doing it in a few hours college-thesis-style. But you still learned a ton! Certainly more than the people that you were presenting for.
 
