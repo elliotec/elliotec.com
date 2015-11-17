@@ -10,7 +10,7 @@
     <title>elliotec | Mike Elliott<%= ' - ' + current_article.title unless current_article.nil? %></title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "elliotec" %>
     <%= stylesheet_link_tag "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"%>
-    <%= stylesheet_link_tag "normalize", "rouge", "all" %>
+    <%= stylesheet_link_tag "all" %>
   </head>
   <body>
     <header class="navigation">
