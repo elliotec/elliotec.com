@@ -4,12 +4,11 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
-    <meta name="author" content="Michael Elliott">
-    <meta name="description" content="Michael Elliott, software developer.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Michael Elliott" />
+    <meta name="description" content="Michael Elliott, software developer." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>elliotec | Mike Elliott<%= ' - ' + current_article.title unless current_article.nil? %></title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "elliotec" %>
-    <%= stylesheet_link_tag "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"%>
     <%= stylesheet_link_tag "all" %>
   </head>
   <body>
