@@ -12,9 +12,9 @@ master of one." - Someone_
 
 Those words are met with much controversy in the industry.
 
-A lot of developers are quite annoyed with the term. They argue that it
-isn't possible to be truly full stack, whatever their definition of
-"truly" might be.
+ A lot of developers are quite annoyed with the term. They argue that it
+ isn't possible to be truly full stack, whatever their definition of
+ "truly" might be.
 
 They often believe that mastery of a specific skill set within a software
 stack is more valuable than being mediocre at all of it. This can be true,
@@ -75,8 +75,12 @@ expert in JavaScript in order to properly implement. Why?
 
 ##Effort For its Own Sake
 
-Many JavaScript frameworks are implementing new
-ideas like MV-star or MVVM or NoSql.
+Many JavaScript frameworks are implementing patterns like MV-star or MVVM
+. They take the solid tried and true MVC pattern that most developers are
+familiar with and start scrambling up the acronyms and implementing them
+poorly and without conventions (I know MVVM was created before these JS
+frameworks, but the creator of the pattern has himself criticized it as
+a bad idea for these UI implementations).
 
 Why are we spending time re-inventing the wheel under the guise of
 innovation and re-solving solved problems for its own sake?
@@ -88,8 +92,22 @@ this data and create rich APIs if need be.
 Yet the hot shit these days is NoSQL, which shuns decades of work for
 a markedly worse solution.
 
-
 full stack development is just combining "standing on the shoulders of
 giants" and "strategic laziness"
 
 ##Shortcuts
+
+Microservices, containers, and "anti-monolithic" approaches to
+architecture make sense occasionally, like when you work for Netflix or
+Spotify and have teams churning out features at enormous scale that needs
+multi-threaded load balancing and all the jazz. But unless you're
+a specialist in whichever micro piece of the stack and are sticking to
+it(or if you're an architect and setting this stuff up is your specialty),
+this type of architecture can be daunting and turn into an unmaintainable
+spaghetti mess.
+
+http://blog.circleci.com/its-the-future/
+
+
+
+
