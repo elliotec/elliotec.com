@@ -80,7 +80,7 @@ expert in JavaScript in order to properly implement. Why?
 Many JavaScript frameworks are implementing patterns like MV-star or MVVM
 . They take the solid tried and true MVC pattern that most developers are
 familiar with and start scrambling up the acronyms and implementing them
-poorly and without conventions (I know MVVM was created before these JS
+poorly and without conventions (I know MVVM was created before the JS
 frameworks, but the creator of the pattern has himself criticized it as
 a bad idea for these UI implementations).
 
