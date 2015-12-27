@@ -118,6 +118,8 @@ https://developer.atlassian.com/blog/2015/11/what-the-web-platform-can-learn-fro
 
 http://blog.circleci.com/its-the-future/
 
+https://medium.com/@ericclemmons/javascript-fatigue-48d4011b6fc4#.s12704ins
+
 
 t-shaped.. I wanna have the business horizontal with engineering vertical.
 lots of peeps want the engineering horizontal with the js vertical, or
