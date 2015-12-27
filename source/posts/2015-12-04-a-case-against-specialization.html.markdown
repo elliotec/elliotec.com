@@ -120,8 +120,9 @@ http://blog.circleci.com/its-the-future/
 
 https://medium.com/@ericclemmons/javascript-fatigue-48d4011b6fc4#.s12704ins
 
-
+http://mir.aculo.us/2015/08/25/how-to-actually-ship-software-that-actually-works/
 t-shaped.. I wanna have the business horizontal with engineering vertical.
+
 lots of peeps want the engineering horizontal with the js vertical, or
 some such
 
