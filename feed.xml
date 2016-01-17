@@ -5,243 +5,10 @@
   <id>http://elliotec.com/</id>
   <link href="http://elliotec.com/"/>
   <link href="http://elliotec.com/feed.xml" rel="self"/>
-  <updated>2015-12-04T20:06:00-07:00</updated>
+  <updated>2015-11-10T13:49:00-07:00</updated>
   <author>
     <name>Michael Elliott</name>
   </author>
-  <entry>
-    <title>Modules and Monoliths</title>
-    <link rel="alternate" href="http://elliotec.com/a-case-against-specialization/"/>
-    <id>http://elliotec.com/a-case-against-specialization/</id>
-    <published>2015-12-04T20:06:00-07:00</published>
-    <updated>2016-01-15T18:12:31-07:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;em&gt;&amp;ldquo;Jack of all trades, master of none &amp;ndash; though oftentimes better than
-master of one.&amp;rdquo; - Someone&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2&gt;The Full Stack Developer&lt;/h2&gt;
-
-&lt;p&gt;Those words are met with controversy in the industry.&lt;/p&gt;
-
-&lt;p&gt;A lot of developers are quite annoyed with the term. They argue that it
- isn&amp;rsquo;t possible to be truly full stack, whatever their definition of
- &amp;ldquo;truly&amp;rdquo; might be.&lt;/p&gt;
-
-&lt;p&gt;They believe that mastery of a specific skill set within a software
-stack is more valuable than being decent at all of it. This can be true,
-especially in large corporations and enterprise systems with hundreds of
-developers that are assigned specific tasks and siloed by their
-specialization.&lt;/p&gt;
-
-&lt;p&gt;Mastering one specific language or piece of the stack certainly has many
-benefits. Masters of JavaScript have tons of knowledge about the quirks of
-the language and clever ways to get complex UIs to do their and the user&amp;rsquo;s
-bidding. Likewise with DBAs and data architects on the other side;
-structuring huge amounts of data and connecting the data by its
-relationships is quite an impressive feat.&lt;/p&gt;
-
-&lt;p&gt;But if the JavaScript master had to analyze and structure and join and
-relate tables, she feels out of her element and may seize up citing
-ignorance in all things non-JavaScript. The DBA might say, &amp;ldquo;this isn&amp;rsquo;t
-SQL.&amp;rdquo; And leave.&lt;/p&gt;
-
-&lt;p&gt;Some people take the love and science of the craft very seriously and
-aspire to reach sensei-level software mastery, and think this usually
-requires a specialization to get anywhere.&lt;/p&gt;
-
-&lt;p&gt;But looking at examples like David Hienemer Hansson and
-hundreds of other startup founders and programming legends, we can see
-that gaining that level of knowledge of the full stack is attainable and
-accessible (obviously DHH is an inflated example, but it
-illustrates the point), and rewarding.&lt;/p&gt;
-
-&lt;p&gt;People often tout the &amp;ldquo;T-shaped&amp;rdquo; metaphor for one&amp;rsquo;s skill levels,
-meaning that they have expertise in a vertical and the horizontal is the
-broad but lesser knowledge of other disciplines. I agree with this, and
-don&amp;rsquo;t see why it can&amp;rsquo;t be more common for someone to have an engineering
-vertical with for example, a strong business/operations/etc. horizontal.
-It&amp;rsquo;s definitely a thing, tons of successful founders of companies do
-exactly that. So why are the developers in the front end community
-isolating themselves into their own little specializations and modules
-that they spend lots of time learning and configuring?&lt;/p&gt;
-
-&lt;h2&gt;The Full Stack Framework&lt;/h2&gt;
-
-&lt;p&gt;This is why I still love Ruby on Rails, which turned 10 this year.&lt;/p&gt;
-
-&lt;p&gt;Rails created a layer of abstraction that eliminated much of
-the monotony, repetition, and difficult integrations that web development
-requires. Building, integrating, and distributing packages of
-functionality (gems) became a breeze. It made developing rich applications
-on the web much more accessible to people with or without programming
-skills, and drastically increased the speed of doing so.&lt;/p&gt;
-
-&lt;p&gt;You still have to know a bit of HTML, CSS, and JavaScript to get your way
-around Rails, but you can take shortcuts with those too, like templating
-with ERB, using CSS frameworks like Bootstrap or Thoughtbot&amp;rsquo;s Refills, and
-of course jQuery, which has become bafflingly rejected recently by a lot
-of the JavaScript community in favor of worse solutions.&lt;/p&gt;
-
-&lt;p&gt;Some proponents of the full stack JavaScript world are attracted to the
-&amp;ldquo;one language to rule them all&amp;rdquo; idea, but most implementations of JS
-frameworks lack any structure or standardization or convention and take so
-much time to configure that shipping a product is arduous. (If you like
-the idea of developing entirely in one language, I recommend looking into
-Clojure and Luminus which is fast and expressive and uses some
-awesome truly full-stack patterns.)&lt;/p&gt;
-
-&lt;p&gt;Stuff like Yeoman eases the pain a little bit sometimes, but the
-fragmentation of the community and the fiasco that has become of the
-JavaScript framework/library/ world. their accessibility and often require
-that one be an expert in JavaScript in order to properly implement. Why?&lt;/p&gt;
-
-&lt;h2&gt;Effort For its Own Sake&lt;/h2&gt;
-
-&lt;p&gt;Many JavaScript frameworks are implementing patterns like MV-star or MVVM
-. They take the solid tried and true MVC pattern that most developers are
-familiar with and start scrambling up the acronyms and implementing them
-poorly and without conventions (I know MVVM was created before the JS
-frameworks, but the creator of the pattern has himself criticized it as
-a bad idea for these UI implementations).&lt;/p&gt;
-
-&lt;p&gt;Why are we spending time re-inventing the wheel under the guise of
-innovation and re-solving solved problems for its own sake?&lt;/p&gt;
-
-&lt;p&gt;SQL is another example. The problem of organizing data rationally and querying it
-was solved decades ago, and any worthy modern framework can interact with
-this data and create rich APIs if need be.&lt;/p&gt;
-
-&lt;p&gt;Yet the hot shit these days is NoSQL, which shuns decades of work for &lt;a href="http://www.sarahmei.com/blog/2013/11/11/why-you-should-never-use-mongodb/"&gt;a
-markedly worse
-solution&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2&gt;Servers are our friends&lt;/h2&gt;
-
-&lt;p&gt;SPA&amp;rsquo;s are almost never necessary. Your users don&amp;rsquo;t care about two-way data
-binding or one-way data flow. I promise. Neither does your pointy-haired boss.
-They care that the data they are getting or posting is getting got or posted.&lt;/p&gt;
-
-&lt;p&gt;the state of javascript 2015 post&lt;/p&gt;
-
-&lt;h2&gt;Over-modularization&lt;/h2&gt;
-
-&lt;p&gt;Microservices, containers, and &amp;ldquo;anti-monolithic&amp;rdquo; approaches to
-architecture make sense occasionally, like when you work for Netflix or
-Spotify and have teams churning out features at enormous scale that needs
-multi-threaded asynchronous load balancing and all the jazz.&lt;/p&gt;
-
-&lt;p&gt;But unless you&amp;rsquo;re a specialist in whichever micro piece of the stack and
-are sticking to it(or if you&amp;rsquo;re an architect and setting this stuff up is
-your specialty), this type of architecture is daunting and will
-unquestionably turn into an unmaintainable spaghetti mess.&lt;/p&gt;
-
-&lt;p&gt;The fact is we are over-modularizing things. Every time I start a new JS
-project, I feel like I just moved into a new house with nothing but
-a screwdriver and a few thousand dollars worth of Ikea furniture -I&amp;rsquo;m
-excited so I tear open the boxes and get started but building the couch
-seems more fun than the bookcase and I just stripped all the screws of the
-wardrobe which was too heavy to lift by myself anyway and I really should
-start on my desk so I can build a computer to put on it and now I lost
-that screwdriver. Before I know it, I have a room full of shredded
-cardboard under a pile of partly-assembled furniture and the rest of the
-house is still empty.&lt;/p&gt;
-
-&lt;p&gt;What if I had the option of walking into my house totally furnished to my
-exact specifications and expectations at no extra cost?&lt;/p&gt;
-
-&lt;p&gt;Thats what I think of as what some folks like to call &amp;ldquo;monoliths.&amp;rdquo; I&amp;rsquo;m
-fine with that word. If convention means monolith than I prefer monoliths
-over modules, and I think it&amp;rsquo;s odd that so many developers want to be so
-contrarian about it. I get the whole rebel spirit of the industry and
-engineering culture, but historically it hasn&amp;rsquo;t been such a hodge podge
-- it&amp;rsquo;s continually moved towards conventions and layers of abstraction, so
-we can be more effective and efficient and get on with innovating (or in
-most of our cases selling something).&lt;/p&gt;
-
-&lt;p&gt;I don&amp;rsquo;t want to have containers containing NoSQL interacting with
-modularized libraries inside their own containers. It&amp;rsquo;s gonna be slow to
-develop, and slow to load. I want a monolith that I can spend more time on
-making it do a better job at what it is and ship the damn thing.&lt;/p&gt;
-
-&lt;p&gt;Doing a project in React has such a huge learning curve and the sheer
-amount of modules and libraries one must connect and configure makes my
-head spin. There are seemingly infinite combinations of libraries and
-newest things you must know to actually ship something.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="http://bitquabit.com/post/the-more-things-change/"&gt;React is also not even a new idea.&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Some people love this constant stream of new stuff and learning, but even
-they are feeling the exhaustion.&lt;/p&gt;
-
-&lt;p&gt;My buddy shaine put it well -&lt;/p&gt;
-
-&lt;blockquote class="twitter-tweet" lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Is there a way to just skip over react/webpack/es6 to the next big thing? I love those things, but theoretically I love the next thing more.&lt;/p&gt;&amp;mdash; Shaine Hatch (@ShaineHatch) &lt;a href="https://twitter.com/ShaineHatch/status/643468259375714304"&gt;September 14, 2015&lt;/a&gt;&lt;/blockquote&gt;
-
-&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
-
-&lt;p&gt;Its ok to love new things and be hungry for more learning, but I do
-believe that the lack of structure, conventions, and &amp;ldquo;opinions&amp;rdquo; is crippling
-the potential of what we can do, especially in the JS community. Not to mention
-the insane additions of &amp;ldquo;features&amp;rdquo; in
-ES6/ES2018/ES-whatever-we&amp;rsquo;re-calling-it-now:&lt;/p&gt;
-
-&lt;blockquote class="twitter-tweet" lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Modern javascript, annotated (updated): &lt;a href="https://t.co/iIFDHpoxJJ"&gt;pic.twitter.com/iIFDHpoxJJ&lt;/a&gt;&lt;/p&gt;&amp;mdash; Eric D. Fields (@ericdfields) &lt;a href="https://twitter.com/ericdfields/status/677677470590570496"&gt;December 18, 2015&lt;/a&gt;&lt;/blockquote&gt;
-
-&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
-
-&lt;p&gt;https://developer.atlassian.com/blog/2015/11/what-the-web-platform-can-learn-from-nodejs/&lt;/p&gt;
-
-&lt;p&gt;http://blog.circleci.com/its-the-future/&lt;/p&gt;
-
-&lt;p&gt;https://medium.com/@ericclemmons/javascript-fatigue-48d4011b6fc4#.s12704ins&lt;/p&gt;
-
-&lt;p&gt;http://mir.aculo.us/2015/08/25/how-to-actually-ship-software-that-actually-works/&lt;/p&gt;
-
-&lt;p&gt;https://medium.com/@wob/the-sad-state-of-web-development-1603a861d29f#.65e9l1sie&lt;/p&gt;
-
-&lt;p&gt;https://ponyfoo.com/articles/stop-breaking-the-web&lt;/p&gt;
-
-&lt;p&gt;lots of peeps want the engineering horizontal with the js vertical, or some
-such&lt;/p&gt;
-
-&lt;p&gt;http://dilbertblog.typepad.com/the&lt;em&gt;dilbert&lt;/em&gt;blog/2007/07/career-advice.html&lt;/p&gt;
-
-&lt;h2&gt;Lets go back to convention over configuration.&lt;/h2&gt;
-
-&lt;p&gt;The chaos of the
-ultra-modularized JavaScript (and relatives) community can be solved by
-coming together to develop some order and standards, so we can use
-conventions that are shared by most instead of connecting and configuring
-one library after another to re-solve solved problems. Developers are not
-happy with this churn fatigue, and users are getting shittier experiences
-from it.&lt;/p&gt;
-
-&lt;p&gt;Maybe the full-stack naysayers are saying nay because they have spent so
-much time specializing on their thing that they find it impossible to be
-as good at doing all the things. If we standardized some conventions, more
-of us would be able to specialize on the entire stack, but only because we
-are really specializing on the layer of abstraction that does all the
-full-stack stuff.&lt;/p&gt;
-
-&lt;p&gt;Full stack development is really just combining the concepts of
-&amp;ldquo;standing on the shoulders of giants&amp;rdquo; and &amp;ldquo;strategic laziness.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;people can be modules or monoliths. the one-thing-well thought is not
-valid if &amp;ldquo;web development&amp;rdquo; or &amp;ldquo;programming&amp;rdquo; isn&amp;rsquo;t one thing.o&lt;/p&gt;
-
-&lt;p&gt;Undoubtedly a large percentage of you reading this will say, &amp;ldquo;If you don&amp;rsquo;t like
-it fork it, fix it, or make a better one.&amp;rdquo; But not only do I have no desire
-whatsoever to do that, I also believe this mentality is possibly the biggest
-contributor to the clusterfuckification of the community.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m ranting, but I&amp;rsquo;m also here to offer solutions. People need to stop making
-JS frameworks, and people also need to stop writing self contained libraries
-that don&amp;rsquo;t conform to any standard but their own. Follow the examples of Rails
-and Django, and SpringMVC and even jQuery.&lt;/p&gt;
-</content>
-  </entry>
   <entry>
     <title>Teach Your Skills for Fun and Profit</title>
     <link rel="alternate" href="http://elliotec.com/teach-your-skills-for-fun-and-profit/"/>
@@ -959,6 +726,79 @@ and Django, and SpringMVC and even jQuery.&lt;/p&gt;
 &lt;p&gt;Hope you learned something too.&lt;/p&gt;
 
 &lt;p&gt;-Mike&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Using Variables in YAML Front Matter</title>
+    <link rel="alternate" href="http://elliotec.com/using-variables-in-yaml-front-matter/"/>
+    <id>http://elliotec.com/using-variables-in-yaml-front-matter/</id>
+    <published>2014-05-30T09:08:00-06:00</published>
+    <updated>2015-12-09T22:50:27-07:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;h2&gt;What is Front Matter?&lt;/h2&gt;
+
+&lt;p&gt;I didn&amp;rsquo;t know this until just now, but &lt;a href="http://en.wikipedia.org/wiki/Book_design#Front_matter"&gt;the name comes from book design&lt;/a&gt;, where the front matter is just all the stuff before the actual body of the book. This includes the table of contents, title pages, copyright info, etc. It&amp;rsquo;s essentially all the metadata of the book.&lt;/p&gt;
+
+&lt;p&gt;Likewise, the YAML front matter common in static-site generators like Middleman is the metadata of the current page. In my case that usually ends up being post pages where some of the dynamic data is defined:&lt;/p&gt;
+&lt;pre class="highlight yaml"&gt;&lt;code&gt;&lt;span class="nn"&gt;---&lt;/span&gt;
+&lt;span class="s"&gt;layout&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;post&lt;/span&gt;
+&lt;span class="s"&gt;title&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;Using Variables in YAML Front Matter&lt;/span&gt;
+&lt;span class="s"&gt;date&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;2014-05-30 09:08&lt;/span&gt;
+&lt;span class="s"&gt;tags&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;yaml, middleman&lt;/span&gt;
+&lt;span class="nn"&gt;---&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This makes it super easy to have various HTML layouts that you can assign to any page on your site. It also gives us the date and title options which are useful for the index, file structure, and other obvious benefits. &lt;/p&gt;
+
+&lt;h2&gt;Setting Custom Variables&lt;/h2&gt;
+
+&lt;p&gt;I have 4 social media icon SVGs on my portfolio/main index page, and I&amp;rsquo;m currently using each of them twice - one for the contact drop-down menu, and another for the contact section at the bottom. &lt;/p&gt;
+
+&lt;p&gt;As you can imagine, that clunked up the HTML pretty bad and it was immediately a giant pain to try and find or move anything. I wanted to DRY it up, and I knew that I could do that with Middleman. &lt;/p&gt;
+
+&lt;p&gt;It only took 3 steps.&lt;/p&gt;
+
+&lt;p&gt;1) The first thing I did was list each of the icons by name in the front matter:&lt;/p&gt;
+&lt;pre class="highlight yaml"&gt;&lt;code&gt;&lt;span class="nn"&gt;---&lt;/span&gt;
+&lt;span class="s"&gt;github&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; 
+
+&lt;span class="s"&gt;linkedin&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+
+&lt;span class="s"&gt;twitter&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+
+&lt;span class="s"&gt;email&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt;
+&lt;span class="nn"&gt;---&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;2) Then I added the cumbersome svg codes to set the variables for each:&lt;/p&gt;
+&lt;pre class="highlight yaml"&gt;&lt;code&gt;&lt;span class="nn"&gt;---&lt;/span&gt;
+&lt;span class="s"&gt;github&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;&amp;lt;svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"&lt;/span&gt;
+                &lt;span class="s"&gt;width="22" height="20" viewBox="0 0 99.441 99.44" enable-background="new 0 0 99.441 99.44" xml:space="preserve"&amp;gt;&amp;lt;path id="github" fill="#fff" d="M64.507,95.749c-2.439,0.474-3.303-1.026-3.303-2.307c0-1.584,0.053-6.763,0.053-13.197&lt;/span&gt;
+                &lt;span class="s"&gt;c0-4.486-1.535-7.412-3.259-8.905c10.707-1.189,21.958-5.257,21.958-23.727c0-5.25-1.867-9.541-4.949-12.908&lt;/span&gt;
+                &lt;span class="s"&gt;c0.499-1.211,2.145-6.101-0.473-12.726c0,0-4.034-1.292-13.211,4.931c-3.844-1.065-7.96-1.601-12.047-1.619&lt;/span&gt;
+                &lt;span class="s"&gt;c-4.088,0.018-8.201,0.554-12.036,1.619c-9.189-6.222-13.228-4.931-13.228-4.931c-2.611,6.625-0.966,11.515-0.465,12.726&lt;/span&gt;
+                &lt;span class="s"&gt;c-3.079,3.368-4.957,7.658-4.957,12.908c0,18.428,11.228,22.55,21.91,23.767c-1.374,1.199-2.62,3.32-3.054,6.428&lt;/span&gt;
+                &lt;span class="s"&gt;c-2.745,1.23-9.705,3.356-13.993-3.996c0,0-2.543-4.615-7.373-4.956c0,0-4.69-0.061-0.329,2.923c0,0,3.152,1.479,5.339,7.036&lt;/span&gt;
+                &lt;span class="s"&gt;c0,0,2.824,8.585,16.202,5.675c0.02,4.019,0.065,7.808,0.065,8.953c0,1.27-0.881,2.758-3.286,2.312&lt;/span&gt;
+                &lt;span class="s"&gt;C14.968,89.396,1.188,71.37,1.188,50.125c0-26.56,21.533-48.089,48.089-48.089c26.558,0,48.088,21.529,48.088,48.089&lt;/span&gt;
+              &lt;span class="s"&gt;C97.364,71.366,83.604,89.382,64.507,95.749z"/&amp;gt;&amp;lt;/svg&amp;gt;&lt;/span&gt;
+&lt;span class="s"&gt;linkedin&lt;/span&gt;&lt;span class="pi"&gt;:&lt;/span&gt; &lt;span class="s"&gt;&amp;lt;svg&amp;gt; ...&lt;/span&gt;
+&lt;span class="nn"&gt;---&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;3) After that it was simply a matter of calling &amp;ldquo;current_page.data&amp;rdquo; and passing the custom variable in its place in Erb:&lt;/p&gt;
+&lt;pre class="highlight erb"&gt;&lt;code&gt;&lt;span class="nt"&gt;&amp;lt;a&lt;/span&gt; &lt;span class="na"&gt;href=&lt;/span&gt;&lt;span class="s"&gt;"http://github.com/elliotec"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&amp;lt;%=&lt;/span&gt; &lt;span class="n"&gt;current_page&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;data&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;github&lt;/span&gt; &lt;span class="cp"&gt;%&amp;gt;&lt;/span&gt;Github&lt;span class="nt"&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now the code base is much more DRY and modular, and the generated HTML is producing the expected behavior. &lt;/p&gt;
+
+&lt;p&gt;You can do this in Jekyll too, but there are a few differences (basically just step 3) so &lt;a href="http://jekyllrb.com/docs/frontmatter/"&gt;check out their docs if thats what you&amp;rsquo;re into&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;For more info on the Middleman front matter, &lt;a href="http://middlemanapp.com/basics/frontmatter/"&gt;see the relavent section in the Middleman docs&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&amp;ndash; Mike&lt;/p&gt;
 </content>
   </entry>
 </feed>
