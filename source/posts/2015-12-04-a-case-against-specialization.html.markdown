@@ -1,5 +1,5 @@
 ---
-title: A Case For the Monolith
+title: Modules and Monoliths
 layout: post
 date: 2015-12-04 20:06 MST
 tags: specialization full-stack development rapid
@@ -8,18 +8,16 @@ tags: specialization full-stack development rapid
 _"Jack of all trades, master of none -- though oftentimes better than
 master of one." - Someone_
 
-##The Full Stack Developer
+## The Full Stack Developer
 
-Those words are met with much controversy in the industry.
+Those words are met with controversy in the industry.
 
  A lot of developers are quite annoyed with the term. They argue that it
  isn't possible to be truly full stack, whatever their definition of
  "truly" might be.
 
- Frankly, I'm annoyed that they are annoyed with the term.
-
-They often believe that mastery of a specific skill set within a software
-stack is more valuable than being mediocre at all of it. This can be true,
+They believe that mastery of a specific skill set within a software
+stack is more valuable than being decent at all of it. This can be true,
 especially in large corporations and enterprise systems with hundreds of
 developers that are assigned specific tasks and siloed by their
 specialization.
@@ -40,13 +38,23 @@ Some people take the love and science of the craft very seriously and
 aspire to reach sensei-level software mastery, and think this usually
 requires a specialization to get anywhere.
 
-But looking at examples like David Hienemer Hansson, Jack Dorsey, and
+But looking at examples like David Hienemer Hansson and
 hundreds of other startup founders and programming legends, we can see
 that gaining that level of knowledge of the full stack is attainable and
-accessible (obviously DHH and Dorsey are inflated examples, but it
+accessible (obviously DHH is an inflated example, but it
 illustrates the point), and rewarding.
 
-##The Full Stack Framework
+People often tout the "T-shaped" metaphor for one's skill levels,
+meaning that they have expertise in a vertical and the horizontal is the
+broad but lesser knowledge of other disciplines. I agree with this, and
+don't see why it can't be more common for someone to have an engineering
+vertical with for example, a strong business/operations/etc. horizontal.
+It's definitely a thing, tons of successful founders of companies do
+exactly that. So why are the developers in the front end community
+isolating themselves into their own little specializations and modules
+that they spend lots of time learning and configuring?
+
+## The Full Stack Framework
 
 This is why I still love Ruby on Rails, which turned 10 this year.
 
@@ -60,22 +68,23 @@ skills, and drastically increased the speed of doing so.
 You still have to know a bit of HTML, CSS, and JavaScript to get your way
 around Rails, but you can take shortcuts with those too, like templating
 with ERB, using CSS frameworks like Bootstrap or Thoughtbot's Refills, and
-jQuery.
+of course jQuery, which has become bafflingly rejected recently by a lot
+of the JavaScript community in favor of worse solutions.
 
 Some proponents of the full stack JavaScript world are attracted to the
-"one language to rule them all" idea, but most implementations of client
-side frameworks lack any structure or standardization or convention and
-take so much time to configure that shipping a product is arduous. (If you
-like the idea of developing entirely in one language, I recommend looking
-into Clojure and Luminus which is super fast and expressive and uses some
-of my favorite Railsy ideas)
+"one language to rule them all" idea, but most implementations of JS
+frameworks lack any structure or standardization or convention and take so
+much time to configure that shipping a product is arduous. (If you like
+the idea of developing entirely in one language, I recommend looking into
+Clojure and Luminus which is fast and expressive and uses some
+awesome truly full-stack patterns.)
 
 Stuff like Yeoman eases the pain a little bit sometimes, but the
-fragmentation of the community and the enormous mess and sheer number of
-JS frameworks destroy their accessibility and often require that one be an
-expert in JavaScript in order to properly implement. Why?
+fragmentation of the community and the fiasco that has become of the
+JavaScript framework/library/ world. their accessibility and often require
+that one be an expert in JavaScript in order to properly implement. Why?
 
-##Effort For its Own Sake
+## Effort For its Own Sake
 
 Many JavaScript frameworks are implementing patterns like MV-star or MVVM
 . They take the solid tried and true MVC pattern that most developers are
@@ -87,22 +96,24 @@ a bad idea for these UI implementations).
 Why are we spending time re-inventing the wheel under the guise of
 innovation and re-solving solved problems for its own sake?
 
-SQL for example. The problem of organizing data rationally and querying it
+SQL is another example. The problem of organizing data rationally and querying it
 was solved decades ago, and any worthy modern framework can interact with
 this data and create rich APIs if need be.
 
-Yet the hot shit these days is NoSQL, which shuns decades of work for
-a markedly worse solution.
+Yet the hot shit these days is NoSQL, which shuns decades of work for [a
+markedly worse
+solution](http://www.sarahmei.com/blog/2013/11/11/why-you-should-never-use-mongodb/).
 
-My buddy shaine put it well - "i like react, but theoretically i like the
-next big thing more""
+## Servers are our friends
 
-full stack development is just combining "standing on the shoulders of
-giants" and "strategic laziness"
+SPA's are almost never necessary. Your users don't care about two-way data
+binding or one-way data flow. I promise. Neither does your pointy-haired boss.
+They care that the data they are getting or posting is getting got or posted.
+
 
 the state of javascript 2015 post
 
-##Shortcuts
+## Over-modularization
 
 Microservices, containers, and "anti-monolithic" approaches to
 architecture make sense occasionally, like when you work for Netflix or
@@ -114,6 +125,61 @@ are sticking to it(or if you're an architect and setting this stuff up is
 your specialty), this type of architecture is daunting and will
 unquestionably turn into an unmaintainable spaghetti mess.
 
+The fact is we are over-modularizing things. Every time I start a new JS
+project, I feel like I just moved into a new house with nothing but
+a screwdriver and a few thousand dollars worth of Ikea furniture -I'm
+excited so I tear open the boxes and get started but building the couch
+seems more fun than the bookcase and I just stripped all the screws of the
+wardrobe which was too heavy to lift by myself anyway and I really should
+start on my desk so I can build a computer to put on it and now I lost
+that screwdriver. Before I know it, I have a room full of shredded
+cardboard under a pile of partly-assembled furniture and the rest of the
+house is still empty.
+
+What if I had the option of walking into my house totally furnished to my
+exact specifications and expectations at no extra cost?
+
+Thats what I think of as what some folks like to call "monoliths." I'm
+fine with that word. If convention means monolith than I prefer monoliths
+over modules, and I think it's odd that so many developers want to be so
+contrarian about it. I get the whole rebel spirit of the industry and
+engineering culture, but historically it hasn't been such a hodge podge
+- it's continually moved towards conventions and layers of abstraction, so
+we can be more effective and efficient and get on with innovating (or in
+most of our cases selling something).
+
+I don't want to have containers containing NoSQL interacting with
+modularized libraries inside their own containers. It's gonna be slow to
+develop, and slow to load. I want a monolith that I can spend more time on
+making it do a better job at what it is and ship the damn thing.
+
+Doing a project in React has such a huge learning curve and the sheer
+amount of modules and libraries one must connect and configure makes my
+head spin. There are seemingly infinite combinations of libraries and
+newest things you must know to actually ship something.
+
+[React is also not even a new idea.](
+http://bitquabit.com/post/the-more-things-change/)
+
+Some people love this constant stream of new stuff and learning, but even
+they are feeling the exhaustion.
+
+My buddy shaine put it well -
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Is there a way to just skip over react/webpack/es6 to the next big thing? I love those things, but theoretically I love the next thing more.</p>&mdash; Shaine Hatch (@ShaineHatch) <a href="https://twitter.com/ShaineHatch/status/643468259375714304">September 14, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Its ok to love new things and be hungry for more learning, but I do
+believe that the lack of structure, conventions, and "opinions" is crippling
+the potential of what we can do, especially in the JS community. Not to mention
+the insane additions of "features" in
+ES6/ES2018/ES-whatever-we're-calling-it-now:
+
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Modern javascript, annotated (updated): <a href="https://t.co/iIFDHpoxJJ">pic.twitter.com/iIFDHpoxJJ</a></p>&mdash; Eric D. Fields (@ericdfields) <a href="https://twitter.com/ericdfields/status/677677470590570496">December 18, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
 https://developer.atlassian.com/blog/2015/11/what-the-web-platform-can-learn-from-nodejs/
 
 http://blog.circleci.com/its-the-future/
@@ -121,8 +187,46 @@ http://blog.circleci.com/its-the-future/
 https://medium.com/@ericclemmons/javascript-fatigue-48d4011b6fc4#.s12704ins
 
 http://mir.aculo.us/2015/08/25/how-to-actually-ship-software-that-actually-works/
-t-shaped.. I wanna have the business horizontal with engineering vertical.
 
-lots of peeps want the engineering horizontal with the js vertical, or
-some such
+https://medium.com/@wob/the-sad-state-of-web-development-1603a861d29f#.65e9l1sie
+
+https://ponyfoo.com/articles/stop-breaking-the-web
+
+lots of peeps want the engineering horizontal with the js vertical, or some
+such
+
+http://dilbertblog.typepad.com/the_dilbert_blog/2007/07/career-advice.html
+
+## Lets go back to convention over configuration.
+
+The chaos of the
+ultra-modularized JavaScript (and relatives) community can be solved by
+coming together to develop some order and standards, so we can use
+conventions that are shared by most instead of connecting and configuring
+one library after another to re-solve solved problems. Developers are not
+happy with this churn fatigue, and users are getting shittier experiences
+from it.
+
+Maybe the full-stack naysayers are saying nay because they have spent so
+much time specializing on their thing that they find it impossible to be
+as good at doing all the things. If we standardized some conventions, more
+of us would be able to specialize on the entire stack, but only because we
+are really specializing on the layer of abstraction that does all the
+full-stack stuff.
+
+Full stack development is really just combining the concepts of
+"standing on the shoulders of giants" and "strategic laziness."
+
+people can be modules or monoliths. the one-thing-well thought is not
+valid if "web development" or "programming" isn't one thing.o
+
+Undoubtedly a large percentage of you reading this will say, "If you don't like
+it fork it, fix it, or make a better one." But not only do I have no desire
+whatsoever to do that, I also believe this mentality is possibly the biggest
+contributor to the clusterfuckification of the community.
+
+I'm ranting, but I'm also here to offer solutions. People need to stop making
+JS frameworks, and people also need to stop writing self contained libraries
+that don't conform to any standard but their own. Follow the examples of Rails
+and Django, and SpringMVC and even jQuery.
 
