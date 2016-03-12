@@ -44,6 +44,17 @@
       font-weight: 500;
       color: $nephritis;
       font-size: 1.5em;
+    }
+
+    .contact-me{
+      margin-top: 2.5em;
+      a{
+        padding: 0.3em;
+        background-color: $nephritis;
+        color: white;
+        border-radius:2px;
+        border: 1px solid darken($nephritis, 10%);
       }
     }
   }
+}

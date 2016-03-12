@@ -1,21 +1,22 @@
 <div class="full">
-<section class="home">
-  <%= image_tag("/images/groom.png", class: "headshot") %>
-  <div class="intro">
-    <h3>Mike Elliott</h3><br>
-    <p>Software developer.</p>
-    <p>Currently at <a href="http://www.overstock.com">Overstock.com</a> and <a href="http://www.thinkful.com">Thinkful</a></p>
-  </div>
-</section>
+  <section class="home">
+    <%= image_tag("/images/groom.png", class: "headshot") %>
+    <div class="intro">
+      <h3>Mike Elliott</h3><br>
+      <p>Front End Engineering Instructor at <a href="http://www.theironyard.com">The Iron Yard</a></p>
+      <p>Always accepting development and consulting projects at <a href="http://elliotec.com">elliotec</a></p>
+      <p class="contact-me"><a href="mailto:me@michaelelliott.me">Contact me</a></p>
+    </div>
+  </section>
 </div>
 <section class="posts">
   <h2>Posts</h2>
   <ul>
     <% blog.articles.each do |post| %>
-      <li class="post-item">
-        <%= link_to(post.title, post.url)%>
-      </li>
-      <p id='date'><%= post.date.strftime('%B %d, %Y') %></p>
+    <li class="post-item">
+      <%= link_to(post.title, post.url)%>
+    </li>
+    <p id="date"><%= post.date.strftime('%B %d, %Y') %></p>
     <% end %>
   </ul>
 </section>
@@ -26,7 +27,7 @@
     <a href="http://linkedin.com/in/elliotec"><i class="fa fa-linkedin fa-5x"></i></a>
     <a href="http://github.com/elliotec"><i class="fa fa-github fa-5x"></i></a>
     <a href="http://twitter.com/elliotecweb"><i class="fa fa-twitter fa-5x"></i></a>
-  <div>
-  <p class="copyright">&copy; elliotec</p>
+    <p class="copyright">&copy; elliotec</p>
+  </div>
 </section>
 <%= javascript_include_tag "//squaresend.com/squaresend.js" %>
