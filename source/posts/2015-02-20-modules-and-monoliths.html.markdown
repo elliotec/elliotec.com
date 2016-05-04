@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Modules and Monoliths
 layout: post
 date: 2016-02-20 20:06 MST
