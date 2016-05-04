@@ -2,8 +2,8 @@
 published: false
 title: Modules and Monoliths
 layout: post
-date: 2015-12-04 20:06 MST
-tags: specialization full-stack development rapid
+date: 2016-02-20 20:06 MST
+tags: specialization full-stack development rapid modules monoliths opinion
 ---
 
 _"Jack of all trades, master of none -- though oftentimes better than
@@ -45,6 +45,13 @@ that gaining that level of knowledge of the full stack is attainable and
 accessible (obviously DHH is an inflated example, but it
 illustrates the point), and rewarding.
 
+People can be modules or monoliths. Many choose specialization and corner themselves as "JavaScript Developers" or "Rails Developers." My advice is to stay away from this and keep your options open with something like "software developer," highlighting your experience in your preferred fields without removing yourself from opportunities to grow and gain new technical skills. [Some of the best career advice I've read came from Scott Adams which says that in order to become extraordinary, you have two paths:](http://dilbertblog.typepad.com/the_dilbert_blog/2007/07/career-advice.html)
+
+1. Become the best at one specific thing.
+2. Become very good at two or more things.
+
+The first is almost impossible, so I'll be sticking to the second.
+
 People often tout the "T-shaped" metaphor for one's skill levels,
 meaning that they have expertise in a vertical and the horizontal is the
 broad but lesser knowledge of other disciplines. I agree with this, and
@@ -57,7 +64,7 @@ that they spend lots of time learning and configuring?
 
 ## The Full Stack Framework
 
-This is why I still love Ruby on Rails, which turned 10 this year.
+This is why I still love [Ruby on Rails](http://rubyonrails.org), which turned 10 this year.
 
 Rails created a layer of abstraction that eliminated much of
 the monotony, repetition, and difficult integrations that web development
@@ -66,11 +73,13 @@ functionality (gems) became a breeze. It made developing rich applications
 on the web much more accessible to people with or without programming
 skills, and drastically increased the speed of doing so.
 
+I hear a lot of people that don't like Rails give their primary reason for disliking it as "It's just too much magic." What the hell is that supposed to mean!? Who doesn't love magic? Why would you want to waste time configuring things and wiring up stuff under the hood when you can scaffold and ship a product much sooner? Rails was built to remove the repetition of common architecture patterns, and did it very well. It baffles me that people want to redo this because they're afraid of "magic."
+
 You still have to know a bit of HTML, CSS, and JavaScript to get your way
 around Rails, but you can take shortcuts with those too, like templating
-with ERB, using CSS frameworks like Bootstrap or Thoughtbot's Refills, and
-of course jQuery, which has become bafflingly rejected recently by a lot
-of the JavaScript community in favor of worse solutions.
+with ERB, using CSS frameworks like Bootstrap or [Thoughtbot's Refills](http://refills.bourbon.io), and
+of course jQuery, which has become startlingly rejected recently by a lot
+of the JavaScript community.
 
 Some proponents of the full stack JavaScript world are attracted to the
 "one language to rule them all" idea, but most implementations of JS
@@ -78,12 +87,17 @@ frameworks lack any structure or standardization or convention and take so
 much time to configure that shipping a product is arduous. (If you like
 the idea of developing entirely in one language, I recommend looking into
 Clojure and Luminus which is fast and expressive and uses some
-awesome truly full-stack patterns.)
+awesome truly full-stack patterns).
 
-Stuff like Yeoman eases the pain a little bit sometimes, but the
-fragmentation of the community and the fiasco that has become of the
-JavaScript framework/library/ world. their accessibility and often require
-that one be an expert in JavaScript in order to properly implement. Why?
+Ember is an outlier here, and deserves credit for taking a lot of the good ideas Rails popularized and put it in a JS framework with an amazing CLI tool. But unfortunately they don't have marketing expert giants like Facebook (for React) or Google (for Angular) pushing the Ember framework, so naturally it gets pushed aside.
+
+Stuff like Ember and Yeoman ease the pain a little bit sometimes, but the
+fragmentation of the community and the dramatic fiasco that has become of the
+JavaScript framework/library/etc world is becoming a defining characteristic of the community. These frameworks inaccessibility often require
+that one be an expert just in JavaScript in order to properly implement. Why?
+
+Full stack development is really just combining the concepts of
+"standing on the shoulders of giants" and "strategic laziness." We take what we've learned from the past, and use it to strategically avoid decisions that have already been made and proven by people smarter than us.
 
 ## Effort For its Own Sake
 
@@ -102,19 +116,30 @@ was solved decades ago, and any worthy modern framework can interact with
 this data and create rich APIs if need be.
 
 Yet the hot shit these days is NoSQL, which shuns decades of work for [a
-markedly worse
-solution](http://www.sarahmei.com/blog/2013/11/11/why-you-should-never-use-mongodb/).
+markedly worse solution](http://www.sarahmei.com/blog/2013/11/11/why-you-should-never-use-mongodb/). This trend is very limiting, and any SQL DB can produce JSON anyway, so what is the point?
 
 ## Servers are our friends
 
-SPA's are almost never necessary. Your users don't care about two-way data
+[Single Page Apps are almost never necessary.](https://ponyfoo.com/articles/stop-breaking-the-web)
+Your users don't care about two-way data
 binding or one-way data flow. I promise. Neither does your pointy-haired boss.
 They care that the data they are getting or posting is getting got or posted.
 
+"Isomorphic" (a pretentious word for universal, or running on the client and server) JavaScript is an idea that removes the logical separation of client and server so that all the code is tightly coupled and stored together in a repo. This is an interesting solution to the problem that we are now having with SPAs bloating up and slowing down the browser by running the code through the server first and templating. This is, on the surface, a trend toward the monolithic architecture I'm touting in this article.
 
-the state of javascript 2015 post
+But, really it's roundabout, difficult to implement, and adding complexity when we should be removing it. Like, how about just not using too much JS on the client and minimizing requests? People say it helps with SEO, but Google now crawls pages that are generated with JS, at least supposedly. If you want better SEO, don't render all your content with JavaScript.
+
+Data and content should be submitted and displayed by the client, and manipulated and stored on the server. This has worked well, and will continue to work well for the foreseeable future. Just sprinkle in the JS that is needed to make you're app interactive and pretty and things will move along nicely.
 
 ## Over-modularization
+
+The Unix philosophy of "Do one thing and do it well" has been repeated to the point of overuse in the community, especially surrounding the React ecosystem. So React does the view layer well. Redux does the data flow well. Webpack does package management well, and Gulp or NPM scripts do build process well. And so on and so forth.
+
+Well, Rails has many components that do their respective pieces well. Active Record does ORM and data handling _very_ well. ActionMailer does email well. The asset pipeline does asset management well. And so on and so forth.
+
+But guess what? Ruby on Rails does one thing, and one thing well, and that's _full-stack web development_.
+
+It's also important to remember that Unix is a family of operating systems. Operating systems do many things, and do them well. One off the top of my head might be system operation. But each of the components do their own thing well to make the monolith of Unix the magical beast that it is.
 
 Microservices, containers, and "anti-monolithic" approaches to
 architecture make sense occasionally, like when you work for Netflix or
@@ -140,14 +165,13 @@ house is still empty.
 What if I had the option of walking into my house totally furnished to my
 exact specifications and expectations at no extra cost?
 
-Thats what I think of as what some folks like to call "monoliths." I'm
+That's what I think of as what some folks like to call "monoliths." I'm
 fine with that word. If convention means monolith than I prefer monoliths
 over modules, and I think it's odd that so many developers want to be so
 contrarian about it. I get the whole rebel spirit of the industry and
-engineering culture, but historically it hasn't been such a hodge podge
-- it's continually moved towards conventions and layers of abstraction, so
+engineering culture, but historically it hasn't been such a hodgepodge - it has continually moved towards conventions and layers of abstraction, so
 we can be more effective and efficient and get on with innovating (or in
-most of our cases selling something).
+most of our cases, selling something).
 
 I don't want to have containers containing NoSQL interacting with
 modularized libraries inside their own containers. It's gonna be slow to
@@ -157,52 +181,26 @@ making it do a better job at what it is and ship the damn thing.
 Doing a project in React has such a huge learning curve and the sheer
 amount of modules and libraries one must connect and configure makes my
 head spin. There are seemingly infinite combinations of libraries and
-newest things you must know to actually ship something.
+newest things you must know to [actually ship something.](http://mir.aculo.us/2015/08/25/how-to-actually-ship-software-that-actually-works/) [React is also not even a new idea.](http://bitquabit.com/post/the-more-things-change/)
 
-[React is also not even a new idea.](
-http://bitquabit.com/post/the-more-things-change/)
 
-Some people love this constant stream of new stuff and learning, but even
-they are feeling the exhaustion.
-
+[Some people love this constant stream of new stuff and learning, but even
+they are feeling the exhaustion.](https://medium.com/@ericclemmons/javascript-fatigue-48d4011b6fc4#.s12704ins)
 My buddy shaine put it well -
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Is there a way to just skip over react/webpack/es6 to the next big thing? I love those things, but theoretically I love the next thing more.</p>&mdash; Shaine Hatch (@ShaineHatch) <a href="https://twitter.com/ShaineHatch/status/643468259375714304">September 14, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Its ok to love new things and be hungry for more learning, but I do
-believe that the lack of structure, conventions, and "opinions" is crippling
+It's okay to love new things and be hungry for more learning, but I do
+believe that the lack of structure, conventions, and opinionated-ness is crippling
 the potential of what we can do, especially in the JS community. Not to mention
-the insane additions of "features" in
-ES6/ES2018/ES-whatever-we're-calling-it-now:
-
-
-<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Modern javascript, annotated (updated): <a href="https://t.co/iIFDHpoxJJ">pic.twitter.com/iIFDHpoxJJ</a></p>&mdash; Eric D. Fields (@ericdfields) <a href="https://twitter.com/ericdfields/status/677677470590570496">December 18, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-https://developer.atlassian.com/blog/2015/11/what-the-web-platform-can-learn-from-nodejs/
-
-http://blog.circleci.com/its-the-future/
-
-https://medium.com/@ericclemmons/javascript-fatigue-48d4011b6fc4#.s12704ins
-
-http://mir.aculo.us/2015/08/25/how-to-actually-ship-software-that-actually-works/
-
-https://medium.com/@wob/the-sad-state-of-web-development-1603a861d29f#.65e9l1sie
-
-https://ponyfoo.com/articles/stop-breaking-the-web
-
-lots of peeps want the engineering horizontal with the js vertical, or some
-such
-
-http://dilbertblog.typepad.com/the_dilbert_blog/2007/07/career-advice.html
+the insane additions of features in
+ES6/ES2018/ES-whatever-we're-calling-it-now.
 
 ## Lets go back to convention over configuration.
 
-The chaos of the
-ultra-modularized JavaScript (and relatives) community can be solved by
-coming together to develop some order and standards, so we can use
+[The chaos of the ultra-modularized JavaScript (and relatives) community](https://medium.com/@wob/the-sad-state-of-web-development-1603a861d29f#.65e9l1sie)can be solved by
+coming together to develop some order and re-use, so we can use
 conventions that are shared by most instead of connecting and configuring
 one library after another to re-solve solved problems. Developers are not
 happy with this churn fatigue, and users are getting shittier experiences
@@ -215,11 +213,7 @@ of us would be able to specialize on the entire stack, but only because we
 are really specializing on the layer of abstraction that does all the
 full-stack stuff.
 
-Full stack development is really just combining the concepts of
-"standing on the shoulders of giants" and "strategic laziness."
-
-people can be modules or monoliths. the one-thing-well thought is not
-valid if "web development" or "programming" isn't one thing.o
+We in the [current state of the JS world](http://www.breck-mckye.com/blog/2014/12/the-state-of-javascript-in-2015/) are lacking the glue that holds the modules that make a magnificent, magical monolith. I'm talking about the ridiculous steps of getting all the moving pieces to work together. Let's come up with ways to fix it.
 
 Undoubtedly a large percentage of you reading this will say, "If you don't like
 it fork it, fix it, or make a better one." But not only do I have no desire
@@ -229,5 +223,5 @@ contributor to the clusterfuckification of the community.
 I'm ranting, but I'm also here to offer solutions. People need to stop making
 JS frameworks, and people also need to stop writing self contained libraries
 that don't conform to any standard but their own. Follow the examples of Rails
-and Django, and SpringMVC and even jQuery.
+and Django, and SpringMVC and even jQuery. Let's just come together to pick a framework with a high level of abstraction, so we can make the magic happen by piggybacking on the magic the frameworks provide. [It's the future.](http://blog.circleci.com/its-the-future/)
 
