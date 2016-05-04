@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>elliotec | Web Development &amp; Design</title>
+  <title>elliotec | Software Development</title>
   <subtitle></subtitle>
   <id>http://elliotec.com/</id>
   <link href="http://elliotec.com/"/>
@@ -16,7 +16,7 @@
     <published>2015-11-10T13:49:00-07:00</published>
     <updated>2015-12-09T22:50:27-07:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>Michael Elliott</name>
     </author>
     <content type="html">&lt;h2&gt;An age old concept&lt;/h2&gt;
 
@@ -100,7 +100,7 @@
     <published>2015-05-27T00:17:00-06:00</published>
     <updated>2015-12-09T22:50:27-07:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>Michael Elliott</name>
     </author>
     <content type="html">&lt;div class="frame-wrap"&gt;
 &lt;iframe src="//slides.com/michaelelliott/art-music-webapps-clojure/embed" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
@@ -114,7 +114,7 @@
     <published>2015-01-27T06:12:00-07:00</published>
     <updated>2015-12-09T22:50:27-07:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>Michael Elliott</name>
     </author>
     <content type="html">&lt;h2&gt;Why I&amp;rsquo;m writing this&lt;/h2&gt;
 
@@ -277,7 +277,7 @@
     <published>2014-11-12T10:10:00-07:00</published>
     <updated>2015-12-09T22:50:27-07:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>Michael Elliott</name>
     </author>
     <content type="html">&lt;p&gt;Some may find themselves developing the front end of web applications in .NET and Visual Studio. If that&amp;rsquo;s you, I&amp;rsquo;m sorry (at least until the new &lt;a href="http://news.microsoft.com/2014/11/12/microsoft-takes-net-open-source-and-cross-platform-adds-new-development-capabilities-with-visual-studio-2015-net-2015-and-visual-studio-online/"&gt;cross platform open source versions&lt;/a&gt; come out).&lt;/p&gt;
 
@@ -313,7 +313,7 @@
     <published>2014-06-29T09:08:00-06:00</published>
     <updated>2015-12-09T22:50:27-07:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>Michael Elliott</name>
     </author>
     <content type="html">&lt;p&gt;&lt;em&gt;If you&amp;rsquo;re here for the code and want to skip most of the history and linguistics, &lt;a href="#code"&gt;click here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
@@ -735,7 +735,7 @@
     <published>2014-05-30T09:08:00-06:00</published>
     <updated>2015-12-09T22:50:27-07:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>Michael Elliott</name>
     </author>
     <content type="html">&lt;h2&gt;What is Front Matter?&lt;/h2&gt;
 
