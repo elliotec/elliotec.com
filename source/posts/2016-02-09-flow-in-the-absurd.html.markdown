@@ -3,6 +3,7 @@ title: Flow In the Absurd
 date: 2016-02-09 14:16 MST
 tags:
 published: false
+layout: post
 ---
 
 ## Flow
