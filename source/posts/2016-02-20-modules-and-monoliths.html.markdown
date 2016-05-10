@@ -42,10 +42,11 @@ requires a specialization to get anywhere.
 But looking at examples like David Hienemer Hansson and
 hundreds of other startup founders and programming legends, we can see
 that gaining that level of knowledge of the full stack is attainable and
-accessible (obviously DHH is an inflated example, but it
-illustrates the point), and rewarding.
+accessible and rewarding.
 
-People can be modules or monoliths. Many choose specialization and corner themselves as "JavaScript Developers" or "Rails Developers." My advice is to stay away from this and keep your options open with something like "software developer," highlighting your experience in your preferred fields without removing yourself from opportunities to grow and gain new technical skills. [Some of the best career advice I've read came from Scott Adams which says that in order to become extraordinary, you have two paths:](http://dilbertblog.typepad.com/the_dilbert_blog/2007/07/career-advice.html)
+People can be modules or monoliths. Many choose specialization and corner themselves as "JavaScript Developers" or "Rails Developers." My advice is to stay away from this and keep your options open with something like "software developer," highlighting your experience in your preferred fields without removing yourself from opportunities to grow and gain new technical skills.
+
+[Some of the best career advice I've read came from Scott Adams which says that in order to become extraordinary, you have two paths:](http://dilbertblog.typepad.com/the_dilbert_blog/2007/07/career-advice.html)
 
 1. Become the best at one specific thing.
 2. Become very good at two or more things.
@@ -89,15 +90,15 @@ the idea of developing entirely in one language, I recommend looking into
 Clojure and Luminus which is fast and expressive and uses some
 awesome truly full-stack patterns).
 
-Ember is an outlier here, and deserves credit for taking a lot of the good ideas Rails popularized and put it in a JS framework with an amazing CLI tool. But unfortunately they don't have marketing expert giants like Facebook (for React) or Google (for Angular) pushing the Ember framework, so naturally it gets pushed aside.
+[Ember](http://emberjs.com/) is an outlier here, and deserves credit for taking a lot of the good ideas Rails popularized and put it in a JS framework with an amazing CLI tool. But unfortunately they don't have marketing expert giants like Facebook (for React) or Google (for Angular) pushing the Ember framework, so naturally it gets pushed aside.
 
-Stuff like Ember and Yeoman ease the pain a little bit sometimes, but the
-fragmentation of the community and the dramatic fiasco that has become of the
+Stuff like Ember and [Yeoman](http://yeoman.io) ease the pain a little bit sometimes, but the
+fragmentation and the dramatic fiasco that has become of the
 JavaScript framework/library/etc world is becoming a defining characteristic of the community. These frameworks inaccessibility often require
 that one be an expert just in JavaScript in order to properly implement. Why?
 
 Full stack development is really just combining the concepts of
-"standing on the shoulders of giants" and "strategic laziness." We take what we've learned from the past, and use it to strategically avoid decisions that have already been made and proven by people smarter than us.
+"standing on the shoulders of giants" and ["strategic laziness."](http://fourhourworkweek.com/2014/08/25/the-art-of-strategic-laziness/) We take what we've learned from the past, and use it to strategically avoid decisions that have already been made and proven by people smarter than us.
 
 ## Effort For its Own Sake
 
@@ -121,11 +122,11 @@ markedly worse solution](http://www.sarahmei.com/blog/2013/11/11/why-you-should-
 ## Servers are our friends
 
 [Single Page Apps are almost never necessary.](https://ponyfoo.com/articles/stop-breaking-the-web)
-Your users don't care about two-way data
+ Your users don't care about two-way data
 binding or one-way data flow. I promise. Neither does your pointy-haired boss.
 They care that the data they are getting or posting is getting got or posted.
 
-"Isomorphic" (a pretentious word for universal, or running on the client and server) JavaScript is an idea that removes the logical separation of client and server so that all the code is tightly coupled and stored together in a repo. This is an interesting solution to the problem that we are now having with SPAs bloating up and slowing down the browser by running the code through the server first and templating. This is, on the surface, a trend toward the monolithic architecture I'm touting in this article.
+"Isomorphic" (which is quite a pretentious word for running on the client and server) JavaScript is an idea that removes the logical separation of client and server so that all the code is tightly coupled and stored together in a repo. This is an interesting solution to the problem that we are now having with SPAs bloating up and slowing down the browser by running the code through the server first and templating. This is, on the surface, a trend toward the monolithic architecture I'm touting in this article.
 
 But, really it's roundabout, difficult to implement, and adding complexity when we should be removing it. Like, how about just not using too much JS on the client and minimizing requests? People say it helps with SEO, but Google now crawls pages that are generated with JS, at least supposedly. If you want better SEO, don't render all your content with JavaScript.
 
@@ -181,11 +182,11 @@ making it do a better job at what it is and ship the damn thing.
 Doing a project in React has such a huge learning curve and the sheer
 amount of modules and libraries one must connect and configure makes my
 head spin. There are seemingly infinite combinations of libraries and
-newest things you must know to [actually ship something.](http://mir.aculo.us/2015/08/25/how-to-actually-ship-software-that-actually-works/) [React is also not even a new idea.](http://bitquabit.com/post/the-more-things-change/)
-
+newest things you must know to [actually ship something.](http://mir.aculo.us/2015/08/25/how-to-actually-ship-software-that-actually-works/)
 
 [Some people love this constant stream of new stuff and learning, but even
 they are feeling the exhaustion.](https://medium.com/@ericclemmons/javascript-fatigue-48d4011b6fc4#.s12704ins)
+
 My buddy shaine put it well -
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Is there a way to just skip over react/webpack/es6 to the next big thing? I love those things, but theoretically I love the next thing more.</p>&mdash; Shaine Hatch (@ShaineHatch) <a href="https://twitter.com/ShaineHatch/status/643468259375714304">September 14, 2015</a></blockquote>
@@ -199,7 +200,7 @@ ES6/ES2018/ES-whatever-we're-calling-it-now.
 
 ## Lets go back to convention over configuration.
 
-[The chaos of the ultra-modularized JavaScript (and relatives) community](https://medium.com/@wob/the-sad-state-of-web-development-1603a861d29f#.65e9l1sie)can be solved by
+[The chaos of the ultra-modularized JavaScript (and relatives) community](https://medium.com/@wob/the-sad-state-of-web-development-1603a861d29f#.65e9l1sie) can be solved by
 coming together to develop some order and re-use, so we can use
 conventions that are shared by most instead of connecting and configuring
 one library after another to re-solve solved problems. Developers are not
@@ -218,7 +219,7 @@ We in the [current state of the JS world](http://www.breck-mckye.com/blog/2014/1
 Undoubtedly a large percentage of you reading this will say, "If you don't like
 it fork it, fix it, or make a better one." But not only do I have no desire
 whatsoever to do that, I also believe this mentality is possibly the biggest
-contributor to the clusterfuckification of the community.
+contributor to the [clusterfuckification of the community](https://xkcd.com/927/).
 
 I'm ranting, but I'm also here to offer solutions. People need to stop making
 JS frameworks, and people also need to stop writing self contained libraries
