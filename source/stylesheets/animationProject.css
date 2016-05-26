@@ -5,7 +5,8 @@ section{
   -webkit-animation: rise 5s linear infinite alternate;
 }
 .headwrap {
-  -webkit-animation: shrink 20s ease-in-out infinite alternate both;
+  padding: 1em;
+  -webkit-animation: shrink 10s ease-in-out infinite alternate both;
 }
 .head {
   height: 30em;
@@ -13,7 +14,7 @@ section{
   border: 1px solid black;
   border-radius: 50%;
   background-color: #ffe0bd;
-  -webkit-animation: spin 10s linear infinite;
+  -webkit-animation: spin 7s linear infinite;
   margin: 0 auto
 }
 .right-eye, .left-eye {
@@ -123,7 +124,7 @@ body, section, .stars {
 .stars {
   background: radial-gradient(2px 2px, #ddd, rgba(0,0,0,0));
   background-size: 200px 200px;
-  animation: zoom 5s infinite;
+  animation: zoom 4s infinite;
   opacity: 0;
 }
 
@@ -144,7 +145,7 @@ body, section, .stars {
   animation-delay: 3s;
 }
 .stars:nth-child(5) {
-  background-position: -20% 30%;
+  background-position: -20% 35%;
   animation-delay: 4s;
 }
 
