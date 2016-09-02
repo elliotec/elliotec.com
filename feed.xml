@@ -5,10 +5,32 @@
   <id>http://elliotec.com/</id>
   <link href="http://elliotec.com/"/>
   <link href="http://elliotec.com/feed.xml" rel="self"/>
-  <updated>2016-06-10T21:40:00-06:00</updated>
+  <updated>2016-08-24T11:36:00-06:00</updated>
   <author>
     <name>Michael Elliott</name>
   </author>
+  <entry>
+    <title>Grass is Always Greener</title>
+    <link rel="alternate" href="http://elliotec.com/grass-is-always-greener/"/>
+    <id>http://elliotec.com/grass-is-always-greener/</id>
+    <published>2016-08-24T11:36:00-06:00</published>
+    <updated>2016-08-24T14:57:53-06:00</updated>
+    <author>
+      <name>Michael Elliott</name>
+    </author>
+    <content type="html">&lt;h1&gt;&amp;ldquo;Dream Gig&amp;rdquo;&lt;/h1&gt;
+
+&lt;p&gt;At the beginning of this year, I was managing a software team on a project that was&amp;hellip; less than significant in the eyes of myself and most of the company I was working for. The business owner was by all accounts terrible, and the dev team did not have clear requirements and had a lot of time sitting on their hands waiting for orders that were yet to come.&lt;/p&gt;
+
+&lt;p&gt;I was feeling burned out working on a lame project and having little to do but deflect annoying micromanagement from my dev team, when what seemed like a fantastic opportunity arose from my network. It was kind of a dream gig - an opportunity teaching my skills as an engineering instructor for one of the largest code schools in the nation which was just entering our city.&lt;/p&gt;
+
+&lt;p&gt;It seemed perfect - I had always loved teaching and had done so in some capacity since beginning to code professionally. They were offering a 20% salary increase to what I was at, with great benefits and a month off every three months, with the addition of &amp;ldquo;unlimited PTO&amp;rdquo; (a trap and a racket, as most people have found out now). They promised only one travel per year for the all hands conference, and were in the middle of remodeling a new space in a building a short bike ride from where I lived. It seemed a little to good to be true.&lt;/p&gt;
+
+&lt;h1&gt;If it seems to good to be true, it probably is&lt;/h1&gt;
+
+&lt;p&gt;I got hired in mid March, with the intention that I&amp;rsquo;d start teaching at the end of March. I thought I had 2 weeks to write my curriculum, and did it frantically knowing I&amp;rsquo;d have to adjust to the students needs&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>horizontal</title>
     <link rel="alternate" href="http://elliotec.com/horizontal/"/>
@@ -529,42 +551,6 @@ and Django, and SpringMVC and even jQuery. Let&amp;rsquo;s just come together to
 &lt;p&gt;A year is a relatively short time to have gotten where I did, and I am certain I wouldn&amp;rsquo;t have gotten there without the series of fortunate events (yes, I consider the destruction of my ankle as a fortunate event in hindsight) that allowed me to focus obsessively and full time on this pursuit. But passion is a lot stronger then luck and if one has the drive, they shouldn&amp;rsquo;t need any fortune to make things happen on their own timeline.&lt;/p&gt;
 
 &lt;p&gt;Join the discussion &lt;a href="https://news.ycombinator.com/item?id=8954348"&gt;here on Hacker News&lt;/a&gt;.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Using Sass in Visual Studio</title>
-    <link rel="alternate" href="http://elliotec.com/using-sass-in-visual-studio/"/>
-    <id>http://elliotec.com/using-sass-in-visual-studio/</id>
-    <published>2014-11-12T10:10:00-07:00</published>
-    <updated>2015-12-09T22:50:27-07:00</updated>
-    <author>
-      <name>Michael Elliott</name>
-    </author>
-    <content type="html">&lt;p&gt;Some may find themselves developing the front end of web applications in .NET and Visual Studio. If that&amp;rsquo;s you, I&amp;rsquo;m sorry (at least until the new &lt;a href="http://news.microsoft.com/2014/11/12/microsoft-takes-net-open-source-and-cross-platform-adds-new-development-capabilities-with-visual-studio-2015-net-2015-and-visual-studio-online/"&gt;cross platform open source versions&lt;/a&gt; come out).&lt;/p&gt;
-
-&lt;p&gt;If you use Sass, as hopefully you do if you&amp;rsquo;re reading this, you will find yourself frustrated by the fact that Web Essentials for VS advertised as being capable of Sass compilation, but actually isn&amp;rsquo;t. The following outline is the only way I&amp;rsquo;ve been able to get Sass working in Visual Studio. This has been tested in VS 2012 and 2013.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://visualstudiogallery.msdn.microsoft.com/2b96d16a-c986-4501-8f97-8008f9db141a"&gt;Download Mindscape Web Workbench here&lt;/a&gt; and make sure to enable it in VS at &lt;code&gt;Tools &amp;gt; Extenstions and Updates&lt;/code&gt;. You might have to restart VS.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Hopefully you have a &amp;ldquo;main.scss&amp;rdquo; type file in your stylesheets directory that contains all your imports and will eventually compile into a singular minified file called in your markup (this can be added by right-clicking the stylesheets folder, and going to &lt;code&gt;Add &amp;gt; New Item &amp;gt; SCSS Stylesheet (Sass)&lt;/code&gt;, then name appropriately):&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="../images/mainsass.png" /&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Go to &lt;code&gt;Tools &amp;gt; Options&lt;/code&gt; and select Web Workbench from the list. Adjust the settings so that:&lt;/p&gt;
-
-&lt;p&gt;Compilation &amp;gt; Trigger compile on build = True&lt;/p&gt;
-
-&lt;p&gt;Compilation &amp;gt; Disable Sass compilation = False&lt;/p&gt;
-
-&lt;p&gt;Sass &amp;gt; Produce .css file = True&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="../images/workbench.png"/&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;In the toolbar, got to &lt;code&gt;Mindscape &amp;gt; Web Workbench Settings&lt;/code&gt; and make sure the only checkbox selected under Compile is your &amp;ldquo;main.scss&amp;rdquo; file mentioned earlier. Uncheck all the rest unless you want a million extra css files and an hour-long build:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="../images/settings.png"/&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Now your main.scss file will compile on build (and save, depending on your settings) and generate a main.css file in the same directory that is minifiable and browser-readable.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;And thats it. Now you can write your Sass and keep your modular style structure nice and happy in Visual Studio and .NET projects. Hopefully this post will be deprecated at the release of the new versions.&lt;/p&gt;
 </content>
   </entry>
 </feed>
