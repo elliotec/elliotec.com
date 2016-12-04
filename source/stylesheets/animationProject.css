@@ -68,7 +68,7 @@ section{
 @-webkit-keyframes bounce{
   0% {
     transform: scale(.7);
-    -webkit-transform: scale(.3);
+    -webkit-transform: scale(.7);
   }
   50%{
     transform: scale(1.3);
