@@ -7,11 +7,16 @@
     <link rel="stylesheet" href="visuify/styles.css">
 </head>
 <body>
+    <header class="navigation">
+      <a href="/">{ elliotec }</a>
+    </header>
     <h2>Visuify</h2>
+    <em>A Spotify related artists data visualizer</em>
     <form>
-        <input type="text" id="query">
-        <input type="submit" id="submit">
+        <input type="text" id="query" placeholder="Enter artist name">
+        <button id="submit">Draw Graph</button>
     </form>
+    <p>Hover, drag, and click the nodes and links!</p>
     <h3></h3>
 
     <svg width="1000" height="750"></svg>
