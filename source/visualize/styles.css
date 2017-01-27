@@ -1,0 +1,44 @@
+body {
+    background-color: #282828;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Helvetica', sans-serif;
+}
+svg {
+    margin: 0 auto;
+    display: block;
+    background-color: #282828;
+}
+.links line {
+  stroke: #999;
+  stroke-opacity: 0.6;
+}
+
+.links line:hover {
+  cursor: pointer;
+  stroke: #fff;
+  stroke-width: 4px;
+}
+.nodes circle {
+  stroke: #2AB759;
+  stroke-width: 3px;
+}
+.nodes circle:hover {
+  cursor: pointer;
+  fill: #333;
+}
+
+div.tooltip {
+  color: white;
+  position: absolute;
+  text-align: center;
+  min-width: 50px;
+  min-height: 18px;
+  padding: 6px;
+  font: 15px;
+  background: #666;
+  border: 0px;
+  border-radius: 5px;
+  pointer-events: none;
+}
