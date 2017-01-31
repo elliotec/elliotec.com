@@ -21,12 +21,6 @@ function buildGraph(originalArtist, artists, existingGraph) {
     return graphObj;
 }
 
-function getRelatedArtists(artistId) {
-    return $.ajax({
-        url: "https://api.spotify.com/v1/artists/" + artistId + "/related-artists"
-    });
-}
-
 function getArtist(query) {
     return $.ajax({
         url: "https://api.spotify.com/v1/search",
@@ -37,7 +31,59 @@ function getArtist(query) {
     });
 }
 
+function getRelatedArtists(artistId) {
+    return $.ajax({
+        url: "https://api.spotify.com/v1/artists/" + artistId + "/related-artists"
+    });
+}
+
+function getFirstDegreeArtists(response) {
+    if (!response.artists.items.length){
+        $("#message").text("¯\\_(ツ)_/¯ Can't find that artist - try again.");
+    }
+    var artist = response.artists.items[0];
+    $("#uri").attr("href", artist.uri).text($("#query").val());
+    return $.when(artist, getRelatedArtists(artist.id)
+        .then(function(response) { return response.artists; }));
+}
+
+function getSecondDegreeArtists(firstDegreeGraph, firstDegreeArtists) {
+    var deferreds = [$.when(firstDegreeGraph)];
+    firstDegreeArtists.forEach(function(firstDegreeArtist) {
+        var artistDeferred = $.Deferred();
+        deferreds.push(artistDeferred);
+
+        getRelatedArtists(firstDegreeArtist.id)
+            .then(function(response) {
+                var firstDegreeArtistItem = {};
+                firstDegreeArtistItem[firstDegreeArtist.name] = response.artists;
+                artistDeferred.resolve(firstDegreeArtistItem);
+            })
+    });
+
+    return $.when.apply(null, deferreds);
+}
+
+function buildFirstGraph(originalArtist, firstDegreeArtists) {
+    return $.when(buildGraph(originalArtist, firstDegreeArtists), firstDegreeArtists);
+}
+
+function buildUpdatedGraph(firstDegreeGraph) {
+    var updatedGraph = firstDegreeGraph;
+    var firstDegreeArtistsMap = Array.prototype.slice.call(arguments, 1);
+
+    firstDegreeArtistsMap.forEach(function(secondDegreeArtists, i) {
+        updatedGraph = buildGraph(
+            { name: Object.keys(secondDegreeArtists)[0] },
+            secondDegreeArtists[Object.keys(secondDegreeArtists)[0]],
+            firstDegreeGraph
+        );
+    });
+
+    return updatedGraph;
+}
 function drawGraph(graph){
+    graph.nodes = _.uniqBy(graph.nodes, "id");
     var svg = d3.select("svg"),
         width = parseInt(d3.select("#chart").style("width")),
         height = parseInt(d3.select("#chart").style("height"))
@@ -98,7 +144,7 @@ function drawGraph(graph){
             div.transition()
                 .duration(500)
                 .style("opacity", 0);
-            chain()
+            visuify()
         })
         .call(d3.drag()
             .on("start", dragstarted)
@@ -142,56 +188,20 @@ function drawGraph(graph){
         d.fy = null;
     }
 }
-function chain(){
+
+function visuify(){
     $("svg").empty();
     $("#message").empty();
     $("#uri").empty();
     getArtist($("#query").val())
-        .then(function(response) {
-            if (!response.artists.items.length){
-                $("#message").text("¯\\_(ツ)_/¯ Can't find that artist - try again.");
-            }
-            var artist = response.artists.items[0];
-            $("#uri").attr("href", artist.uri).text($("#query").val());
-            return $.when(artist, getRelatedArtists(artist.id)
-                .then(function(response) { return response.artists; }));
-        })
-        .then(function(originalArtist, firstDegreeArtists) {
-            return $.when(buildGraph(originalArtist, firstDegreeArtists), firstDegreeArtists);
-        })
-        .then(function(firstDegreeGraph, firstDegreeArtists) {
-            var deferreds = [$.when(firstDegreeGraph)];
-            firstDegreeArtists.forEach(function(firstDegreeArtist) {
-                var artistDeferred = $.Deferred();
-                deferreds.push(artistDeferred);
-
-                getRelatedArtists(firstDegreeArtist.id)
-                    .then(function(response) {
-                        var firstDegreeArtistItem = {};
-                        firstDegreeArtistItem[firstDegreeArtist.name] = response.artists;
-                        artistDeferred.resolve(firstDegreeArtistItem);
-                    })
-            });
-
-            return $.when.apply(null, deferreds);
-        })
-        .then(function(firstDegreeGraph) {
-            var updatedGraph = firstDegreeGraph;
-            var firstDegreeArtistsMap = Array.prototype.slice.call(arguments, 1);
-
-            firstDegreeArtistsMap.forEach(function(secondDegreeArtists, i) {
-                updatedGraph = buildGraph({ name: Object.keys(secondDegreeArtists)[0] }, secondDegreeArtists[Object.keys(secondDegreeArtists)[0]], firstDegreeGraph);
-            });
-
-            return updatedGraph;
-        })
-        .then(function(graph) {
-            graph.nodes = _.uniqBy(graph.nodes, "id");
-            drawGraph(graph);
-        });
+        .then(getFirstDegreeArtists)
+        .then(buildFirstGraph)
+        .then(getSecondDegreeArtists)
+        .then(buildUpdatedGraph)
+        .then(drawGraph);
 }
 
 $("#submit").on("click", function(e) {
     e.preventDefault();
-    chain();
+    visuify();
 });
