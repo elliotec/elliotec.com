@@ -23,36 +23,34 @@ function buildGraph(originalArtist, artists, existingGraph) {
 
 function getRelatedArtists(artistId) {
     return $.ajax({
-        url: 'https://api.spotify.com/v1/artists/' + artistId + '/related-artists'
+        url: "https://api.spotify.com/v1/artists/" + artistId + "/related-artists"
     });
 }
 
 function getArtist(query) {
     return $.ajax({
-        url: 'https://api.spotify.com/v1/search',
+        url: "https://api.spotify.com/v1/search",
         data: {
             q: query,
-            type: 'artist'
+            type: "artist"
         }
     });
 }
 
 function drawGraph(graph){
     var svg = d3.select("svg"),
-        // width = +svg.attr("width"),
-        // height = +svg.attr("height");
-width = parseInt(d3.select("#chart").style("width")),
-height = parseInt(d3.select("#chart").style("height"))
-
-
+        width = parseInt(d3.select("#chart").style("width")),
+        height = parseInt(d3.select("#chart").style("height"))
 
     var simulation = d3.forceSimulation()
         .force("link", d3.forceLink().id(function(d) { return d.id; }))
-        .force("charge", d3.forceManyBody().strength(-80))
-        .force("center", d3.forceCenter(width / 2, height / 2));
+        .force("charge", d3.forceManyBody().strength(-100))
+        .force("center", d3.forceCenter(width / 2, height / 2.5));
+
     var div = d3.select("body").append("div")
         .attr("class", "tooltip")
         .style("opacity", 0);
+
     var link = svg.append("g")
         .attr("class", "links")
         .selectAll("line")
@@ -95,13 +93,12 @@ height = parseInt(d3.select("#chart").style("height"))
                 .duration(500)
                 .style("opacity", 0);
         })
-        .on('click', function(d, i) {
-            $('#query').val(d.id);
+        .on("click", function(d) {
+            $("#query").val(d.id);
             div.transition()
                 .duration(500)
                 .style("opacity", 0);
             chain()
-            window.location.href = d.uri;
         })
         .call(d3.drag()
             .on("start", dragstarted)
@@ -147,11 +144,17 @@ height = parseInt(d3.select("#chart").style("height"))
 }
 function chain(){
     $("svg").empty();
-    $("h3").text($('#query').val());
-    getArtist($('#query').val())
+    $("#message").empty();
+    $("#uri").empty();
+    getArtist($("#query").val())
         .then(function(response) {
+            if (!response.artists.items.length){
+                $("#message").text("¯\\_(ツ)_/¯ Can't find that artist - try again.");
+            }
             var artist = response.artists.items[0];
-            return $.when(artist, getRelatedArtists(artist.id).then(function(response) { return response.artists; }));
+            $("#uri").attr("href", artist.uri).text($("#query").val());
+            return $.when(artist, getRelatedArtists(artist.id)
+                .then(function(response) { return response.artists; }));
         })
         .then(function(originalArtist, firstDegreeArtists) {
             return $.when(buildGraph(originalArtist, firstDegreeArtists), firstDegreeArtists);
@@ -183,12 +186,12 @@ function chain(){
             return updatedGraph;
         })
         .then(function(graph) {
-            graph.nodes = _.uniqBy(graph.nodes, 'id');
+            graph.nodes = _.uniqBy(graph.nodes, "id");
             drawGraph(graph);
         });
 }
 
-$("#submit").on('click', function(e) {
+$("#submit").on("click", function(e) {
     e.preventDefault();
-    chain()
+    chain();
 });
