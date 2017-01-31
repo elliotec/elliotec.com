@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://elliotec.com/force-directed-artist-relationship-graph-with-d3-js-and-the-spotify-api/"/>
     <id>http://elliotec.com/force-directed-artist-relationship-graph-with-d3-js-and-the-spotify-api/</id>
     <published>2017-01-30T22:13:00-07:00</published>
-    <updated>2017-01-31T01:43:43-07:00</updated>
+    <updated>2017-01-31T01:46:31-07:00</updated>
     <author>
       <name>Michael Elliott</name>
     </author>
@@ -41,6 +41,8 @@
 &lt;p&gt;The most difficult part was structuring the data properly synchronously before executing D3 to draw the graph from it. I enlisted help from a few friends and my buddy Michal Scienski helped me get the promise chain to work properly, so kudos to him.&lt;/p&gt;
 
 &lt;p&gt;After the data structure was sorted out, it was pretty fast and fun to get D3 to do what I wanted with it. Between the excellent documentation and the &lt;a href="https://gist.github.com/mbostock"&gt;creator&amp;rsquo;s examples&lt;/a&gt;, I was able to build most of the features and functionality I wanted in a couple spare evenings. It was quickly apparent how powerful D3 can be and how many useful applications it has.&lt;/p&gt;
+
+&lt;p&gt;Ideas for its future include routing by artist query and rewriting it in ES-Latest without jQuery or Lodash.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href="https://github.com/elliotec/visuify"&gt;See the code on Github&lt;/a&gt;&lt;/p&gt;
 </content>
