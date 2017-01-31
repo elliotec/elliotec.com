@@ -2,6 +2,7 @@
 title: horizontal
 date: 2016-06-10 21:40 MDT
 tags:
+published: false
 ---
 
 Gotta do a modern full-stack JS app.

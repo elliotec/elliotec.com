@@ -2,6 +2,7 @@
 title: Grass is Always Greener
 date: 2016-08-24 11:36 MDT
 tags: jobs, employment, software, development, teaching
+published: false
 ---
 
 #"Dream Gig"

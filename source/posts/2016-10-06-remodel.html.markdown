@@ -2,6 +2,7 @@
 title: Remodel
 date: 2016-10-06 00:17 MDT
 tags: remodeling
+published: false
 ---
 
 In May, my wife Tiffany was looking online browsing through houses on Utah Real Estate randomly on a Saturday night. We had talked about buying a house, but were working on saving up for a down payment that would be a substantial percentage of our $400k maximum budget. We were planning on 2017, because we spent the equivalent of a down payment on our honeymoon to Iceland, Denmark, and Norway the year before and wanted to find the perfect one that would last us for a very long time.
