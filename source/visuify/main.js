@@ -39,8 +39,12 @@ function getArtist(query) {
 
 function drawGraph(graph){
     var svg = d3.select("svg"),
-        width = +svg.attr("width"),
-        height = +svg.attr("height");
+        // width = +svg.attr("width"),
+        // height = +svg.attr("height");
+width = parseInt(d3.select("#chart").style("width")),
+height = parseInt(d3.select("#chart").style("height"))
+
+
 
     var simulation = d3.forceSimulation()
         .force("link", d3.forceLink().id(function(d) { return d.id; }))
@@ -181,7 +185,6 @@ function chain(){
         .then(function(graph) {
             graph.nodes = _.uniqBy(graph.nodes, 'id');
             drawGraph(graph);
-
         });
 }
 
