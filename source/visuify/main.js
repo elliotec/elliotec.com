@@ -82,6 +82,7 @@ function buildUpdatedGraph(firstDegreeGraph) {
 
     return updatedGraph;
 }
+
 function drawGraph(graph){
     graph.nodes = _.uniqBy(graph.nodes, "id");
     var svg = d3.select("svg"),
