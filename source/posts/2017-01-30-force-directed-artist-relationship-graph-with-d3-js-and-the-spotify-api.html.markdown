@@ -27,5 +27,7 @@ The most difficult part was structuring the data properly synchronously before e
 
 After the data structure was sorted out, it was pretty fast and fun to get D3 to do what I wanted with it. Between the excellent documentation and the [creator's examples](https://gist.github.com/mbostock), I was able to build most of the features and functionality I wanted in a couple spare evenings. It was quickly apparent how powerful D3 can be and how many useful applications it has.
 
+Ideas for its future include routing by artist query and rewriting it in ES-Latest without jQuery or Lodash.
+
 [See the code on Github](https://github.com/elliotec/visuify)
 
