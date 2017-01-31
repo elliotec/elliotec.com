@@ -5,10 +5,46 @@
   <id>http://elliotec.com/</id>
   <link href="http://elliotec.com/"/>
   <link href="http://elliotec.com/feed.xml" rel="self"/>
-  <updated>2016-02-20T20:06:00-07:00</updated>
+  <updated>2017-01-30T22:13:00-07:00</updated>
   <author>
     <name>Michael Elliott</name>
   </author>
+  <entry>
+    <title>Force-directed relationship graph with D3.js and the Spotify Web API</title>
+    <link rel="alternate" href="http://elliotec.com/force-directed-artist-relationship-graph-with-d3-js-and-the-spotify-api/"/>
+    <id>http://elliotec.com/force-directed-artist-relationship-graph-with-d3-js-and-the-spotify-api/</id>
+    <published>2017-01-30T22:13:00-07:00</published>
+    <updated>2017-01-31T01:43:43-07:00</updated>
+    <author>
+      <name>Michael Elliott</name>
+    </author>
+    <content type="html">&lt;p&gt;I&amp;rsquo;ve always loved data visualization done well and admired interactive graphs and maps seen on &lt;a href="https://www.nytimes.com/interactive/2016/12/21/upshot/Mapping-the-Shadows-of-New-York-City.html"&gt;The New York Times&lt;/a&gt; and elsewhere.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://d3js.org/"&gt;D3.js&lt;/a&gt; is a powerful data visualization library in JavaScript written by the former editor of the New York Times graphics department. It uses a jQuery-like syntax to create and manipulate interactive charts on the web.&lt;/p&gt;
+
+&lt;p&gt;I finally made an excuse for myself to take a couple days and learn what D3 is all about in the form of a web app that maps a &lt;a href="https://en.wikipedia.org/wiki/Force-directed_graph_drawing"&gt;force-directed graph&lt;/a&gt; of related artists to the artist the user inputs.&lt;/p&gt;
+
+&lt;h2&gt;&lt;a href="http://elliotec.com/visuify"&gt;PLAY WITH VISUIFY&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;Click the link above to play around with it. Open the artist page in Spotify by clicking the artist name above the chart and hovering, clicking, and dragging the nodes and links do stuff too.&lt;/p&gt;
+
+&lt;p&gt;The flow of the program is:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;User inputs and submits the name of an artist&lt;/li&gt;
+&lt;li&gt;A query for the artist is made to the &lt;a href="https://developer.spotify.com/web-api/"&gt;Spotify Web API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The artist is stored, and another request is made for that artist&amp;rsquo;s related artists&lt;/li&gt;
+&lt;li&gt;Each related artist to the original query is stored along with their relationships, and another request is made for the second degree of related artists to the original - that is, the related artists of each related artist to the original query&lt;/li&gt;
+&lt;li&gt;Nodes and Links are drawn by D3 with specified interactions and styles based on the objects built in the previous step&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The most difficult part was structuring the data properly synchronously before executing D3 to draw the graph from it. I enlisted help from a few friends and my buddy Michal Scienski helped me get the promise chain to work properly, so kudos to him.&lt;/p&gt;
+
+&lt;p&gt;After the data structure was sorted out, it was pretty fast and fun to get D3 to do what I wanted with it. Between the excellent documentation and the &lt;a href="https://gist.github.com/mbostock"&gt;creator&amp;rsquo;s examples&lt;/a&gt;, I was able to build most of the features and functionality I wanted in a couple spare evenings. It was quickly apparent how powerful D3 can be and how many useful applications it has.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/elliotec/visuify"&gt;See the code on Github&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Modules and Monoliths</title>
     <link rel="alternate" href="http://elliotec.com/modules-and-monoliths/"/>
@@ -535,428 +571,6 @@ and Django, and SpringMVC and even jQuery. Let&amp;rsquo;s just come together to
 &lt;/ol&gt;
 
 &lt;p&gt;And thats it. Now you can write your Sass and keep your modular style structure nice and happy in Visual Studio and .NET projects. Hopefully this post will be deprecated at the release of the new versions.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Writing in the Deseret Alphabet with Web Fonts</title>
-    <link rel="alternate" href="http://elliotec.com/writing-in-the-deseret-alphabet/"/>
-    <id>http://elliotec.com/writing-in-the-deseret-alphabet/</id>
-    <published>2014-06-29T09:08:00-06:00</published>
-    <updated>2016-12-04T02:25:16-07:00</updated>
-    <author>
-      <name>Michael Elliott</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;em&gt;If you&amp;rsquo;re here for the code and want to skip most of the history and linguistics, &lt;a href="#code"&gt;click here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2&gt;The State of Deseret&lt;/h2&gt;
-
-&lt;p&gt;This past weekend I went camping in the &lt;a href="http://en.wikipedia.org/wiki/San_Rafael_Swell"&gt;San Rafael Swell&lt;/a&gt; and became interested in my native state of Utah&amp;rsquo;s history and unique culture.&lt;/p&gt;
-
-&lt;p&gt;Evidence of humans is found in Utah for as far back as 12,000 years ago. Various Native American tribes and cultures (Freemont, Puebloan, etc.) solely occupied the land until the first of the Mormon pioneers arrived with their leader &lt;a href="http://en.wikipedia.org/wiki/Brigham_Young"&gt;Brigham Young&lt;/a&gt; in 1847.&lt;/p&gt;
-
-&lt;p&gt;They settled in by vastly changing the desert environment into a habitable landscape with amazing feats of industry including irrigation and agriculture, timber and mining, and constructing communities from the resources around them. They created a society from scratch.&lt;/p&gt;
-
-&lt;p&gt;The settlers were very isolated and in a political and territorial limbo that went from technically belonging to Mexico, to a near immediate statehood proposal (&lt;a href="http://en.wikipedia.org/wiki/State_of_Deseret"&gt;The State of Deseret&lt;/a&gt;), and then remaining a U.S. territory - all the while settling most of the western United States including cities like Las Vegas, San Bernardino, most of Idaho and Nevada, a good chunk of Arizona and many other western states. &lt;/p&gt;
-
-&lt;p&gt;Brigham Young and the Mormons were the de facto government throughout this time (some say they still are) and as such were providing public necessities like schooling, and founded the precursor to the University of Utah, the University of Deseret.&lt;/p&gt;
-
-&lt;h2&gt;The Deseret Alphabet&lt;/h2&gt;
-
-&lt;p&gt;This was a time when there were several efforts to reform the traditional Latin English alphabet into something phonetic, more easily taught to immigrants and children, and optimized for handwriting. Brigham Young and the board of regents of the University of Deseret saw their position as an opportunity to get in on this action. &lt;/p&gt;
-
-&lt;p&gt;In addition to the aforementioned reasons for alphabet reform, the Mormon leadership believed a new writing system would benefit them in other ways such as more unification, solidifying their unique identity, and some speculate that there was a bit of a secret-keeping draw to it as well, though that claim has been refuted by several scholars.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="http://en.wikipedia.org/wiki/Deseret_alphabet"&gt;The Deseret Alphabet&lt;/a&gt; was developed over the course of several years and iterations beginning before the pioneers made their way across the plains, and finally had its first printing in 1859 by the &lt;a href="http://en.wikipedia.org/wiki/Deseret_News"&gt;Deseret News&lt;/a&gt;. Periodic sample prints of the alphabet came in the newspaper until the first books were published in the late 1860&amp;rsquo;s which sold very poorly. The alphabet died with Brigham Young in 1877.&lt;/p&gt;
-
-&lt;p&gt;It is amazing how much research there is on the Deseret Alphabet, with how few people seem to know about it. There has even been &lt;a href="http://www.deseretalphabet.info/classics/"&gt;an effort to print many classic literary masterpieces&lt;/a&gt; in the alphabet. It was introduced in Unicode in 2001, allowing for hobbyists, linguists, and historians to use the alphabet more easily.&lt;/p&gt;
-
-&lt;h2&gt;Learning the alphabet&lt;/h2&gt;
-
-&lt;p&gt;Here&amp;rsquo;s a pronunciation table:&lt;/p&gt;
-
-&lt;table&gt;&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Glyph&lt;/th&gt;
-&lt;th&gt;IPA&lt;/th&gt;
-&lt;th&gt;Sound&lt;/th&gt;
-&lt;th&gt;Glyph&lt;/th&gt;
-&lt;th&gt;IPA&lt;/th&gt;
-&lt;th&gt;Sound&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;i class="adamic"&gt; 𐐀&lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/iː/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;e&amp;rdquo; in me&lt;/td&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐊&lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/ʌ/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;u&amp;rdquo; in luck&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐁&lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/eɪ/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;ay&amp;rdquo; in day&lt;/td&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐋&lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/ʊ/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;u&amp;rdquo; in pull&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐂&lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/ɑː/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;a&amp;rdquo; in cart&lt;/td&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐌&lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/aɪ/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;y&amp;rdquo; in my&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐃&lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/ɔː/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;au&amp;rdquo; in caught&lt;/td&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐍 &lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/aʊ/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;ow&amp;rdquo; in cow&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐄&lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/oʊ/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;o&amp;rdquo; in go&lt;/td&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐎&lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/w/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;w&amp;rdquo; in wow&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐅 &lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/uː/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;oo&amp;rdquo; in do&lt;/td&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐏 &lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/j/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;y&amp;rdquo; in yes&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐆&lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/ɪ/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;i&amp;rdquo; in sit&lt;/td&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐐&lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/h/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;h&amp;rdquo; in hi&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐇 &lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/ɛ/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;e&amp;rdquo; in bet&lt;/td&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐑&lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/p/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;p&amp;rdquo; in pet&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐈 &lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/æ/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;a&amp;rdquo; in cat&lt;/td&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐒&lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/b/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;b&amp;rdquo; in boy&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐉 &lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/ɒ/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;o&amp;rdquo; in lot&lt;/td&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐓&lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/t/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;t&amp;rdquo; in tank&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-
-&lt;table&gt;&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Glyph&lt;/th&gt;
-&lt;th&gt;IPA&lt;/th&gt;
-&lt;th&gt;Sound&lt;/th&gt;
-&lt;th&gt;Glyph&lt;/th&gt;
-&lt;th&gt;IPA&lt;/th&gt;
-&lt;th&gt;Sound&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐔&lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/d/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;d&amp;rdquo; in dog&lt;/td&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐞  &lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/z/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;z&amp;rdquo; in zoo&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐕&lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/tʃ/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;ch&amp;rdquo; in church&lt;/td&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐟&lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/ʃ/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;sh&amp;rdquo; in ship&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐖 &lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/dʒ/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;j&amp;rdquo; in jump&lt;/td&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐠&lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/ʒ/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;s&amp;rdquo; in measure&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐗 &lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/k/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;k&amp;rdquo; in kite&lt;/td&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐡&lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/r/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;r&amp;rdquo; in red&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐘&lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/ɡ/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;g&amp;rdquo; in girl&lt;/td&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐢&lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/l/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;l&amp;rdquo; in love&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐙&lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/f/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;f&amp;rdquo; in food&lt;/td&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐣 &lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/m/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;m&amp;rdquo; in mom&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐚&lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/v/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;v&amp;rdquo; in voice&lt;/td&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐤 &lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/n/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;n&amp;rdquo; in night&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐛&lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/θ/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;th&amp;rdquo; in think&lt;/td&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐥 &lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/ŋ/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;ng&amp;rdquo; in sing&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐜 &lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/ð/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;th&amp;rdquo; in that&lt;/td&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐦&lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/ɔɪ/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;oy&amp;rdquo; in boy&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐝 &lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/s/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;s&amp;rdquo; in sun&lt;/td&gt;
-&lt;td&gt;&lt;i class="adamic"&gt;𐐧 &lt;/i&gt;&lt;/td&gt;
-&lt;td&gt;/juː/&lt;/td&gt;
-&lt;td&gt;&amp;ldquo;yew&amp;rdquo; in yew&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-
-&lt;p&gt;So, ostensibly thats kind of a lot. 40 new unique characters and sounds to replace a very well known system seems a bit daunting, which may be part of the reason it had a hard time getting adopted by the intended users and audience. &lt;/p&gt;
-
-&lt;p&gt;In my opinion, other than the glyphs looking nothing at all like their Latin counterparts, the alphabet is rather easy to learn since you are just reassigning a symbol to a sound in English. There is no grammar or syntax change, it&amp;rsquo;s really just like mind-mapping 40 pictures to 40 words for which a few hours of flash card study would be quite sufficient. (Though, this isn&amp;rsquo;t the first time I&amp;rsquo;ve learned a dead script for no reason. I once became fluent in the ancient &lt;a href="http://en.wikipedia.org/wiki/Baybayin"&gt;Baybayin Tagalog script&lt;/a&gt; in a strange bout of manic overachievement.)&lt;/p&gt;
-
-&lt;h2&gt;Limitations of the alphabet&lt;/h2&gt;
-
-&lt;p&gt;The alphabet in its official form was created to emulate the pronunciation of the settlers, who came primarily from New England. This means when you read out loud a publication in the Deseret Alphabet, it&amp;rsquo;s going to sound like you&amp;rsquo;re talking with the accent of a North Easterner in the 1860&amp;rsquo;s. &lt;/p&gt;
-
-&lt;p&gt;A good example of change is &lt;i class="adamic"&gt;&amp;ldquo;𐐃&amp;rdquo;&lt;/i&gt;, which in present-day Utah essentially doesn&amp;rsquo;t exist. Think of a Long Island native saying something like &amp;ldquo;I thought you caught it when you fought it,&amp;rdquo; or something along those lines. You know what I mean about the vowels in those words being non-existent and replaced simply with &amp;ldquo;ah&amp;rdquo; in the western United States.&lt;/p&gt;
-
-&lt;p&gt;Another limitation is the lack of a schwa (/ə/) vowel. It sounds like the &amp;ldquo;e&amp;rdquo; in &amp;ldquo;the.&amp;rdquo; Historically the schwa has been written as &lt;i class="adamic"&gt;𐐊&lt;/i&gt;, which I find odd since the symbol &lt;i class="adamic"&gt;𐐋&lt;/i&gt; is much closer in my opinion. My blog, my rules, so I&amp;rsquo;ll use &lt;i class="adamic"&gt;𐐋&lt;/i&gt; as the schwa from now on. Also, Deseret is cased, but the capital letters are just bigger versions of the lower case ones. So I&amp;rsquo;m going to skip using the lower case for readability and ease of use.&lt;/p&gt;
-
-&lt;p&gt;&lt;a class="anchor" id="code"&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2&gt;Now for the fun part&lt;/h2&gt;
-
-&lt;p&gt;I went about scouring the web for better Deseret fonts. I had a lot of trouble finding a good sans-serif font. The primary resource for these and the serif fonts I found were by &lt;a href="http://copper.chem.ucla.edu/~jericks/index.html"&gt;Joshua Erickson&lt;/a&gt;, but alas, the entire sans-serif collection has been disabled. Bummer. At least I could use some of his serif fonts that were less harsh on the eyes than the default, and there were a few sans-serif fonts his site led me to. Here are a few font samples:&lt;/p&gt;
-
-&lt;p class="adamic"&gt;1. 𐐈𐐔𐐈𐐣𐐆𐐗𐐒𐐀： 𐐀𐐁𐐂𐐃𐐄𐐅𐐆𐐇𐐈𐐉𐐊𐐋𐐌𐐍𐐎𐐏𐐐𐐑𐐒𐐓𐐔𐐕𐐖𐐗𐐘𐐙𐐚𐐛𐐜𐐝𐐞𐐠𐐡𐐢𐐣𐐤𐐥𐐦𐐧𐐟 &lt;/p&gt;
-
-&lt;p class="huney"&gt;2. H_NIBI：ABCDEFGHIJKLMNOPQRSTUVWXYZŽÀÁÂÃÊÎÐÑÔÕÛÞ &lt;/p&gt;
-
-&lt;p class="deseret-sans"&gt;3. DEZÒRET: ABCDEFGHIJKLMNOPQRSTUVWXYZÅÆÈÊÌÍÒØÛŒˉ &lt;/p&gt;
-
-&lt;p&gt;Unfortunately 2 and 3 (the two sans-serif) are mapped to two separate and seemingly arbitrary encodings rather than the proper Deseret Unicode characters like the serif font at the top of that list. So even though 2 (HuneyBee) is my favorite of the three, its nowhere near as easy to implement as 1 (AdamicBee). &lt;/p&gt;
-
-&lt;p&gt;Here is the HTML source of those example fonts:&lt;/p&gt;
-&lt;pre class="highlight html"&gt;&lt;code&gt;&lt;span class="nt"&gt;&amp;lt;p&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"adamic"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;1. 𐐈𐐔𐐈𐐣𐐆𐐗𐐒𐐀： 𐐀𐐁𐐂𐐃𐐄𐐅𐐆𐐇𐐈𐐉𐐊𐐋𐐌𐐍𐐎𐐏𐐐𐐑𐐒𐐓𐐔𐐕𐐖𐐗𐐘𐐙𐐚𐐛𐐜𐐝𐐞𐐠𐐡𐐢𐐣𐐤𐐥𐐦𐐧𐐟&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-
-&lt;span class="nt"&gt;&amp;lt;p&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"huney"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;2. H_NIBI：ABCDEFGHIJKLMNOPQRSTUVWXYZŽÀÁÂÃÊÎÐÑÔÕÛÞ&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-
-&lt;span class="nt"&gt;&amp;lt;p&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;"deseret-sans"&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;3. DEZÒRET: ABCDEFGHIJKLMNOPQRSTUVWXYZÅÆÈÊÌÍÒØÛŒˉ&lt;span class="nt"&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;As you can see, 1 is in the proper Deseret Unicode, and 2 and 3&amp;hellip; aren&amp;rsquo;t. Maybe they are relics of the pre-Unicode days of Deseret, but either way I&amp;rsquo;ll be leaving them out when trying to write in it.&lt;/p&gt;
-
-&lt;p&gt;Almost all of the fonts I tried were one .ttf file and I needed to convert them to web fonts. This was ridiculously easy with &lt;a href="http://fontprep.com/"&gt;FontPrep&lt;/a&gt;. All I had to do was drag the .ttf file onto the app, and it generated a whole package of web font formats with the corresponding CSS. I highly recommend that app if you ever need to generate custom web fonts.&lt;/p&gt;
-
-&lt;p&gt;While I&amp;rsquo;m at it, I may as well explain how I got these custom fonts to work in the asset pipeline using Sass.&lt;/p&gt;
-
-&lt;p&gt;First, I created a /fonts directory where the rest of my asset directories are:&lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;(Middleman)
--source
-  -fonts
-  -images
-  -javascripts
-  -stylesheets
-  ...etc
-
-(Rails)
--app
-  -assets
-    -fonts
-    -images
-    -javascripts
-    -stylesheets
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Next, FontPrep generates four files when it receives a .ttf- .eot, .svg, .woff, and another .ttf. I put these files in the /fonts directory for all three fonts I&amp;rsquo;m using:&lt;/p&gt;
-&lt;pre class="highlight plaintext"&gt;&lt;code&gt;-source
-  -fonts
-    -AdamicBee.eot
-    -AdamicBee.svg
-    -AdamicBee.woff
-    -AdamicBee.ttf
-    -Huneybee.eot
-    -Huneybee.svg
-    -Huneybee.woff
-    -Huneybee.ttf
-    -deseret.eot
-    -deseret.svg
-    -deseret.woff
-    -deseret.ttf
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Since I&amp;rsquo;m using &lt;a href="http://bourbon.io"&gt;Bourbon&lt;/a&gt;, I can use the magnificent &lt;a href="http://bourbon.io/docs/#font-face"&gt;font-face mixin&lt;/a&gt; (I&amp;rsquo;m also using &lt;a href="http://bitters.bourbon.io"&gt;Bitters&lt;/a&gt;, so I placed these 3 lines at the bottom of the _typography.scss partial):&lt;/p&gt;
-&lt;pre class="highlight scss"&gt;&lt;code&gt;&lt;span class="c1"&gt;// /bitters/_typography.scss
-&lt;/span&gt;&lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;font-face&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'Huneybee'&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'/fonts/Huneybee'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;font-face&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'AdamicBee'&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'/fonts/AdamicBee'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="k"&gt;@include&lt;/span&gt; &lt;span class="nd"&gt;font-face&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'deseret'&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'/fonts/deseret'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This compiles the following CSS:&lt;/p&gt;
-&lt;pre class="highlight css"&gt;&lt;code&gt;&lt;span class="k"&gt;@font-face&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="nl"&gt;font-family&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;'HuneyBee'&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="nl"&gt;src&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url('/fonts/Huneybee.eot')&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* IE9 Compat Modes */&lt;/span&gt;
-  &lt;span class="nl"&gt;src&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url('/fonts/Huneybee.eot?#iefix')&lt;/span&gt; &lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;'embedded-opentype'&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="c"&gt;/* IE6-IE8 */&lt;/span&gt;
-       &lt;span class="sx"&gt;url('/fonts/Huneybee.woff')&lt;/span&gt; &lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;'woff'&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="c"&gt;/* Modern Browsers */&lt;/span&gt;
-       &lt;span class="sx"&gt;url('/fonts/Huneybee.ttf')&lt;/span&gt;  &lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;'truetype'&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="c"&gt;/* Safari, Android, iOS */&lt;/span&gt;
-       &lt;span class="sx"&gt;url('/fonts/Huneybee.svg#aa041304602ddc161943388b95e8c94f')&lt;/span&gt; &lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;'svg'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c"&gt;/* Legacy iOS */&lt;/span&gt;
-
-  &lt;span class="nl"&gt;font-style&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;   &lt;span class="nb"&gt;normal&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="nl"&gt;font-weight&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;  &lt;span class="m"&gt;400&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-
-&lt;span class="k"&gt;@font-face&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="nl"&gt;font-family&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;'AdamicBee'&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="nl"&gt;src&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url('/fonts/AdamicBee.eot')&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* IE9 Compat Modes */&lt;/span&gt;
-  &lt;span class="nl"&gt;src&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url('/fonts/AdamicBee.eot?#iefix')&lt;/span&gt; &lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;'embedded-opentype'&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="c"&gt;/* IE6-IE8 */&lt;/span&gt;
-       &lt;span class="sx"&gt;url('/fonts/AdamicBee.woff')&lt;/span&gt; &lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;'woff'&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="c"&gt;/* Modern Browsers */&lt;/span&gt;
-       &lt;span class="sx"&gt;url('/fonts/AdamicBee.ttf')&lt;/span&gt;  &lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;'truetype'&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="c"&gt;/* Safari, Android, iOS */&lt;/span&gt;
-       &lt;span class="sx"&gt;url('/fonts/AdamicBee.svg#159e7fbb74bf1cefffafc0996ebf38fb')&lt;/span&gt; &lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;'svg'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c"&gt;/* Legacy iOS */&lt;/span&gt;
-
-  &lt;span class="nl"&gt;font-style&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;   &lt;span class="nb"&gt;normal&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="nl"&gt;font-weight&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;  &lt;span class="m"&gt;400&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-
-&lt;span class="k"&gt;@font-face&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="nl"&gt;font-family&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;'Deseret-sans'&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="nl"&gt;src&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url('/fonts/deseret.eot')&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* IE9 Compat Modes */&lt;/span&gt;
-  &lt;span class="nl"&gt;src&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="sx"&gt;url('/fonts/deseret.eot?#iefix')&lt;/span&gt; &lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;'embedded-opentype'&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="c"&gt;/* IE6-IE8 */&lt;/span&gt;
-       &lt;span class="sx"&gt;url('/fonts/deseret.woff')&lt;/span&gt; &lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;'woff'&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="c"&gt;/* Modern Browsers */&lt;/span&gt;
-       &lt;span class="sx"&gt;url('/fonts/deseret.ttf')&lt;/span&gt;  &lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;'truetype'&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="c"&gt;/* Safari, Android, iOS */&lt;/span&gt;
-       &lt;span class="sx"&gt;url('/fonts/deseret.svg#c44a3474510e076f453a95eeee3a1178')&lt;/span&gt; &lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;'svg'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c"&gt;/* Legacy iOS */&lt;/span&gt;
-
-  &lt;span class="nl"&gt;font-style&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;   &lt;span class="nb"&gt;normal&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="nl"&gt;font-weight&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;  &lt;span class="m"&gt;400&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Thats about as bullet-proof cross-browser compatible as you can get. A good example for why I think Sass is indispensable in modern web development. 3 simple scss lines compile to 34 lines of css with the best of the best practices.&lt;/p&gt;
-
-&lt;p&gt;Finally, I just gave each separate font its own class in the scss that I could apply to any HTML element:&lt;/p&gt;
-&lt;pre class="highlight scss"&gt;&lt;code&gt;&lt;span class="c1"&gt;// /posts.scss
-&lt;/span&gt;  &lt;span class="nc"&gt;.huney&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="nl"&gt;font-family&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"HuneyBee"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="p"&gt;}&lt;/span&gt;
-  &lt;span class="nc"&gt;.deseret-sans&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="nl"&gt;font-family&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"deseret"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="p"&gt;}&lt;/span&gt;
-  &lt;span class="nc"&gt;.adamic&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="nl"&gt;font-family&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;"AdamicBee"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;It should also be noted that I&amp;rsquo;m using Markdown for these posts, which means in this special case I just used the HTML you saw above in the Markdown file to apply those classes to the unique font examples.&lt;/p&gt;
-
-&lt;h2&gt;And finally, a real writing sample&lt;/h2&gt;
-
-&lt;blockquote class="adamic"&gt;𐐁 𐐐𐐧𐐣𐐊𐐤 𐐒𐐀𐐏𐐀𐐥 𐐟𐐋𐐔 𐐒𐐀 𐐁𐐒𐐋𐐢 𐐓𐐅 𐐕𐐁𐐤𐐖 𐐊 𐐔𐐌𐐑𐐋𐐡, 𐐑𐐢𐐈𐐤 𐐊𐐤 𐐆𐐤𐐚𐐁𐐠𐐊𐐤, 𐐒𐐋𐐕𐐋𐐡 𐐊 𐐐𐐉𐐘, 𐐗𐐂𐐤 𐐊 𐐟𐐆𐐑, 𐐔𐐆𐐞𐐌𐐤 𐐊 𐐒𐐆𐐢𐐔𐐀𐐥, 𐐡𐐌𐐓 𐐊 𐐝𐐂𐐤𐐆𐐓, 𐐒𐐈𐐢𐐈𐐤𐐝 𐐊𐐗𐐍𐐤𐐓𐐝, 𐐒𐐆𐐢𐐔 𐐊 𐐎𐐉𐐢, 𐐝𐐇𐐓 𐐊 𐐒𐐄𐐤, 𐐗𐐊𐐣𐐙𐐋𐐡𐐓 𐐜𐐋 𐐔𐐌𐐀𐐥, 𐐓𐐁𐐗 𐐃𐐡𐐔𐐋𐐡𐐝, 𐐘𐐆𐐚 𐐃𐐡𐐔𐐋𐐡𐐝, 𐐗𐐄𐐂𐐑𐐋𐐡𐐁𐐓, 𐐈𐐗𐐓 𐐊𐐢𐐄𐐤, 𐐝𐐂𐐢𐐚 𐐀𐐗𐐎𐐁𐐠𐐊𐐤𐐝, 𐐈𐐤𐐊𐐢𐐌𐐞 𐐊 𐐤𐐅 𐐑𐐡𐐂𐐒𐐢𐐆𐐣, 𐐑𐐆𐐕 𐐣𐐊𐐤𐐧𐐡, 𐐑𐐡𐐄𐐘𐐡𐐈𐐣 𐐊 𐐗𐐊𐐣𐐑𐐧𐐓𐐋𐐡, 𐐗𐐋𐐗 𐐊 𐐓𐐁𐐝𐐓𐐀 𐐣𐐀𐐢, 𐐙𐐌𐐓 𐐀𐐙𐐆𐐟𐐆𐐤𐐓𐐢𐐀, 𐐔𐐌 𐐘𐐈𐐢𐐈𐐤𐐓𐐢𐐀. 𐐝𐐑𐐇𐐟𐐋𐐢𐐌𐐞𐐁𐐟𐐊𐐤 𐐆𐐞 𐐙𐐄𐐡 𐐆𐐤𐐝𐐇𐐗𐐓𐐝.&lt;br&gt;&lt;br&gt;－ 𐐡𐐉𐐒𐐋𐐡𐐓 𐐐𐐌𐐤𐐢𐐌𐐤&lt;/blockquote&gt;
-
-&lt;p&gt;That says: &lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;A human being should be able to change a diaper, plan an invasion, butcher a hog, conn a ship, design a building, write a sonnet, balance accounts, build a wall, set a bone, comfort the dying, take orders, give orders, cooperate, act alone, solve equations, analyze a new problem, pitch manure, program a computer, cook a tasty meal, fight efficiently, die gallantly. Specialization is for insects.&lt;br&gt;&lt;br&gt;
-- Robert Heinlein&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;You might not notice, but the Deseret version of this quote uses 48 fewer characters than our alphabet. There&amp;rsquo;s a real argument for efficiency there. You&amp;rsquo;re never doubling characters or organizing odd vowels into diphthongs, saving lots of space.&lt;/p&gt;
-
-&lt;blockquote class="adamic"&gt;𐐎𐐀 𐐂𐐡 𐐖𐐋𐐝𐐓 𐐊𐐤 𐐈𐐔𐐚𐐈𐐤𐐝𐐓 𐐒𐐡𐐀𐐔 𐐊𐐚 𐐣𐐊𐐥𐐗𐐀𐐞 𐐂𐐤 𐐊 𐐣𐐌𐐤𐐋𐐡 𐐑𐐢𐐈𐐤𐐆𐐓 𐐊𐐚 𐐊 𐐚𐐇𐐡𐐀 𐐈𐐚𐐋𐐡𐐆𐐖 𐐝𐐓𐐂𐐡. 𐐜𐐈𐐓 𐐣𐐁𐐗𐐝 𐐊𐐝 𐐝𐐊𐐣𐐛𐐀𐐥 𐐚𐐇𐐡𐐀 𐐝𐐑𐐇𐐟𐐋𐐢.&lt;br&gt;&lt;br&gt;－𐐝𐐓𐐀𐐚𐐆𐐤 𐐐𐐃𐐗𐐀𐐥&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;We are just an advanced breed of monkeys on a minor planet of a very average star. But we can understand the Universe. That makes us something very special.&lt;br&gt;&lt;br&gt;
-- Steven Hawking&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;That example saved 51 characters, down nearly a third of the characters used in the current alphabet.&lt;/p&gt;
-
-&lt;p&gt;This is very tedious to type, however. I mapped my keys to each of the Deseret characters using &lt;a href="http://www.boastr.net/"&gt;Better Touch Tool&lt;/a&gt;, a handy tool for lots of things, but it totally wasn&amp;rsquo;t worth it as I ended up being faster by just copy/pasting the characters from the chart in order. &lt;/p&gt;
-
-&lt;p&gt;I thought about writing little sticky note characters and putting them on their corresponding keys, but I figured I already spent this much time learning a dead alphabet and my use of it will most likely die with the end of this post.&lt;/p&gt;
-
-&lt;p&gt;Alright, one more thing. This is the logo of one of my favorite bars in Salt Lake City, the &lt;a href="http://www.bourbonhouseslc.com/"&gt;Bourbon House&lt;/a&gt;. I&amp;rsquo;m using it without permission so if they ask me to take it down I will.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="../images/bourbon.png"&gt;&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s a characature of Brigham Young holding a glass of bourbon,something he ironically was known to do (he even built the first whiskey distillery in Utah, go figure). It might be hard to see, but the Deseret there says: &lt;blockquote class="adamic"&gt;𐐒𐐁𐐁𐐡 𐐀𐐝 𐐑𐐡𐐄𐐄𐐙 𐐓𐐐𐐂𐐓 𐐘𐐄𐐔 𐐢𐐄𐐚𐐁𐐝 𐐋𐐝&lt;/blockquote&gt;&lt;/p&gt;
-
-&lt;p&gt;To a native Deseret reader, that would be utter nonsense. It sounds something like:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Be-eer eess proh-ohff t-haut gohd lohveeess oooss&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;It&amp;rsquo;s safe to assume that it&amp;rsquo;s trying to say &amp;ldquo;Beer is proof that God loves us.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;So a more proper translation would be along the lines of:&lt;/p&gt;
-
-&lt;blockquote class="adamic"&gt;𐐒𐐁𐐡 𐐆𐐞 𐐑𐐡𐐅𐐙 𐐜𐐈𐐓 𐐘𐐉𐐔 𐐢𐐊𐐚𐐞 𐐊𐐝&lt;/blockquote&gt;
-
-&lt;p&gt;I don&amp;rsquo;t blame them for not getting a dead script kinda wrong, especially because it&amp;rsquo;s funny and I like them a lot.&lt;/p&gt;
-
-&lt;p&gt;If you want to learn more about the Deseret Alphabet, here are some resources I used:&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Update: A new, far superior &lt;a href="http://2deseret.com"&gt;Deseret Translator&lt;/a&gt; has been created by Nathan Hadfield. He referenced this article as a resource that helped him build it. Please check it out!&lt;/em&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="http://www.deseretalphabet.org//"&gt;The quasi-official Deseret Alphabet site&lt;/a&gt; &lt;em&gt;This site had almost all the resources I used neatly in one place, and seems to be maintained quite frequently.&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="http://deseretalphabet.blogspot.com/"&gt;Deseret Alphabet Blog&lt;/a&gt; &lt;em&gt;The owner of this blog has translated over &lt;a href="http://www.deseretalphabet.info/XKCD/1385.html"&gt;50% of the XKCD comics&lt;/a&gt; into Deseret, an impressive feat no matter how pointless.&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="http://deseret.in/"&gt;The Deseret Alphabet Translator&lt;/a&gt; &lt;em&gt;Still in beta, and some of the translations are pretty broken. I submitted a &lt;a href="https://github.com/sam1am/deseret.in/pull/1"&gt;pull request&lt;/a&gt; with a few fixes that would hopefully improve it, if he merges it. (Update: disregard this resource and redirect yourself &lt;a href="http://2deseret.com"&gt;here&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Anyway, thats enough of that. I probably should&amp;rsquo;ve spent this time learning a new programming language or something, but I learned a ton about my homeland&amp;rsquo;s history, web fonts, typography, linguistics, and encoding so there was no lack of intellectual stimulation. &lt;/p&gt;
-
-&lt;p&gt;Hope you learned something too.&lt;/p&gt;
-
-&lt;p&gt;-Mike&lt;/p&gt;
 </content>
   </entry>
 </feed>
