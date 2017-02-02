@@ -68,6 +68,9 @@ svg {
     display: block;
     background-color: #282828;
 }
+p {
+    margin: 0;
+}
 #uri {
     display: block;
     color:#2AB759;
