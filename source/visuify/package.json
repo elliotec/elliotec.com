@@ -1,0 +1,36 @@
+{
+  "name": "visuify",
+  "version": "1.0.0",
+  "description": "Force-directed D3 relationship graph of artists on Spotify",
+  "main": "main.js",
+  "scripts": {
+    "clean": "rm -rf ./dst && mkdir dst",
+    "prestart": "npm run clean; babel -d ./dst ./src -s",
+    "start": "ENV=production node dst/index.js",
+    "dev": "ENV=dev babel-watch src/index.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elliotec/visuify.git"
+  },
+  "keywords": [
+    "spotify",
+    "d3"
+  ],
+  "homepage": "https://github.com/elliotec/visuify#readme",
+  "author": "Mike Elliott",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elliotec/visuify/issues"
+  },
+  "dependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.22.1",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "jquery": "^3.1.1",
+    "jsdom": "^9.10.0",
+    "whatwg-fetch": "^2.0.2"
+  }
+}

@@ -1,9 +1,3 @@
-import 'whatwg-fetch';
-import $ from 'jquery';
-
-window.$ = $
-
-fetch();
 function addToGraph(graphObj, artist, nodeObj, linkObj) {
     nodeObj.id = artist.name;
     linkObj.target = artist.name;
@@ -14,13 +8,13 @@ function addToGraph(graphObj, artist, nodeObj, linkObj) {
 }
 
 function buildGraph(originalArtist, artists, existingGraph) {
-    var graphObj = existingGraph || {
+    let graphObj = existingGraph || {
         nodes: [{id: originalArtist.name, uri: originalArtist.uri}],
         links: []
     };
-    graphObj = artists.reduce(function(accum, artist) {
-        var nodeObj = {id: artist.name, uri: artist.uri};
-        var linkObj = {source: originalArtist.name};
+    graphObj = artists.reduce((accum, artist) => {
+        const nodeObj = {id: artist.name, uri: artist.uri};
+        const linkObj = {source: originalArtist.name};
         return addToGraph(graphObj, artist, nodeObj, linkObj);
     }, graphObj);
 
@@ -28,18 +22,14 @@ function buildGraph(originalArtist, artists, existingGraph) {
 }
 
 function getArtist(query) {
-    return $.ajax({
-        url: "https://api.spotify.com/v1/search",
-        data: {
-            q: query,
-            type: "artist"
-        }
-    });
+    const url = `https://api.spotify.com/v1/search?q=${query}&type=artist`;
+    return fetch(url).then(function(response) { return response.json()})
+    .then(function(json){ console.log(json); return json});
 }
 
 function getRelatedArtists(artistId) {
     return $.ajax({
-        url: "https://api.spotify.com/v1/artists/" + artistId + "/related-artists"
+        url: `https://api.spotify.com/v1/artists/${artistId}/related-artists`
     });
 }
 
@@ -47,21 +37,22 @@ function getFirstDegreeArtists(response) {
     if (!response.artists.items.length){
         $("#message").text("¯\\_(ツ)_/¯ Can't find that artist - try again.");
     }
-    var artist = response.artists.items[0];
+    const artist = response.artists.items[0];
+    console.log(artist)
     $("#uri").attr("href", artist.uri).text($("#query").val());
     return $.when(artist, getRelatedArtists(artist.id)
-        .then(function(response) { return response.artists; }));
+        .then(response => response.artists));
 }
 
 function getSecondDegreeArtists(firstDegreeGraph, firstDegreeArtists) {
-    var deferreds = [$.when(firstDegreeGraph)];
-    firstDegreeArtists.forEach(function(firstDegreeArtist) {
-        var artistDeferred = $.Deferred();
+    const deferreds = [$.when(firstDegreeGraph)];
+    firstDegreeArtists.forEach(firstDegreeArtist => {
+        const artistDeferred = $.Deferred();
         deferreds.push(artistDeferred);
 
         getRelatedArtists(firstDegreeArtist.id)
-            .then(function(response) {
-                var firstDegreeArtistItem = {};
+            .then(response => {
+                const firstDegreeArtistItem = {};
                 firstDegreeArtistItem[firstDegreeArtist.name] = response.artists;
                 artistDeferred.resolve(firstDegreeArtistItem);
             })
@@ -75,10 +66,10 @@ function buildFirstGraph(originalArtist, firstDegreeArtists) {
 }
 
 function buildUpdatedGraph(firstDegreeGraph) {
-    var updatedGraph = firstDegreeGraph;
-    var firstDegreeArtistsMap = Array.prototype.slice.call(arguments, 1);
+    let updatedGraph = firstDegreeGraph;
+    const firstDegreeArtistsMap = Array.prototype.slice.call(arguments, 1);
 
-    firstDegreeArtistsMap.forEach(function(secondDegreeArtists, i) {
+    firstDegreeArtistsMap.forEach((secondDegreeArtists, i) => {
         updatedGraph = buildGraph(
             { name: Object.keys(secondDegreeArtists)[0] },
             secondDegreeArtists[Object.keys(secondDegreeArtists)[0]],
@@ -91,40 +82,40 @@ function buildUpdatedGraph(firstDegreeGraph) {
 
 function drawGraph(graph){
     graph.nodes = _.uniqBy(graph.nodes, "id");
-    var svg = d3.select("svg"),
-        width = parseInt(d3.select("#chart").style("width")),
-        height = parseInt(d3.select("#chart").style("height"))
+    const svg = d3.select("svg");
+    const width = parseInt(d3.select("#chart").style("width"));
+    const height = parseInt(d3.select("#chart").style("height"));
 
-    var simulation = d3.forceSimulation()
-        .force("link", d3.forceLink().id(function(d) { return d.id; }))
+    const simulation = d3.forceSimulation()
+        .force("link", d3.forceLink().id(d => d.id))
         .force("charge", d3.forceManyBody().strength(-100))
         .force("center", d3.forceCenter(width / 2, height / 2.5));
 
-    var div = d3.select("body").append("div")
+    const div = d3.select("body").append("div")
         .attr("class", "tooltip")
         .style("opacity", 0);
 
-    var link = svg.append("g")
+    const link = svg.append("g")
         .attr("class", "links")
         .selectAll("line")
         .data(graph.links)
         .enter().append("line")
         .attr("stroke-width", 2)
-        .on("mouseover", function(d) {
+        .on("mouseover", d => {
             div.transition()
                 .duration(200)
                 .style("opacity", .9);
-            div.html(d.source.id + " --- " + d.target.id)
-                .style("left", (d3.event.pageX) + "px")
-                .style("top", (d3.event.pageY - 28) + "px");
+            div.html(`${d.source.id} --- ${d.target.id}`)
+                .style("left", `${d3.event.pageX}px`)
+                .style("top", `${d3.event.pageY - 28}px`);
         })
-        .on("mouseout", function(d) {
+        .on("mouseout", d => {
             div.transition()
                 .duration(500)
                 .style("opacity", 0);
         });
 
-    var node = svg.append("g")
+    const node = svg.append("g")
         .attr("class", "nodes")
         .selectAll("circle")
         .data(graph.nodes)
@@ -137,8 +128,8 @@ function drawGraph(graph){
                 .duration(200)
                 .style("opacity", .9)
             div.html(d.id)
-                .style("left", (d3.event.pageX) + "px")
-                .style("top", (d3.event.pageY - 28) + "px");
+                .style("left", `${d3.event.pageX}px`)
+                .style("top", `${d3.event.pageY - 28}px`);
         })
         .on("mouseout", function(d) {
             d3.select(this).transition().duration(200).attr("r", 8)
@@ -146,7 +137,7 @@ function drawGraph(graph){
                 .duration(500)
                 .style("opacity", 0);
         })
-        .on("click", function(d) {
+        .on("click", d => {
             $("#query").val(d.id);
             div.transition()
                 .duration(500)
@@ -168,14 +159,14 @@ function drawGraph(graph){
 
     function ticked() {
         link
-            .attr("x1", function(d) { return d.source.x; })
-            .attr("y1", function(d) { return d.source.y; })
-            .attr("x2", function(d) { return d.target.x; })
-            .attr("y2", function(d) { return d.target.y; });
+            .attr("x1", d => d.source.x)
+            .attr("y1", d => d.source.y)
+            .attr("x2", d => d.target.x)
+            .attr("y2", d => d.target.y);
 
         node
-            .attr("cx", function(d) { return d.x; })
-            .attr("cy", function(d) { return d.y; });
+            .attr("cx", d => d.x)
+            .attr("cy", d => d.y);
     }
 
     function dragstarted(d) {
@@ -208,7 +199,7 @@ function visuify(){
         .then(drawGraph);
 }
 
-$("#submit").on("click", function(e) {
+$("#submit").on("click", e => {
     e.preventDefault();
     visuify();
 });
