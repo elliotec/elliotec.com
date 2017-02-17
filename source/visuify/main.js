@@ -1,9 +1,3 @@
-import 'whatwg-fetch';
-import $ from 'jquery';
-
-window.$ = $
-
-fetch();
 function addToGraph(graphObj, artist, nodeObj, linkObj) {
     nodeObj.id = artist.name;
     linkObj.target = artist.name;
