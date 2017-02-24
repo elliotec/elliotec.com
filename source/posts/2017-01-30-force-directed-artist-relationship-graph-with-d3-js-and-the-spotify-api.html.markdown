@@ -11,7 +11,10 @@ I've always loved data visualization done well and admired interactive graphs an
 
 I finally made an excuse for myself to take a couple days and learn what D3 is all about in the form of a web app that maps a [force-directed graph](https://en.wikipedia.org/wiki/Force-directed_graph_drawing) of related artists to the artist the user inputs.
 
-##[PLAY WITH VISUIFY](http://elliotec.com/visuify)
+<a href="https://elliotec.com/visuify">
+    <img src="../images/visuify.png"/>
+    <h2>PLAY WITH VISUIFY</h2>
+</a>
 
 Click the link above to play around with it. Open the artist page in Spotify by clicking the artist name above the chart and hovering, clicking, and dragging the nodes and links do stuff too.
 
