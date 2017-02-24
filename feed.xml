@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://elliotec.com/force-directed-artist-relationship-graph-with-d3-js-and-the-spotify-api/"/>
     <id>http://elliotec.com/force-directed-artist-relationship-graph-with-d3-js-and-the-spotify-api/</id>
     <published>2017-01-30T22:13:00-07:00</published>
-    <updated>2017-02-17T01:36:02-07:00</updated>
+    <updated>2017-02-24T00:14:25-07:00</updated>
     <author>
       <name>Michael Elliott</name>
     </author>
@@ -24,7 +24,10 @@
 
 &lt;p&gt;I finally made an excuse for myself to take a couple days and learn what D3 is all about in the form of a web app that maps a &lt;a href="https://en.wikipedia.org/wiki/Force-directed_graph_drawing"&gt;force-directed graph&lt;/a&gt; of related artists to the artist the user inputs.&lt;/p&gt;
 
-&lt;h2&gt;&lt;a href="http://elliotec.com/visuify"&gt;PLAY WITH VISUIFY&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://elliotec.com/visuify"&gt;
+    &lt;img src="../images/visuify.png"/&gt;
+    &lt;h2&gt;PLAY WITH VISUIFY&lt;/h2&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Click the link above to play around with it. Open the artist page in Spotify by clicking the artist name above the chart and hovering, clicking, and dragging the nodes and links do stuff too.&lt;/p&gt;
 
