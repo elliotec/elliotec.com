@@ -2,11 +2,10 @@ body{
   background: black;
 }
 section{
-  -webkit-animation: rise 5s linear infinite alternate;
 }
 .headwrap {
   padding: 1em;
-  -webkit-animation: shrink 10s ease-in-out infinite alternate both;
+  -webkit-animation: shrink 8s ease-in-out infinite alternate both;
 }
 .head {
   height: 30em;
@@ -63,7 +62,14 @@ section{
   top: 11em;
   left: 7em;
   background: black;
-  -webkit-animation: open 2s ease-in infinite Alternate both;
+}
+@media (min-width: 700px){
+    .mouth{
+        -webkit-animation: open 2s ease-in infinite Alternate both;
+    }
+    section {
+        -webkit-animation: rise 5s linear infinite alternate;
+    }
 }
 @-webkit-keyframes bounce{
   0% {
@@ -104,11 +110,11 @@ section{
 @-webkit-keyframes rise{
   from {
     margin-top: 0;
-    margin-left:-80em;
+    margin-left:-80%;
   }
   to {
-    margin-top: 27em;
-    margin-left: 80em;
+    margin-top: 50%;
+    margin-left: 80%;
   }
 }
 
