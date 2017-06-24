@@ -1,3 +1,16 @@
+function authorize(){
+    var redirectUri = 'http://localhost:4567/visuify';
+    var clientId= '0b8f83c6a461499e88757164a5be5884';
+
+    var authUrl = 'https://accounts.spotify.com/authorize?client_id=' +
+        clientId +
+        '&response_type=token' +
+        '&redirect_uri=' +
+        redirectUri;
+
+    return window.location.replace(authUrl);
+}
+
 function addToGraph(graphObj, artist, nodeObj, linkObj) {
     nodeObj.id = artist.name;
     linkObj.target = artist.name;
@@ -27,13 +40,19 @@ function getArtist(query) {
         data: {
             q: query,
             type: "artist"
+        },
+        headers: {
+            'Authorization': 'Bearer ' + accessToken
         }
     });
 }
 
 function getRelatedArtists(artistId) {
     return $.ajax({
-        url: "https://api.spotify.com/v1/artists/" + artistId + "/related-artists"
+        url: "https://api.spotify.com/v1/artists/" + artistId + "/related-artists",
+        headers: {
+            'Authorization': 'Bearer ' + accessToken
+        }
     });
 }
 
@@ -194,6 +213,7 @@ function visuify(){
     $("svg").empty();
     $("#message").empty();
     $("#uri").empty();
+
     getArtist($("#query").val())
         .then(getFirstDegreeArtists)
         .then(buildFirstGraph)
@@ -206,3 +226,14 @@ $("#submit").on("click", function(e) {
     e.preventDefault();
     visuify();
 });
+
+if (window.location.href.indexOf("access_token") == -1){
+    authorize();
+} else {
+    var accessToken = getHashValue('access_token');
+
+    function getHashValue(key) {
+      var matches = location.hash.match(new RegExp(key+'=([^&]*)'));
+      return matches ? matches[1] : null;
+    }
+}
