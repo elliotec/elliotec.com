@@ -5,10 +5,30 @@
   <id>http://elliotec.com/</id>
   <link href="http://elliotec.com/"/>
   <link href="http://elliotec.com/feed.xml" rel="self"/>
-  <updated>2017-01-30T22:13:00-07:00</updated>
+  <updated>2017-06-24T12:58:00-06:00</updated>
   <author>
     <name>Michael Elliott</name>
   </author>
+  <entry>
+    <title>Coding For Rookies</title>
+    <link rel="alternate" href="http://elliotec.com/coding-for-rookies/"/>
+    <id>http://elliotec.com/coding-for-rookies/</id>
+    <published>2017-06-24T12:58:00-06:00</published>
+    <updated>2017-06-24T13:09:27-06:00</updated>
+    <author>
+      <name>Michael Elliott</name>
+    </author>
+    <content type="html">&lt;h2&gt;Coding For Rookies&lt;/h2&gt;
+
+&lt;p&gt;This is a collection of notes of the 6 week course I designed for the University of Utah&amp;rsquo;s continuing education program.&lt;/p&gt;
+
+&lt;p&gt;Feedback is welcome.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://codingforrookies.com"&gt;Go to CodingForRookies.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://codingforrookies.com"&gt;&lt;img class="" src="../images/cfr.png"&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Force-directed relationship graph with D3.js and the Spotify Web API</title>
     <link rel="alternate" href="http://elliotec.com/force-directed-artist-relationship-graph-with-d3-js-and-the-spotify-api/"/>
@@ -540,42 +560,6 @@ and Django, and SpringMVC and even jQuery. Let&amp;rsquo;s just come together to
 &lt;p&gt;A year is a relatively short time to have gotten where I did, and I am certain I wouldn&amp;rsquo;t have gotten there without the series of fortunate events (yes, I consider the destruction of my ankle as a fortunate event in hindsight) that allowed me to focus obsessively and full time on this pursuit. But passion is a lot stronger then luck and if one has the drive, they shouldn&amp;rsquo;t need any fortune to make things happen on their own timeline.&lt;/p&gt;
 
 &lt;p&gt;Join the discussion &lt;a href="https://news.ycombinator.com/item?id=8954348"&gt;here on Hacker News&lt;/a&gt;.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Using Sass in Visual Studio</title>
-    <link rel="alternate" href="http://elliotec.com/using-sass-in-visual-studio/"/>
-    <id>http://elliotec.com/using-sass-in-visual-studio/</id>
-    <published>2014-11-12T10:10:00-07:00</published>
-    <updated>2017-02-26T23:40:25-07:00</updated>
-    <author>
-      <name>Michael Elliott</name>
-    </author>
-    <content type="html">&lt;p&gt;Some may find themselves developing the front end of web applications in .NET and Visual Studio. If that&amp;rsquo;s you, I&amp;rsquo;m sorry (at least until the new &lt;a href="http://news.microsoft.com/2014/11/12/microsoft-takes-net-open-source-and-cross-platform-adds-new-development-capabilities-with-visual-studio-2015-net-2015-and-visual-studio-online/"&gt;cross platform open source versions&lt;/a&gt; come out).&lt;/p&gt;
-
-&lt;p&gt;If you use Sass, as hopefully you do if you&amp;rsquo;re reading this, you will find yourself frustrated by the fact that Web Essentials for VS advertised as being capable of Sass compilation, but actually isn&amp;rsquo;t. The following outline is the only way I&amp;rsquo;ve been able to get Sass working in Visual Studio. This has been tested in VS 2012 and 2013.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="https://visualstudiogallery.msdn.microsoft.com/2b96d16a-c986-4501-8f97-8008f9db141a"&gt;Download Mindscape Web Workbench here&lt;/a&gt; and make sure to enable it in VS at &lt;code&gt;Tools &amp;gt; Extenstions and Updates&lt;/code&gt;. You might have to restart VS.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Hopefully you have a &amp;ldquo;main.scss&amp;rdquo; type file in your stylesheets directory that contains all your imports and will eventually compile into a singular minified file called in your markup (this can be added by right-clicking the stylesheets folder, and going to &lt;code&gt;Add &amp;gt; New Item &amp;gt; SCSS Stylesheet (Sass)&lt;/code&gt;, then name appropriately):&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="../images/mainsass.png" /&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Go to &lt;code&gt;Tools &amp;gt; Options&lt;/code&gt; and select Web Workbench from the list. Adjust the settings so that:&lt;/p&gt;
-
-&lt;p&gt;Compilation &amp;gt; Trigger compile on build = True&lt;/p&gt;
-
-&lt;p&gt;Compilation &amp;gt; Disable Sass compilation = False&lt;/p&gt;
-
-&lt;p&gt;Sass &amp;gt; Produce .css file = True&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="../images/workbench.png"/&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;In the toolbar, got to &lt;code&gt;Mindscape &amp;gt; Web Workbench Settings&lt;/code&gt; and make sure the only checkbox selected under Compile is your &amp;ldquo;main.scss&amp;rdquo; file mentioned earlier. Uncheck all the rest unless you want a million extra css files and an hour-long build:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="../images/settings.png"/&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Now your main.scss file will compile on build (and save, depending on your settings) and generate a main.css file in the same directory that is minifiable and browser-readable.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;And thats it. Now you can write your Sass and keep your modular style structure nice and happy in Visual Studio and .NET projects. Hopefully this post will be deprecated at the release of the new versions.&lt;/p&gt;
 </content>
   </entry>
 </feed>

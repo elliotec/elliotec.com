@@ -28,11 +28,13 @@
 <span class="nn">---</span>
 </code></pre> <p>3) After that it was simply a matter of calling &ldquo;current_page.data&rdquo; and passing the custom variable in its place in Erb:</p> <pre class="highlight erb"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://github.com/elliotec"</span><span class="nt">&gt;</span><span class="cp">&lt;%=</span> <span class="n">current_page</span><span class="p">.</span><span class="nf">data</span><span class="p">.</span><span class="nf">github</span> <span class="cp">%&gt;</span>Github<span class="nt">&lt;/a&gt;</span>
 </code></pre> <p>Now the code base is much more DRY and modular, and the generated HTML is producing the expected behavior. </p> <p>You can do this in Jekyll too, but there are a few differences (basically just step 3) so <a href="//jekyllrb.com/docs/frontmatter/">check out their docs if thats what you&rsquo;re into</a>. </p> <p>For more info on the Middleman front matter, <a href="//middlemanapp.com/basics/frontmatter/">see the relavent section in the Middleman docs</a>.</p> <p>&ndash; Mike</p> </article> <a href="https://plus.google.com/+MichaelElliott-elliotec?rel=author"></a> <a href="https://plus.google.com/100799948688623726078?rel=publisher"></a> <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        if(navigator.userAgent.indexOf("Speed Insights") == -1) {
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-46276194-3', 'elliotec.com');
-      ga('send', 'pageview');
+              ga('create', 'UA-46276194-3', 'elliotec.com');
+              ga('send', 'pageview');
+        }
     </script> </body> </html>
