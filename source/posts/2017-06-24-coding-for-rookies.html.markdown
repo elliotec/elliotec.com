@@ -12,9 +12,9 @@ This is a collection of notes of the 6 week course I designed for the University
 
 Feedback is welcome.
 
-[Go to CodingForRookies.com](http://codingforrookies.com)
+[Go to CodingForRookies.com](http://www.codingforrookies.com)
 
-<a href="http://codingforrookies.com"><img class="" src="../images/cfr.png"></a>
+<a href="http://www.codingforrookies.com"><img class="" src="../images/cfr.png"></a>
 
 
 
