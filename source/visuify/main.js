@@ -1,5 +1,5 @@
 function authorize(){
-    var redirectUri = 'http://localhost:4567/visuify';
+    var redirectUri = 'https://elliotec.com/visuify';
     var clientId= '0b8f83c6a461499e88757164a5be5884';
 
     var authUrl = 'https://accounts.spotify.com/authorize?client_id=' +
