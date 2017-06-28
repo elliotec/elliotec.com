@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://elliotec.com/coding-for-rookies/"/>
     <id>http://elliotec.com/coding-for-rookies/</id>
     <published>2017-06-24T12:58:00-06:00</published>
-    <updated>2017-06-24T15:58:25-06:00</updated>
+    <updated>2017-06-27T22:16:57-06:00</updated>
     <author>
       <name>Michael Elliott</name>
     </author>
@@ -34,7 +34,7 @@
     <link rel="alternate" href="http://elliotec.com/force-directed-artist-relationship-graph-with-d3-js-and-the-spotify-api/"/>
     <id>http://elliotec.com/force-directed-artist-relationship-graph-with-d3-js-and-the-spotify-api/</id>
     <published>2017-01-30T22:13:00-07:00</published>
-    <updated>2017-06-24T15:58:25-06:00</updated>
+    <updated>2017-06-27T22:16:57-06:00</updated>
     <author>
       <name>Michael Elliott</name>
     </author>
@@ -75,7 +75,7 @@
     <link rel="alternate" href="http://elliotec.com/modules-and-monoliths/"/>
     <id>http://elliotec.com/modules-and-monoliths/</id>
     <published>2016-02-20T20:06:00-07:00</published>
-    <updated>2017-06-24T15:58:25-06:00</updated>
+    <updated>2017-06-27T22:16:57-06:00</updated>
     <author>
       <name>Michael Elliott</name>
     </author>
@@ -308,7 +308,7 @@ and Django, and SpringMVC and even jQuery. Let&amp;rsquo;s just come together to
     <link rel="alternate" href="http://elliotec.com/teach-your-skills-for-fun-and-profit/"/>
     <id>http://elliotec.com/teach-your-skills-for-fun-and-profit/</id>
     <published>2015-11-10T13:49:00-07:00</published>
-    <updated>2017-06-24T15:58:25-06:00</updated>
+    <updated>2017-06-27T22:16:57-06:00</updated>
     <author>
       <name>Michael Elliott</name>
     </author>
@@ -392,7 +392,7 @@ and Django, and SpringMVC and even jQuery. Let&amp;rsquo;s just come together to
     <link rel="alternate" href="http://elliotec.com/art-music-web-clojure/"/>
     <id>http://elliotec.com/art-music-web-clojure/</id>
     <published>2015-05-27T00:17:00-06:00</published>
-    <updated>2017-06-24T15:58:25-06:00</updated>
+    <updated>2017-06-27T22:16:57-06:00</updated>
     <author>
       <name>Michael Elliott</name>
     </author>
@@ -404,7 +404,7 @@ and Django, and SpringMVC and even jQuery. Let&amp;rsquo;s just come together to
     <link rel="alternate" href="http://elliotec.com/how-i-got-a-job-in-web-development/"/>
     <id>http://elliotec.com/how-i-got-a-job-in-web-development/</id>
     <published>2015-01-27T06:12:00-07:00</published>
-    <updated>2017-06-24T15:58:25-06:00</updated>
+    <updated>2017-06-27T22:29:04-06:00</updated>
     <author>
       <name>Michael Elliott</name>
     </author>
@@ -418,9 +418,7 @@ and Django, and SpringMVC and even jQuery. Let&amp;rsquo;s just come together to
 
 &lt;p&gt;As far as I knew growing up, the Internet was made out of magic. I had taken apart my family computers out of curiosity a few times but had never heard of HTML, or pondered the concept of what software development really was. Most of the technical experience in my life was my enjoyment of building and breaking things, playing with Knex and Erector sets, and growing up with the Internet. Just after high school I was lucky enough to land a job as a contractor for my neighbor soldering circuit boards and electronics for various products he made.&lt;/p&gt;
 
-&lt;p&gt;That was a pretty cool job, but it certainly didn&amp;rsquo;t make me want to study electrical engineering. I went into psychology thinking it would supplement my intent of going to medical school and becoming a psychiatrist. That dream died fast for numerous reasons, and I ended up rushing to finish my degree ASAP. I then started work at Starbucks after leaving my student job upon graduation.&lt;/p&gt;
-
-&lt;p&gt;There are pros and cons to working at Starbucks, and I wasn&amp;rsquo;t sure if I wanted to stick around forever. Career-wise I was open to whatever at the time and didn&amp;rsquo;t have much direction. While poking around on Reddit in January of 2013, I had vaguely been introduced to the idea of web development and coding by a particular post (which I have tragically not since been able to find), and it piqued my interest to research it further. Thats when I realized that I was basically &amp;ldquo;coding&amp;rdquo; when I followed an extensive process (&lt;a href="http://lifehacker.com/5830367/how-to-hack-your-wii-for-homebrew-in-five-minutes"&gt;soon thereafter replaced by this&lt;/a&gt;) haphazardly copypasting weird long strings of symbols in college to mod my Wii so I could play all the games.&lt;/p&gt;
+&lt;p&gt;That was a pretty cool job, but it certainly didn&amp;rsquo;t make me want to study electrical engineering. I went into psychology thinking it would supplement my intent of going to medical school and becoming a psychiatrist. That dream died fast for numerous reasons, and I ended up rushing to finish my degree ASAP. I then started work at Starbucks in addition to helping out the neighbor with soldering and testing his products after leaving my student job upon graduation.&lt;/p&gt;
 
 &lt;p&gt;That same month I learned about &lt;a href="http://www.linuxfoundation.org/"&gt;Linux&lt;/a&gt; and decided to install &lt;a href="http://www.ubuntu.com/desktop"&gt;Ubuntu&lt;/a&gt; on an old Dell I inherited from my parents. In order to get things installed and working properly I had to open the command line and actually use Unix commands, some of them often enough to start understanding what they did and remembering them. I was just getting into Minecraft at the time and wanted my girlfriend to play with me, and I figured with a little googling it would be easy enough to setup a local server on that Ubuntu machine. It was, and I consider that my first real and aware exposure to programming.&lt;/p&gt;
 
@@ -428,7 +426,7 @@ and Django, and SpringMVC and even jQuery. Let&amp;rsquo;s just come together to
 
 &lt;p&gt;Over the next few months I dabbled in various tutorials on HTML and CSS recommended by Reddit but struggled finding time and motivation to just sit down and get through them. I attempted to complete the &lt;a href="http://www.codecademy.com"&gt;Codecademy&lt;/a&gt; courses multiple times but found them boring and purposeless. The idea sort of went to the back burner as I worked full-time, moved into a new place, and wanted to relax and enjoy my time off. I was doing just that at the climbing gym on June 1st when I clumsily stumbled off the mat at the base of the wall and dramatically broke the cartilage in my ankle. Somehow I didn&amp;rsquo;t need surgery but the doctor said it had to be non-weight bearing for 12 weeks.&lt;/p&gt;
 
-&lt;p&gt;So I called my boss and broke the news, she reminded me of one of the aforementioned &amp;ldquo;pros&amp;rdquo; of working at Starbucks: Short-term disability insurance. It got signed off no problem. The first couple weeks were mostly spent sleeping away the pain and playing through various video games, pretty much just lazing around. But one day when the Lortab wore off I was feeling very unproductive and lazy, so I decided to set a goal of getting through those HTML and CSS Codecademy courses the next week. At the same time we moved into my girlfriend&amp;rsquo;s parents&amp;rsquo; house while they were abroad so that eliminated rent and some other expenses for the few months I was out. My girlfriend also deserves a lot of credit for working and helping me out during this time. I became acutely aware of how fortunate I was to be in a position where I was essentially getting paid to chill at home and have 3 months of free time to spend however I wanted.&lt;/p&gt;
+&lt;p&gt;So I called my boss and broke the news, she reminded me of one of the benefits of working at Starbucks: Short-term disability insurance. It got signed off no problem. The first couple weeks were mostly spent sleeping away the pain and playing through various video games, pretty much just lazing around. But one day when the Lortab wore off I was feeling very unproductive and lazy, so I decided to set a goal of getting through those HTML and CSS Codecademy courses the next week. At the same time we moved into my girlfriend&amp;rsquo;s parents&amp;rsquo; house while they were abroad so that eliminated rent and some other expenses for the few months I was out. My girlfriend also deserves a lot of credit for working and helping me out during this time. I became acutely aware of how fortunate I was to be in a position where I was essentially getting paid to chill at home and have 3 months of free time to spend however I wanted.&lt;/p&gt;
 
 &lt;p&gt;This awareness led me to feel like I owed it to karma or whatever powers that were to spend a good chunk of my time out on productive endeavors and keep setting goals like the Codecademy one. I blew through those courses, still feeling annoyed with their seeming lack of purpose and context, but appreciated the introduction to something I knew I wanted to spend more time on.&lt;/p&gt;
 
@@ -450,7 +448,9 @@ and Django, and SpringMVC and even jQuery. Let&amp;rsquo;s just come together to
 
 &lt;p&gt;I was super excited about programming and my new prospects for income. I decided I wanted to start a freelance business doing this, and my first step was getting some more projects and clients. The first few were not as hard to get as I had been led to believe. My family and friends already knew I was doing this, so I asked some of them if they needed a website.&lt;/p&gt;
 
-&lt;p&gt;I did one for free, one as a trade, and then started charging (not very much). My first three clients were close friends or family, and after that I indiscriminately offered my services to anyone and everyone. One of my first non-family/friend clients was an HVAC contractor that was fixing the furnace in the house I was renting at the time. He saw me working on a different project, asked what I was doing, and told me he needed a website. I gave him a cheap quote, and promptly had another check in my pocket.&lt;/p&gt;
+&lt;p&gt;Then, the neighbor who I worked for offered to pay me to make the website for company. I jumped at the idea and finished it in a few weeks, referring back to the books and tutorials, coming out having learned quite a bit.&lt;/p&gt;
+
+&lt;p&gt;After that, I did one for free, one as a trade, and then started charging (not very much). My first three clients were close friends or family, and after that I indiscriminately offered my services to anyone and everyone. One of my first non-family/friend clients was an HVAC contractor that was fixing the furnace in the house I was renting at the time. He saw me working on a different project, asked what I was doing, and told me he needed a website. I gave him a cheap quote, and promptly had another check in my pocket.&lt;/p&gt;
 
 &lt;p&gt;It was time to legitimize my business; I had started making enough money to open up a bank account and register a sole proprietorship. I finally got around to making myself a (pretty rudimentary) personal website and got my girlfriend&amp;rsquo;s help in designing a logo in Illustrator. We designed business cards at the same time and got a cheap bulk order from FedEx. I still use them and they look like this:&lt;/p&gt;
 
@@ -460,13 +460,13 @@ and Django, and SpringMVC and even jQuery. Let&amp;rsquo;s just come together to
 
 &lt;h2&gt;Expediting my learning&lt;/h2&gt;
 
-&lt;p&gt;I continued to get a client here and there after my ankle had fully healed and I started work again full time at Starbucks. It wasn&amp;rsquo;t enough to pay the bills though, and at this point I was dedicated to becoming a professional web developer. I looked around for some dev roles in my area and came up short. Most required a level of proficiency that I wasn&amp;rsquo;t totally confident I had.&lt;/p&gt;
+&lt;p&gt;I continued to get a client here and there after my ankle had fully healed and I started work again part time at Starbucks, and a little for my neighbor. It wasn&amp;rsquo;t enough to pay the bills though, and at this point I was dedicated to becoming a professional web developer. I looked around for some dev roles in my area and came up short. Most required a level of proficiency that I wasn&amp;rsquo;t totally confident I had.&lt;/p&gt;
 
-&lt;p&gt;I mentioned to the same friend who introduced me to the Rails tutorial that I wanted to somehow expedite my learning to get to a professional skill level. He told me about these &amp;ldquo;code bootcamps&amp;rdquo; that had been popping up around the country taking after the tech company incubator model and their apparent success. He had been working at a venture impact fund, and was tasked to get information about these schools for possible investments. He emailed me a spreadsheet with some basic info about each bootcamp he looked into (which was immensely helpful - something similar with can now be found &lt;a href="http://www.skilledup.com/learn/programming/the-ultimate-guide-to-coding-bootcamps-the-exhaustive-list/"&gt;here&lt;/a&gt;) and I did my own research on which would be the best for me.&lt;/p&gt;
+&lt;p&gt;I mentioned to the same friend who introduced me to the Rails tutorial that I wanted to somehow expedite my learning to get to a professional skill level. He told me about these code schools that had been popping up around the country taking after the tech company incubator model and their apparent success. He had been working at a venture impact fund, and was tasked to get information about these schools for possible investments. He emailed me a spreadsheet with some basic info about each code school he looked into (which was immensely helpful - something similar with can now be found &lt;a href="http://www.skilledup.com/learn/programming/the-ultimate-guide-to-coding-bootcamps-the-exhaustive-list/"&gt;here&lt;/a&gt;) and I did my own research on which would be the best for me.&lt;/p&gt;
 
 &lt;p&gt;That October, after much deliberation I decided to apply to &lt;a href="http://www.codefellows.org"&gt;Code Fellows&lt;/a&gt; in Seattle. I chose this particular code school mainly because they guaranteed a job in software development within 9 months or I paid nothing. Another reason was its relatively low price compared to some of the others like Hack Reactor, which at the time I was applying was more expensive than grad school plus the cost and hassle of moving to San Fransisco. Also, I had never been to Seattle and was in great need of an adventure to a place I had heard only good things about.&lt;/p&gt;
 
-&lt;p&gt;The application and interview process was pretty intense. After an initial application assessing my skills and aptitude I was moved on to another stage that required a submission of a one-minute video of me explaining &amp;ldquo;something technical.&amp;rdquo; I chose jQuery and probably did it 50 times before feeling I had done an adequate job. I soon got another email requesting a time for an interview, and I got on Skype with the CEO at the alloted time.&lt;/p&gt;
+&lt;p&gt;The application and interview process was pretty intense. After an initial application assessing my skills and aptitude I was moved on to another stage that required a submission of a one-minute video of me explaining &amp;ldquo;something technical.&amp;rdquo; I chose jQuery and probably did it 10 times before feeling I had done an adequate job. I soon got another email requesting a time for an interview, and I got on Skype with the CEO at the alloted time.&lt;/p&gt;
 
 &lt;p&gt;The interview was absolutely terrible. There were connectivity issues which amplified the fact that I had absolutely no clue what I was talking about. He was asking me questions about data structures and algorithms and how I&amp;rsquo;d model real life objects and items in code. I found myself literally speechless multiple times during the call. I had a few acceptable answers but mostly it was pretty embarrassing and I was sure I wouldn&amp;rsquo;t move further. But he must&amp;rsquo;ve had some faith in me, and said he&amp;rsquo;d send me a code challenge to complete as soon as possible.&lt;/p&gt;
 
@@ -498,13 +498,13 @@ and Django, and SpringMVC and even jQuery. Let&amp;rsquo;s just come together to
 
 &lt;p&gt;The curriculum itself was very rigorous (most of my projects and assignments can be found on my Github if you&amp;rsquo;re interested), but I feel some of the material we were taught was not as impactful to me as what I learned from interacting with my peers and instructors and going to meetups almost every night, brushing elbows with some of the biggest names in the tech community and absorbing everything I could from everyone I could. I also had a great mentor from a local startup that really helped me tie a few loose ends in the directions I was heading.&lt;/p&gt;
 
-&lt;p&gt;Another really useful aspect of the bootcamp was the increasing of our web presence. I never had a &lt;a href="http://linkedin.com/in/elliotec"&gt;Linkedin&lt;/a&gt; account up until then, which I had come to find out is an absolutely essential tool in job searching. There was staff there tasked with helping us maximize the efficacy of our web presence and resumes, and doing mock interviews both technical and general.&lt;/p&gt;
+&lt;p&gt;Another really useful aspect was the increasing of our web presence. I never had a &lt;a href="http://linkedin.com/in/elliotec"&gt;Linkedin&lt;/a&gt; account up until then, which I had come to find out is an absolutely essential tool in job searching. There was staff there tasked with helping us maximize the efficacy of our web presence and resumes, and doing mock interviews both technical and general.&lt;/p&gt;
 
 &lt;p&gt;During the course I was contacted with a few contract opportunities that I took, even though I really didn&amp;rsquo;t have the time. One was as a personal tutor for someone with a MS in computer science learning Rails in a certificate program at UW. I had minimal credentials, and I got paid the most money I&amp;rsquo;d ever charged up to that point to help a comp sci grad student. This put things in an interesting perspective - that the practical knowledge I&amp;rsquo;d been working on gaining might just be more useful than the expensive and dense theory taught in academia.&lt;/p&gt;
 
-&lt;p&gt;Toward the end of the bootcamp, I was asked by an instructor if I&amp;rsquo;d be interested in being a teaching assistant for a new month long class they were doing on the fundamentals of computer science and web development. They were going to pay me and I still had a month left on my lease, so I jumped at the opportunity. It was taught in JavaScript. I learned so much by being put in a position where students looked up to me and I was tasked with being their first resource for help and knowledge.&lt;/p&gt;
+&lt;p&gt;Toward the end of the course, I was asked by an instructor if I&amp;rsquo;d be interested in being a teaching assistant for a new month long class they were doing on the fundamentals of computer science and web development. They were going to pay me and I still had a month left on my lease, so I jumped at the opportunity. It was taught in JavaScript. I learned so much by being put in a position where students looked up to me and I was tasked with being their first resource for help and knowledge.&lt;/p&gt;
 
-&lt;p&gt;I had a few interviews in Seattle, but even though I had made tons of friends the transient nature of my situation was a major barrier in landing a spot right away. A few students got jobs almost immediately after graduation, and others slowly trickled along roughly biweekly. We lost 3 classmates half way through the bootcamp, but most of us have jobs now or are making a decent living consulting.&lt;/p&gt;
+&lt;p&gt;I had a few interviews in Seattle, but even though I had made tons of friends the transient nature of my situation was a major barrier in landing a spot right away. A few students got jobs almost immediately after graduation, and others slowly trickled along roughly biweekly. We lost 3 classmates half way through the course, but most of us have jobs now or are making a decent living consulting.&lt;/p&gt;
 
 &lt;h2&gt;Startup Weekend&lt;/h2&gt;
 
