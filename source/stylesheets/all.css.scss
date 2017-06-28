@@ -20,7 +20,7 @@ section {
     text-align: center;
     border-top: 1px solid #ddd;
     padding: 1em;
-    color: $nephritis;
+    color: darken($nephritis, 5%);
     font-weight: 500;
   }
 }

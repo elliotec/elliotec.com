@@ -36,25 +36,28 @@
     @include media($large-screen){
       @include span-columns(4);
       @include vertical-align;
-      font-size: 1.5em;
+      font-size: 1.35em;
       left: 2em;
     }
 
     h3 {
       font-weight: 500;
-      color: $nephritis;
       font-size: 1.5em;
+      color: darken($nephritis, 5%);
     }
 
-    .contact-me{
-      margin-top: 2.5em;
-      a{
+    .contact-link{
         padding: 0.3em;
-        background-color: $nephritis;
-        color: white;
-        border-radius:2px;
-        border: 1px solid darken($nephritis, 10%);
-      }
+        margin: 1em;
+        background-color: $lightwhite;
+        color: $hover-link-color;
+        border-radius:3px;
+        border: 2px solid $hover-link-color;
+
+        &:hover {
+            color: $base-link-color;
+            border-color: $base-link-color
+        }
     }
   }
 }

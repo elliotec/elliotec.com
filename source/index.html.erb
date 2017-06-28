@@ -3,14 +3,16 @@
     <%= image_tag("/images/groom.png", class: "headshot") %>
     <div class="intro">
       <h3>Mike Elliott</h3><br>
-      <p>Senior Front End Developer at <a href="http://www.overstock.com">Overstock.com</a></p>
+      <p>Senior Front End Developer at Overstock.com</p>
       <p>Available for contract work and consulting</p>
-      <p class="contact-me"><a href="mailto:me@michaelelliott.me">Contact me</a></p>
+      <br/>
+      <a class="contact-link" href="mailto:me@michaelelliott.me">Contact</a>
+      <%= link_to "Resume", "/images/MichaelElliottResume.pdf", class: "contact-link" %>
     </div>
   </section>
 </div>
 <section class="posts">
-  <h2>Posts <a href="/feed.xml"><i class="fa fa-rss"></i></a></h2>
+  <h2>Posts</h2>
   <ul>
     <% blog.articles.each do |post| %>
     <li class="post-item">
